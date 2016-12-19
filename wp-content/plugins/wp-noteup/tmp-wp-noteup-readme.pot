@@ -1,0 +1,72 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "WP NoteUp"
+msgstr ""
+
+#. Short description.
+msgid "Take simple notes on your Posts and Pages."
+msgstr ""
+
+#. Screenshot description.
+msgid "WP NoteUp in a Post"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"WP NoteUp allows you to take simple notes when you're editing your Posts\n"
+"or Pages."
+msgstr ""
+
+#. Found in installation paragraph.
+msgid ""
+"Install by going to your WordPress Dashboard &gt; Plugins &gt; Add New and searching\n"
+"for \"WP NoteUp.\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial release that allows simple text notes on Posts and Pages"
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid ""
+"Yet another small change in hopes that activation through WordPress.org\n"
+"is again possible."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "Another small tweak fixing the issue people are having activating the plugin."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid ""
+"Small tweak that keeps other Add Media buttons from showing up in the NoteUp\n"
+"box."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid ""
+"This major update, dubbed Cube, was entirely focused on updating the experience of note taking to\n"
+"include formatting and media. Special thanks to the <a href=\"https://github.com/WebDevStudios/CMB2\">CMB2</a> crew <a href=\"http://webdevstudios.com\">@webdevstudios</a>."
+msgstr ""
+
+#. Found in changelog paragraph.
+msgid "<a href=\"http://aubreypwd.com/wp-noteup-1-1-cube/\">Read More</a>"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Development"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Credits"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "WP NoteUp is developed over at <a href=\"http://github.com/aubreypwd/wp-noteup\">GitHub</a>."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "Super thanks to the authors of <a href=\"https://github.com/WebDevStudios/CMB2\">CMB2</a>"
+msgstr ""

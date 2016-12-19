@@ -1,0 +1,5323 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+
+
+
+.desktop-only {display:inline; }
+.desktop-block {display:block;}
+.mobile-only {display:none;}
+.hide {position:absolute;top:0px;left:-9999px;}
+
+sup {
+	font-family:$sans-serif;
+	font-weight:normal;
+	//font-size:12px;
+
+	h2 & {
+		font-size:14px;
+		position:relative;
+		top:-16px;
+		left:2px;
+	}
+}
+
+
+h1, .h1 {
+	font-size: 2.5rem;
+
+}
+
+h2, .h2 {
+	font-size: 1.75rem;
+}
+
+h3, .h3 {
+	font-size: 1.125rem;
+}
+
+h4, .h4 {
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+h5, .h5 {
+	font-size: 1.0rem;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .profile-username {
+	@include headings-desktop;
+
+}
+
+
+// for desktops only...
+.image-replacement2,
+.image-replacement3 a,
+h2.image-replacement3 {
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+#container {}
+
+.header {
+	height:120px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:2000;
+}
+
+.logged-in .header {
+	top:32px;
+}
+
+.logged-in.no-admin-bar .header {
+		top:0px;
+}
+
+.wrap {
+	width:100%;
+	max-width:100%;
+	margin:0 auto;
+	
+	.inner-wrap {
+		max-width:1000px;
+		width:100%;
+		margin:0 auto;
+		padding:0;
+		position:relative;
+	}
+}
+
+#content {margin-top:120px;}
+
+
+
+// inner wrap that will always be 1000px wide
+
+.learn-more {
+		display:block;
+		width:80px;
+		height:20px;
+		line-height:20px;
+		text-align:center;
+		@include headings-desktop;
+		background:#ffffff;
+		text-align:center;
+		position:absolute;
+		top:10.5px;
+		right:1px;
+		cursor:pointer;
+	}
+
+.learn-more.open,
+.learn-more:hover {
+		background:#000000;
+		color:#ffffff;
+	}
+
+.gray {
+		background: #eeece9;
+	}
+
+/* SPLASH PAGE */
+//******************************************************
+//******************************************************
+//******************************************************
+
+.page-template-template-splash-php {
+	//background-image: url(../../images/splash-bg-2000.jpg) no-repeat center top;
+	min-width:400px;
+	min-height:650px;
+
+	
+
+#splash-content {
+	
+	
+}
+
+#splash-content img {
+	
+}
+
+#splash-content .hide {
+	position:absolute;
+	top:0px;
+	left:-9999px;
+}
+
+
+#yes, #no {
+	position:absolute;	
+	background:url(../../images/txt-green-yes-no-2.png) no-repeat;
+	height:90px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border:none;
+	outline:none;
+}
+
+#yes {
+	width:267px;
+	left:13.95%;
+	top:67.1%;
+	background-position:bottom left;
+	&:hover {
+		background-position:top left;
+	}
+	
+}
+#no {
+	width:209px;
+	left:61%;
+	top:66.9%;
+	background-position:bottom right;
+	&:hover {
+		background-position:top right;
+	}
+}
+
+}
+
+
+//******************************************************
+// EOF SPLASH PAGE
+
+// COMMON AREAS HOME and BEER
+// beer locator
+
+.page-template-template-home-2015-2 .wrap #find-beer .inner-wrap,
+.page-template-template-our-beers-2015-simple .wrap #find-beer .inner-wrap {
+		max-width:1075px;
+	}
+
+.page-template-template-our-beers-2015-simple #find-beer.beer-locator,
+.beer-locator {
+
+	
+			padding:60px 0;
+			background: url('../../images/home/findbeer/find-beer-bg.jpg') no-repeat;
+			background-size:cover;
+			height:295px;
+
+			h2 {
+				background: url('../../images/home/findbeer/find-gfb-in-your-area.png') no-repeat center;
+				background-size:contain;
+				width:100%;
+				margin:40px 0 40px 0;
+			}
+
+			label,
+			p.hide {
+				position:absolute;
+				top:0px;
+				left:-9999px;
+			}
+			form {
+				//@extend .image-replacement;
+				//background: url('../../images/home/findbeer/txt-find-beer.png') no-repeat;
+				// background-size:85% 100%;
+				// background-position:0px 0px;
+				// height:109px;
+				// width:100%;
+				max-width:100%;
+				text-align:center;
+				position:relative;
+				p #locator-zip-code,
+				p #locator-submit {
+					// position:absolute;
+					// top:30px;
+					//background: $text-gray;
+					background-color:transparent;
+					height: 50px;
+					border:none;
+					color:#ffffff;
+					font-size:36px;
+					font-family: $font-desktop;
+					border:3px solid #ffffff;
+					margin:0 8px;
+				}
+				#locator-zip-code {
+					width:40%;
+					padding-left:10px;
+					right:54px;
+				}
+				#locator-submit {
+					width:20%;
+					right:0px;
+					&:hover {
+						background:rgba(255,255,255,0.4);
+					}
+				}
+
+			}
+		} // EOF BEER LOCATOR
+
+		// Newsletter Start
+		.newsletter,
+		#tribe-events-pg-template .newsletter.first {
+			background: url('../../images/home/newsletter/bg-newsletter.jpg') no-repeat top center;
+			//background: $desktop-sprite-jpg;
+			//background-position:0px -3690px;
+			background-size:cover;
+			height:319px;
+
+
+			.inner-wrap {
+				
+				height:319px;
+				padding-top:0;
+				margin-top:0;
+				position:relative;
+				max-width:1000px;
+				margin:0 auto;
+				
+			}
+
+			h2 {
+				background:url('../../images/home/newsletter/txt-i-love-craft-beer.png') no-repeat;
+				width:100%;
+				height:130px;
+				background-size:100% 100%;
+				position:absolute;
+				top:70px;
+				left:0px;
+			}
+
+			.bottle-cap {
+				width:115px;
+				height:115px;
+				background: $gfb-sprite;
+				background-position:-480px -522px;
+				position:absolute;
+				top:120px;
+				left:-36px;
+
+			}
+
+			.input-group {
+				position:absolute;
+				top:200px;
+				left:0px;
+				text-align:center;
+				width:100%;
+
+				label,
+				li span {
+					position:relative;
+					top:0px;
+				}
+				li {
+					display:inline;
+					margin:0 15px;
+				}
+
+				label, li {
+					color:#ffffff;
+					font-family: $font-desktop;
+					font-size:28px;
+					letter-spacing:1px;
+					text-transform:uppercase;
+
+				}
+
+				li input[type="checkbox"],
+				li input {
+					width:20px;
+					height:20px;
+					border:none;
+					background:#ffffff;
+					position:relative;
+					right:6px;
+				}
+			}
+
+			#mc-embedded-subscribe,
+			#mce-EMAIL {
+				position:absolute;
+				top:150px;
+				border:0;
+				margin:0;
+				background:#ffffff;
+				height:50px;
+				line-height:40px;
+				color:$text-gray;
+			}
+
+			#mce-EMAIL {
+				left:33.2%;
+				width:28.1%;
+				color:$text-gray;
+				padding-left:20px;
+			}
+			#mc-embedded-subscribe {
+				left:61.9%;
+				width:5%;
+				font-family: $font-desktop;
+				font-size:18px;
+				font-weight:normal;
+			}
+
+			#mc-embedded-subscribe:hover {
+				background:#000000;
+			}
+			
+
+			p, #label-for-email {
+				position:absolute;
+				top:0px;
+				left:-9999px;
+			}
+			#mc_embed_signup {
+				form {
+				width:100%;
+				height:319px;
+				margin:0;
+				
+			}
+				input.mce_inline_error{
+					border-color:#000000;
+				} 
+			}
+		}
+
+// HOME PAGE TABLETS and COMPUTERS
+//******************************************************
+//******************************************************
+//******************************************************
+
+.page-template-template-home-php,
+.page-template-template-home-2015-php,
+.page-template-template-home-2015-2-php {
+
+	#find-beer {
+		//margin:50px 0;
+	}
+
+	#content {
+		overflow:hidden;
+		.bg-gray {
+			background: $bg-gray;
+		}
+	// slider
+	.slider {
+
+		.slider-bg {
+			width:100%;
+			//height:580px; // change this once we have an image inside it.
+			background-size:cover;
+			background-repeat:no-repeat;
+			background-position:center top;
+			background-color:#444444;
+		}
+		.slider-content {
+			height:100%;
+			text-align:center;
+			max-width:1400px;
+			//background:#fff;
+			img {
+				display:block;
+				margin:0 auto;
+			}
+			
+		}
+		.cycle-pager {
+			position:absolute;
+			left:0;
+			bottom:20px;
+			z-index:500;
+			width:100%;
+			display:block;
+			text-align:center;
+			span {
+				font-size:36px;
+				margin:0 4px;
+				color:#ffffff;
+				display:inline-block;
+				width:10px;
+				height:10px;
+				text-align:center;
+				line-height:10px;
+				&:hover {
+					cursor:pointer;
+				}
+			}
+
+			span:hover,
+			.cycle-pager-active {
+				color:#999999;
+			}
+		}
+	}
+
+	// boxes
+		.boxes {
+			margin-top:20px;
+			padding:36px 0 100px 0;
+			#featured-beer-bottle,
+			.featured-beer-bottle {
+				position:absolute;
+				top:-24px;
+				left:-60px;
+				width:auto;
+			}
+			.fourcol {
+				margin:0;
+				width:33.33%;
+				a {
+					color:$text-gray;
+				}
+				.box-content {
+					padding-right:36px;
+					font-size:.9rem;
+				}
+				h2 {
+					font-size:30px;
+					font-size:2.0rem;
+					letter-spacing:2px;
+					margin:10px 0 8px 0;
+					a {
+						color: $text-gray;
+						&:hover {
+							color: $black;
+						}
+					}
+				}
+			}
+			#three-boxes a img {
+			  -webkit-transition: opacity 0.5s ease-in-out;
+			  -moz-transition: opacity 0.5s ease-in-out;
+			  -ms-transition: opacity 0.5s ease-in-out;
+			  -o-transition: opacity 0.5s ease-in-out;
+			  transition: opacity 0.5s ease-in-out;
+			  &:hover {
+			  	zoom: 1;
+				filter: alpha(opacity=50);
+				opacity: 0.5;
+			  }
+			}
+		} // eof boxes
+	
+	// Rate and Review Beer
+		.ratereviewbeer {
+			.inner-wrap {
+				max-width:1077px;
+			}
+			padding:90px 0 0 0;
+			height:297px;
+			//background: $desktop-sprite-jpg;
+			//background-position:0px -3480px;
+			background: url(../../images/home/ratereview/rate-beer-bg.jpg) no-repeat center;
+			background-size:cover;
+			#txt-ratereview,
+			#txt-enlighten {
+				//@extend .image-replacement;
+				text-indent:-9999px;
+				height:85px;
+				float:left;
+				padding:0;
+				margin:0;
+
+			}
+			#txt-ratereview {
+				background: url('../../images/home/ratereview/enlighten-others.png') no-repeat center;
+				background-size:contain;
+				width:100%;
+			}
+			#txt-enlighten {
+				// background: url('../../images/home/ratereview/txt-enligten-others.png') no-repeat;
+				// background-size:100% 100%;
+				// width:40.5%;
+			}
+
+			#btn-ratebeer,
+			#btn-beer-advocate {
+				//@extend .image-replacement;
+				//background: $gfb-sprite;
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
+				float:none;
+				height:48px;
+				display:block;
+				margin:0 auto;
+
+				//border:1px solid red;
+			}
+
+			#btn-ratebeer {
+				width:12.74%;
+				background:url(../../images/home/ratereview/ratebeer.png) no-repeat;
+				background-size:contain;
+				
+				&:hover {
+					opacity:0.6;
+				}
+			}
+			#btn-beer-advocate {
+				width:22.21%;
+				background:url(../../images/home/ratereview/beeradvocate.png) no-repeat;
+				background-size:contain;
+				&:hover {
+					opacity:0.6;
+				}
+			}
+
+			#btn-ratebeer,
+			#btn-beer-advocate {
+				// margin:26px 0 0 6px;
+				// float:right;
+				position:absolute;
+				top:22px;
+				right:24%;
+			}
+			#btn-beer-advocate {
+				// float:right;
+				// margin-left:0;
+				right:0%;
+			}
+		}
+	// Taste it Once Remember it Forever
+		.tasteitonce {
+			background: $bg-gray url(../../images/home/tasteonce/a-flash-of-genius-bg.jpg) no-repeat bottom center;
+			background-size:100% 393px;
+			height:393px;
+			padding:100px 0 0 0;
+			h2 {
+				//@extend .image-replacement;
+				text-indent:-9999px;
+				background: url(../../images/home/tasteonce/a-flash-of-genius.png) no-repeat center;
+				background-size:contain;
+				width:827px;
+				height:41px;
+				margin:18px auto 12px auto;
+			}
+			p {
+				line-height:36px;
+				color:#ffffff;
+				text-align:center;
+			}
+			#taste-it-once-glass {
+				position:absolute;
+				right:0px;
+				top:120px;
+			}
+		}
+	// Youtube Area
+		.youtube {
+			padding:60px 0 80px 0;
+			width:120%;
+			position:relative;
+			left:-10%;
+
+			.slide-videos {
+				text-align:center;
+				height:auto;
+				//max-width:560px;
+			}
+
+			// .slide-videos {
+			// 	position: relative;
+			// 	padding-bottom: 56.25%; /* 16:9 */
+			// 	padding-top: 25px;
+			// 	height: 0;
+			// }
+			// .slide-videos iframe {
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+			// 	width: 100%;
+			// 	height: 100%;
+			// }
+
+
+			#next,
+			#prev {
+				display:block;
+				width:24.25%;
+				height:100%;
+				background:url(../../images/home/youtube/youtube-prev-next.png) no-repeat;
+				position:absolute;
+				top:0px;
+				z-index:500;
+				//border:1px solid red;
+			}
+
+			#next {
+				right:8.25%;
+				background-position:89% 45%;
+			}
+			#prev {
+				left:8.25%;
+				background-position:11% 45%;
+			}
+			
+			iframe {
+				width:100%;
+				max-width:95%;
+				//margin:0 auto;
+				//margin-left:10%;
+			}
+			h2 {
+				background: url(../../images/home/youtube/taste-enlightenment.png) no-repeat center;
+				max-width:1000px;
+				background-size:contain;
+				width:100%;
+				height:50px;
+				margin:0px auto 60px auto;
+				span {
+					position:absolute;
+					top:0px;
+					left:-9999px;
+				}
+				a {
+					display:block;
+					//background: $gfb-sprite;
+					//text-indent:-9999px;
+					&.youtube-website {
+						//background-position: -84px -267px;
+						border:2px solid $text-gray;
+						padding:2px 6px;
+						font-size:24px;
+						line-height:24px;
+						width:auto;
+						height:auto;
+						float:right;
+						margin-top:10px;
+						&:hover {
+							//background-position: -124px -267px;
+						}
+					}
+				}
+			}
+		} // eof youtube
+
+	// Instagram Area
+		.instagram-wrapper {
+			padding:80px 0;
+			.twocol {
+				margin:0;
+			}
+			h2 {
+				background: url(../../images/home/instagram/share-your-gfb-experience.png) no-repeat top left;
+				background-size: contain;
+				max-width:1000px;
+				height:40px;
+				margin:0 0 24px 0;
+				//border:1px solid red;
+				span {
+					position:absolute;
+					top:0px;
+					left:-9999px;
+				}
+				a {
+					display:block;
+					//background: $gfb-sprite;
+					text-indent:-9999px;
+					&.instagram-website {
+						background-position: 0px -88px;
+						width:50px;
+						height:50px;
+						float:left;
+						&:hover {
+							background-position: -50px -88px;
+						}
+					}
+					&.instagram-hashtag {
+						background: url(../../images/home/instagram/hash-tag-gfb.png) no-repeat;
+						background-size:contain;
+						height:40px;
+						width:55%;
+						float:right;
+						margin-top:0px;
+						&:hover {
+							opacity:0.8;
+						}
+					}
+				}
+			} // eof h2
+			// START INSTAGRAM IMAGE AREA
+			#home-instagram {
+				height:327px;
+				// top row
+				.gfb-0 {top:0%;left:0%;}
+				.gfb-1 {top:0%;left:16.86%;}
+				.tag-0 {top:0%;left:33.72%;}
+				.gfb-2 {top:0%;left:50.58%;}
+				.tag-1 {top:0%;left:67.44%;}
+				.gfb-3 {top:0%;right:0%;}
+
+				// bottom row
+				.gfb-4 {bottom:0%;left:0%;}
+				.tag-2 {bottom:0%;left:16.86%;}
+				.gfb-5 {bottom:0%;left:33.72%;}
+				.tag-3 {bottom:0%;left:50.58%;}
+				.gfb-6 {bottom:0%;left:67.44%;}
+				.gfb-7 {bottom:0%;right:0%;}
+			}
+			.instagram-content {
+					width:15.7%;
+					background:#000;
+					padding:0;
+					margin:0;
+					position:relative;
+					overflow:hidden;
+					position:absolute;
+				.main-image {
+					width:100%;
+					height:auto;
+					display:block;
+				}
+				.main-link {
+
+				}
+				.profile-info {
+					background:#fff;
+					height:50px;
+					white-space: nowrap;
+					position:absolute;
+					width:100%;
+					left:0px;
+					bottom:0px;
+					display:none;
+					overflow:hidden;
+					.profile-image {
+						margin:10px 10px 0 10px;
+						display:inline;
+						width:30px;
+						height:30px;
+					}
+					.profile-username {
+						//@include headings;
+						font-family: $font-desktop;
+						text-rendering: optimizelegibility;
+						font-size:13px;
+						font-size:1.1rem;
+						position:relative;
+						top:-10px;
+					}
+				}
+			}
+
+		} // eof instagram-wrapper
+		
+	}
+}
+
+#virginia-beach-icon {
+	position:absolute;
+	right:0px;
+	bottom:50px;
+	margin:0;
+	z-index:1998;
+	display:block;
+	#close {
+		display:block;
+	}
+}
+
+
+// new home page changes
+.page-template-template-home-2015-php #content,
+.page-template-template-home-2015-2-php #content {
+	
+	#three-boxes.inner-wrap {
+		max-width:1340px;
+		padding:40px 20px 0 20px;
+	}
+
+	.boxes {
+		margin-top:20px;
+		.threecol {
+			margin:0;
+			width:24.99%;
+			padding:0 8px;
+		}
+		.featured-beer-bottle {
+			left:0px;
+			top:auto;
+			bottom:0px;
+			width:28%;
+		}
+
+	}
+}
+
+//******************************************************
+// EOF HOME PAGE
+
+
+// BEER PAGE TABLETS and COMPUTERS
+//******************************************************
+//******************************************************
+//******************************************************
+
+.page-template-template-our-beers-php,
+.page-template-template-our-beers-2015-php,
+.page-template-template-our-beers-2015-simple-php {
+
+	.discover {
+		img {
+			width:100%;
+		}
+	}
+
+	&.logged-in {
+		#beer-nav {
+			&.stick {
+				top:152px;
+			}
+		}
+	}
+
+	&.no-admin-bar {
+		#beer-nav {
+			&.stick {
+				top:120px;
+			}
+		}
+	}
+
+	#beer-nav {
+		background:#ffffff;
+		text-align:center;
+		z-index:1999;
+		&.stick {
+			position:fixed;
+			top:120px;
+			left:0px;
+			margin-bottom:36px;
+		}
+
+		.nav {
+			overflow:hidden;
+			text-align:center;
+			li {
+				display:inline;
+				float:none;
+			}
+
+			a {
+				background:#ffffff;
+				color:#858585;
+				font-size:22px;
+				font-size:1.4rem;
+				display:inline;
+				&:hover,
+				&:focus {
+					color:#000000;
+				}
+
+			}
+
+		}
+
+	} // EOF BEER NAV
+
+	.slide-initial,
+	.slide-secondary {
+		//background: $desktop-sprite-jpg;
+		height:478px;
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+	}
+
+	.constant-text {z-index:101;position:relative;}
+	.slide-overlay {z-index:101;position:absolute;}
+	.slide-initial {z-index:100;background-color:#000000;}
+	.slide-secondary {z-index:99;}
+
+	.close-more {
+		display:block;
+		background: $gfb-sprite;
+		background-position:-302px -68px;
+		width:49px;
+		height:49px;
+		cursor:pointer;
+		position:absolute;
+		top:50px;
+		right:-12px;
+		display:none;
+		&:hover {
+			background-position:-351px -68px;	
+		}
+	}
+	// COMMON STYLES FOR 3 BEER TYPES
+
+	.beer-types,
+	#genuis2 {
+		overflow:hidden;
+		h2 {
+			text-indent:-9999px;
+			width:100%;
+			height:40px;
+			background-size:100% 100%;
+			margin-top:40px;
+		}
+
+		.slide-secondary {
+			h3 {
+				font-size:44px;
+				font-size:2.75rem;
+				line-height:48px;
+				margin:0;
+				padding:0;
+			}
+
+			p {
+				font-size:14px;
+				line-height:24px;
+			}
+
+			
+		}
+
+
+		.slide-overlay {
+			background: $desktop-sprite-pngs;
+			height:350px;
+			width:110%;
+			left:0px;
+			bottom:23px;
+			
+		}
+	}
+
+	// START THE PRODIGIES formerly NATIONAL LINEUP
+	#national {
+		
+		height:478px;
+		margin-bottom:20px;
+		.inner-wrap{
+			height:478px;
+			padding:0;
+		}
+
+		h2 {
+			//background: url(../../images/our-beers/txt-national-lineup.png) no-repeat 0px 0px;
+			//background: url(../../images/our-beers/txt-the-prodigies.png) no-repeat 0px 0px;
+			background: url(../../images/our-beers/txt-year-round-beers.png) no-repeat 0px 0px;
+			background-size:100% 100%;
+		}
+
+		#slide-initial-1 {
+			background: $bg-gray url(../../images/ipads/natl-bg-1b.jpg) no-repeat 0px 0px;
+			background-size:100% 478px;
+		}
+		#slide-secondary-1 {
+			background: #9DB53B url(../../images/ipads/natl-bg-2-green.jpg) no-repeat 0px 0px;
+			background-size:cover;
+
+			h3 {font-size:42px;}
+
+			h3,
+			p {
+				color:$gfb-green-dark;
+				padding-right:24px;
+			}
+
+			img {
+				float:left;
+				width:50%;
+				height:auto;
+				margin:0 20px 100px 0;
+
+			}
+
+			.inner-wrap {
+				height:auto;
+				padding-top:100px;
+			}
+			
+		}
+
+
+		
+
+	} // EOF NATIONAL
+
+	// START SEASONAL
+	#seasonal {
+		height:478px;
+		margin-bottom:24px;
+		position:relative;
+		background: url(../../images/our-beers/seasonal-release-bg.jpg) no-repeat 0px 0px;
+		background-size:100% 478px;
+		.slide-overlay {
+			//top:static;
+			width:100%;
+			top:0px;
+			height:350px;
+			left:0px;
+			background:none;
+			//border:1px solid white;
+			//position:absolute;
+		}
+		h2 {
+			background:url(../../images/our-beers/seasonal-releases-discover.png) no-repeat 0px 0px;
+			height:42px;
+		}
+		 
+		
+	}
+
+	// START HOP ODYSSEY
+	#hop {
+		height:479px;
+		margin-bottom:20px;
+		.inner-wrap{
+			height:479px;
+			padding:0;
+		}
+
+		h2 {
+			//background: url(../../images/our-beers/txt-hop-odyssey-set-sail.png) no-repeat 0px 0px;
+			background: url(../../images/our-beers/txt-hop-odyssey-set-sail3.png) no-repeat 0px 0px;
+			height:41px;
+			background-size:100% 100%;
+		}
+
+		#slide-initial-2 {
+			//background: url(../../images/ipads/hop-bg-1.jpg) no-repeat 0px 0px;
+			background: url(../../images/our-beers/hop-bg-1-3.jpg) no-repeat 0px 0px;
+			background-size:100% 479px;
+			//display:none; // test
+		}
+		#slide-secondary-2 {
+			//background: url(../../images/ipads/hop-bg-2.jpg) no-repeat 0px 0px;
+			//background: #414544 url(../../images/our-beers/hop-bg-2-2.jpg) no-repeat 0px 0px;
+			background: #383838;
+
+			//
+			background-size:cover;
+			//display:block; // test
+			
+			.hop-content {
+				width:26%;
+				margin-left:2%;
+				float:right;
+				padding-right:12px;
+				padding-top:40px;
+			}
+
+			#hop-odyssey-logo {
+				float:right;
+				width:40%;
+				position:relative;
+				//margin-right:2%;
+				right:2%;
+			}
+			#hop-image-middle {
+				float:left;
+				width:10%;
+			}
+
+			#six-beer-bottles {position:relative;left:10px;}
+			#six-beer-bottles li {
+				margin:0 -2px;
+				img {position:relative;display:block;}
+				float:left;
+				// &.beer-1 {width:5.75%;img {top:50px;}}
+				// &.beer-2 {width:6.25%;img {top:40px;}}
+				// &.beer-3 {width:6.75%;img {top:30px;}}
+				// &.beer-4 {width:7.25%;img {top:20px;}}
+				// &.beer-5 {width:7.75%;img {top:10px;}}
+				// &.beer-6 {width:8.25%;}
+				img {width:100%;}
+			}
+
+			h3 {
+				color:#979796;
+				margin:16px 0;
+				font-size:52px;
+				span {
+					display:block;
+					width:180px;
+					height:12px;
+					background: $gfb-sprite;
+					background-position:-220px -486px;
+				}
+			}
+			p {
+				color:#8d8d8d;
+				font-size:14px;
+			}
+
+			.inner-wrap {
+				height:auto;
+				padding-top:100px;
+			}
+			
+		}
+
+		//#slide-kegs {left:-9999px;} // test
+		
+	} // EOF HOP ODYSSEY
+
+	#cellar {
+		position:relative;
+		.wrap {
+			position:absolute;
+			top:0px;
+			left:0px;
+			z-index:1;
+			height:42px;
+		}
+		h2 {
+			max-width:1000px;
+			margin:24px auto 0 auto;
+			height:42px;
+			background:url(../../images/our-beers/txt-craft-evolves-into-artistry.png) no-repeat 0px 0px;
+			background-size:100% 42px;
+			z-index:1;
+			a {
+				display:block;
+				width:100%;
+				height:100%;
+			}
+		}
+
+		// h3 {
+		// 	background:url(../../images/our-beers/txt-cellar-3.png) no-repeat center;
+		// 	background-size:contain;
+		// 	width:20%;
+		// 	height:300px;
+		// 	margin:18px auto 0 auto;
+		// 	a {
+		// 		display:block;
+		// 		width:100%;
+		// 		height:100%;
+		// 	}
+		// }
+
+		img#cellar-3 {
+			display:block;
+			margin:18px auto 0 auto;
+			width:14%;
+			height:auto;
+		}
+	}
+
+	// Discovery Pack
+	#discovery-pack {
+		height:477px;
+		margin-bottom:20px;
+		position:relative;
+
+		h2 {
+			background: url(../../images/our-beers/txt-discovery-pack.png) no-repeat 0px 0px;
+			background-size:100% 100%;
+			height:42px;
+		}
+
+		#slide-initial-4 {
+			background: url(../../images/our-beers/discovery-pack-bg-1.jpg) no-repeat 0px 0px;
+			background-size:100% 477px;
+		}
+		#slide-secondary-4 {
+			background: #383838;
+			height:477px;
+			padding-top:105px;
+			//overflow:hidden;
+			.sixcol.last {
+				padding:18px 40px 0 0;
+			}
+		}
+
+		.inner-wrap {
+			height:477px;
+			//overflow:hidden;
+		}
+
+		#slide-discovery {
+			height:63.5%;
+			img {
+				margin-top:0px;
+				margin-top:-15px;
+				max-width:100%;
+			}
+		}
+
+	}
+
+
+
+
+
+	// Genius Lab
+		
+	#genuis2 {
+		
+		height:478px;
+		margin-bottom:20px;
+		.inner-wrap{
+			height:478px;
+			padding:0;
+		}
+
+		.learn-more {
+			top:35px;
+		}
+
+		.learn-more.open {
+			background:#ffffff;
+			color: $text-gray;
+			&:hover {
+				background:#000000;
+				color:#ffffff;
+			}
+		}
+		.close-more {
+			top:80px;
+		}
+
+		.constant-text {
+			top:-40px;
+		}
+
+		h2 {
+			//background: url(../../images/our-beers/txt-national-lineup.png) no-repeat 0px 0px;
+			//background: url(../../images/our-beers/txt-the-prodigies.png) no-repeat 0px 0px;
+			background: url(../../images/our-beers/txt-genius-lab.png) no-repeat 0px 0px;
+			height:445px;
+			background-size:100% 100%;
+			position:relative;
+			top: 10px;
+		}
+
+		#slide-initial-5 {
+			background: $bg-gray url(../../images/our-beers/genuis2-initial.jpg) no-repeat center;
+			background-size:100% 478px;
+			background-size:cover;
+		}
+		#slide-secondary-5 {
+			background: #383838 url(../../images/our-beers/genuis2-secondary.jpg) no-repeat center;
+			//background-size:cover;
+
+			.genius-content {
+				width:35%;
+				float:right;
+				padding-top:75px;
+
+			h3 {font-size:42px;}
+			p {
+				color:#8d8d8d;
+				padding-right:24px;
+				font-size:14px;
+			}
+
+			
+
+			}
+
+			.inner-wrap {
+				height:auto;
+				padding-top:100px;
+			}
+			
+		}
+
+
+		
+
+	} // EOF New Genius Lab
+
+	// START BARREL ROOM
+	#barrel {
+		height:464px;
+		margin-bottom:20px;
+		.inner-wrap{
+			height:464px;
+			padding:0;
+		}
+
+		
+		h2 {
+			//background: url(../../images/our-beers/txt-barrel-aged-journey.png) no-repeat 0px 0px;
+			background: url(../../images/our-beers/txt-barrel-aged-journey2.png) no-repeat 0px 0px;
+			background-size:100% 100%;
+			height:42px;
+		}
+
+		#slide-initial-3 {
+			background: url(../../images/ipads/barrel-bg-1.jpg) no-repeat 0px 0px;
+			background-size:100% 464px;
+		}
+		#slide-secondary-3 {
+			background: url(../../images/ipads/barrel-bg-2.jpg) no-repeat 0px 0px;
+			background-size:cover;
+		
+
+			h3,
+			p {
+				color:#ffffff;
+				margin-left:400px;
+			}
+
+			h3 {
+				background:url(../../images/our-beers/txt-the-barrel-room.png) no-repeat;
+				width:360px;
+				height:170px;
+			}
+
+			.inner-wrap {
+				height:auto;
+				padding-top:100px;
+			}
+			
+		}
+
+		
+
+	} // EOF BARREL
+	// BEGIN GENIUS
+	#genius {
+		//background: $desktop-sprite-jpg;
+		//background-position:0px -2815px;
+		background: url(../../images/ipads/genius-lab-bg.jpg) no-repeat 0px 0px;
+		background-size:cover;
+		height:398px;
+		padding:15px 0 0 0;
+		color:#ffffff;
+		font-size:14px;
+		font-size:.85rem;
+		line-height:23px;
+		//border:1px solid red;
+		margin-bottom:20px;
+		.inner-wrap {
+			height:383px;
+		}
+		h2 {
+			background: url(../../images/our-beers/genius-lab-txt.png) no-repeat;
+			width:266px;
+			height:325px;
+			float:left;
+			margin:-14px 30px 0 190px;
+		}
+		h3 {
+			color:#4b4b4b;
+			text-align:justify;
+			font-size:52px;
+			font-size:3.1rem;
+			line-height:50px;
+			width:340px;
+			margin:10px 0 20px 0;
+			span {
+				display:block;
+				font-size:69px;
+			}
+		}
+
+		.genius-content {
+			width:350px;
+			float:left;
+		}
+
+		#view-poster {
+			display:block;
+			background: $desktop-sprite-pngs;
+			background: $gfb-sprite;
+			background-position:0px -1050px;
+			width:320px;
+			height:400px;
+			position:absolute;
+			bottom:14px;
+			right:-75px;
+			&:hover {
+				background-position:-320px -1050px;
+			}
+		}
+
+	} // EOF GENIUS
+
+	// BEGIN LIMITED
+	#limited {
+		background: $bg-gray;
+		padding:20px 0 40px 0;
+		h2 {
+			 background: url(../../images/our-beers/txt-limited-special.png) no-repeat;
+			 background-size:100% 100%;
+			 width:100%;
+			 height:41px;
+			 margin-bottom:30px;
+		}
+
+		.twocol {
+			//  ORIGNAL VALUES
+			//	14.364640883% // width
+			//  2.762430939 // margin-left
+			width: 16%;
+			margin: 0 0 6px .79%;
+			&.first {margin-left:0;}
+			&.last {float:right;margin-left:0;}
+		}
+	}
+	// EOF LIMITED
+	// START RELEASE CALENDAR
+	#calendar {
+		height: 210px;
+		padding:40px 0 0 0;
+		//background: $desktop-sprite-jpg;
+		//background-position:0px -3480px;
+		//background: url(../../images/ipads/bg-rate-beer.jpg) no-repeat 0px 0px;
+		background:#000000;
+		background-size:cover;
+		h2 {
+			 background: url(../../images/our-beers/txt-release-calendar-2.png) no-repeat;
+			 background-size:100% 100%;
+			 width:100%;
+			 height:42px;
+			 margin-bottom:30px;
+			 position:absolute;
+			 left:0px;
+			 top:24px;
+			}
+		
+	}
+
+
+} // EOF BEER PAGE
+
+#view-calendar {
+			display:inline-block;
+			height:41px;
+			line-height:39px;
+			font-size:30px;
+			background:#fff;
+			color: #ffffff;
+			font-family: $font-desktop;
+			text-transform:uppercase;
+			text-align:center;
+			width:15%;
+			position:absolute;
+			border:2px solid #ffffff;
+			top:24px;
+			right:0px;
+			text-decoration:none;
+			background:#000000;
+			&:hover {
+				background:#000;
+				color:$text-gray;
+				border-color:$text-gray;
+			}
+		}
+body #cellar-3-content {
+	h2 {
+
+		.no-phones {display:inline;}
+		font-size:32px;
+		line-height:22px;
+		br {display:inline;}
+		small {
+			font-size:18px;
+			display:inline;
+		}
+	}
+
+}
+
+// New Beer Page
+.page-template-template-our-beers-2015-php,
+.page-template-template-our-beers-2015-simple-php {
+
+	#seasonal,
+	#discovery-pack,
+	#hop,
+	#national,
+	.inner-wrap,
+	#genuis2 {
+		.constant-text h2,
+		h2 {
+			background-size:auto;
+			background-repeat:no-repeat;
+			background-position:center;
+		}
+	}
+
+	#national {
+
+		h2 {
+			//background: url(../../images/our-beers/2015/txt-year-round-2015.png) no-repeat center;
+			background-size:auto;
+		} 
+
+		#slide-initial-1 {
+		//background-image: url(../../images/our-beers/2015/bg-year-round.jpg);
+		}
+
+		#slide-beers  {
+			
+			ul {
+				width:100%;
+				text-align:center;
+				padding:0;
+				bottom:50px;
+				left:-50px;
+				li {
+				width:6.5%;
+				float:none;
+				display:inline-block;
+					img {
+						width:100%;
+					}
+				}
+			}
+		}
+
+
+	}
+
+	#seasonal {
+		h2 {
+			//background: url(../../images/our-beers/2015/txt-seasonal-releases-2015.png) no-repeat center;
+			//background-size:auto;
+		} 
+		//background-image: url(../../images/our-beers/2015/bg-seasonal.jpg);
+
+		#slide-seasonal  {
+			
+			ul {
+				li {
+				width:7.2%;
+				//border:1px solid #ffffff;
+					img {
+						max-width:100%;
+					}
+				}
+			}
+		}
+	}
+
+	#hop { 
+		h2 {
+			//background: url(../../images/our-beers/2015/txt-hop-odyssey-2105.png) no-repeat center;
+		} 
+		#slide-initial-2 {
+		//background-image: url(../../images/our-beers/2015/bg-odyssey.jpg);
+		}
+
+		ul {
+			top:10px;
+		}
+
+		li {
+			height:300px;
+		}
+
+		li a {
+			position:absolute;
+			bottom:0px;
+		}
+
+		#slide-kegs  {
+			
+			ul {
+				text-align:center;
+				//width:100%;
+				//margin:0;
+				left:-50px;
+				padding:0;
+				li {
+				width:6.5%;
+				display:inline-block;
+				float:none;
+					img {
+						width:100%;
+					}
+				}
+			}
+		}
+
+	}
+
+	#cellar-3-main {
+		height:479px;
+		margin-bottom:20px;
+		.inner-wrap{
+			height:479px;
+			padding:0;
+			#slide-cellar-3 {
+				//width:100%;
+				//background:#fff;
+				height:355px;
+
+			ul {
+				//width:100% !important;
+				//background:#000;
+				position:absolute;
+				margin:0;
+				padding:0;
+				bottom:15px;
+				left:-45px;
+				text-align:center;
+				li {
+					display:inline-block;
+					float:none;
+					//width:100px;
+					//height:355px;
+					width:9.2%;
+					img {
+						width:100%;
+					}
+				}
+			}
+		}
+		}
+		h2 {
+			//background: url(../../images/our-beers/2015/txt-cellar-3-2015.png) no-repeat center;
+		} 
+		height:478px;
+
+		#slide-initial-cellar {
+			background-image: url(../../images/our-beers/2015/bg-cellar-3.jpg);
+			background-size:100% 478px;
+		}
+	}
+
+	#discovery-pack {
+		text-align:center;
+		img {
+			position:relative;
+			right:55px;
+			bottom:60px;
+		}
+		h2 {
+			//background: url(../../images/our-beers/2015/txt-discovery-pack-2015.png) no-repeat center;
+		} 
+		#slide-initial-4 {
+			//background-image: url(../../images/our-beers/2015/bg-discovery-pack.jpg);
+		}
+
+	}
+
+	#genuis2 {
+		h2 {
+			//background: url(../../images/our-beers/2015/txt-genius-lab-beers-2015.png) no-repeat center;
+			background:none;
+			height:40px;
+			margin-top:60px;
+		} 
+
+		p a {
+			color:#ffffff;
+			text-decoration:none;
+			display:block;
+		}
+
+		a:hover h2,
+		p a:hover {
+			opacity:0.7;
+		}
+
+		#slide-genuis2 {
+			background:none;
+			color:#ffffff;
+			text-align:left;
+			padding:0;
+			left:-5%;
+			padding:0px 120px 0;
+			line-height:30px;
+			font-size:20px;
+		}
+		
+		#slide-initial-5 {
+			//background-image: url(../../images/our-beers/2015/bg-genius-lab.jpg);
+			height:478px;
+		}
+	}
+
+}
+
+// COMMON STYLES for HOP, BARREL, SEASONAL and Single Beer page small bottles
+#slide-beers,
+#slide-discovery,
+#slide-bottles,
+#slide-kegs,
+#small-beers,
+#seasonal,
+#slide-cellar-3,
+.nav .beer-bottles {
+			//background-position:0px 0px;
+
+			background:none;
+			ul,
+			ul.sub-menu,
+			ul.children {
+				margin:-12px 0 0 0px;
+				li {
+					float:left;
+					//width:90.6px;
+					width:8.3%;
+					width:7.69%;
+					color:#ffffff;
+					position:relative;
+					&.last {
+						//float:right;
+					}
+					&:hover {
+						span.glow,
+						span.dates {
+							display:block;
+						}
+
+						span.dates {left:0px;}
+					}
+					
+					//background:#fff;
+					a {
+						display:block;
+						width:79px;
+						width:90%;
+						height:324px;
+						height:auto;
+						margin:0 auto;
+						position:relative;
+						z-index:1000;
+					}
+
+					span {
+						display:none;
+						&.dates {
+							display:block;
+							width:100%;
+							text-align:center;
+							position:relative;
+							left:-9999px;
+							top:-22px;
+							font-family:$font-desktop;
+							font-size:22px;
+						}
+						&.glow,
+						&.menu-content {
+							display:none;
+							position:absolute;
+							z-index:999;
+							top:0px;
+							left:-150%;
+							width:400%;
+							height:100%;
+							background: url(../../images/our-beers/bg-beer-glow.png) no-repeat center center;
+						}
+					}
+				}
+			}
+			
+		} // eof common
+
+		#slide-beers {
+			ul {
+				position:absolute;
+				left:0px;
+				bottom:0px;
+				width:100%;
+			}
+		}
+
+		#slide-bottles {
+			background-position:0px -670px;
+			height:375px;
+			width:400px;
+			left:32%;
+			&.slide-overlay {
+				bottom:12px;
+			}
+			ul {
+				li {
+				width:120px;
+				//border:1px solid #ffffff;
+					a {
+						background-position:-254px -678px;
+						width:95px;
+						height:364px;
+					}
+				}
+			}
+		} // eof slide bottles
+
+		#slide-kegs,
+		#slide-cellar-3  {
+			background-position:0px -340px;
+			ul {
+				//margin-left:21%;
+				position:absolute;
+				left:0px;
+				bottom:-10px;
+				width:100%;
+				li {
+				//width:169px;
+				width:8.3%;
+				//border:1px solid #ffffff;
+					a {
+						background-position:-170px -349px;
+						//width:152px;
+						width:89.94%;
+						height:auto;
+					}
+				}
+			}
+		}
+
+		#slide-seasonal {
+			ul {
+			//width:400px;
+				position:absolute;
+				left:0px;
+				bottom:-125px;
+				width:100%;
+				//border:1px solid white;
+				text-align:center;
+				li {
+					display:inline-block;
+					margin:0 1px;
+					float:none;
+					margin-top:0px;
+					width:8.3%;
+					img {
+						//position:absolute;
+						bottom:0px;
+						left:auto;
+					}
+				}
+		}
+
+		}
+
+
+		#small-beers {
+			ul {
+				margin:0;
+				width:100%;
+				li {
+				width:30px;
+				width:7.69%;
+				//border:1px solid #ffffff;
+					a {
+						//background: url(../../images/demos/single-demo-beer-bottles.png) no-repeat 0px 0px;
+						//background-position:-113px 0px;
+						width:95%;
+						height:125px;
+					}
+					span {
+					&.glow {
+						background: url(../../images/our-beers/bg-beer-small-glow2.png) no-repeat center center;
+						}
+					}
+				}
+			}
+		}
+
+
+	.nav .beer-bottles {
+			a:hover {background: url(../../images/menus/main-nav-triangle.png) no-repeat top right;}
+			overflow:hidden;
+			width:auto;
+			ul.sub-menu,
+			ul.children {
+				margin:0 0 0 0;
+				width:600px;
+				//width:auto; // TEST
+				min-width:auto;
+				background:#323232;
+				padding:12px 0 12px 24px;
+				//background:none;
+				overflow:hidden;
+				li {
+				width:54px;
+				float:left;
+				display:block;
+				height:220px;
+				margin:0;
+				&:hover span {display:block;}
+				//border:1px solid #ffffff;
+					a {
+						background: url(../../images/menus/main-nav-beer-bottles.png) no-repeat 0px 0px;
+						background: $gfb-sprite;
+						background-position:1000px 1000px;
+						width:47px;
+						height:220px;
+						font-family:$sans-serif;
+						text-transform:none;
+						font-size:12px;
+					}
+					span {
+						display:none;
+						
+					&.aspan {
+						color:#7d7d7d;
+						text-align:center;
+						position:absolute;
+						width:300%;
+						left:-100%;
+						bottom:0px;
+						padding-left:8px;
+					}
+
+					&.menu-content {
+						position:absolute;
+						top:0px;
+						width:300%;
+						height:100%;
+						left:-100%;
+						background: url(../../images/menus/main-nav-glow.png) no-repeat center center;
+						}
+					}
+
+					// BEER BOTTLES
+					// hop odyssey
+					&.black-ipa a {background-position:-13px -596px;}
+					&.thirtieth-street a {background-position:-73px -596px;}
+					&.thirtieth-street-old a {background-position:-116px -1509px;}
+					&.white-ipa a {background-position:-132px -596px;}
+					&.citra-session a {background-position:-192px -596px;}
+					&.cedar-plank a {background-position:-252px -596px;}
+					&.symposium-ipa a {background-position:-311px -596px;}
+
+					&.mosaic a {background-position:-175px -1510px;}
+					&.segal-ranch a {background-position:-230px -1510px;}
+					// prodigies
+					&.west-coast-ipa a {background-position:-11px -820px;}
+					&.double-stout a {background-position:-71px -820px;}
+					&.hop-head-red a {background-position:-130px -820px;}
+					&.imperial-ipa a {background-position:-190px -820px;}
+					&.le-freak a {background-position:-250px -820px;}
+					&.palate-wrecker a {background-position:-309px -820px;}
+					&.road-warrior a {background-position:-369px -820px;}
+					&.green-bullet a {background-position:-429px -820px;}
+					// new ones
+					&.jibe a {background-position:-6px -1509px;}
+					&.soul a {background-position:-61px -1509px;}
+					// barrel aged
+					&.shaggy a {background-position:-496px -820px;width:58px;}
+					&.silva-stout a {background-position:-566px -820px;width:58px;}
+					&.flanders-drive a {background-position:-636px -820px;width:58px;}
+					//&.CHANGE a {background-position:-0px -0px;}
+
+				}
+
+			}
+		}
+
+
+// START OF INDIVIDUAL BEER PAGES
+.single-gfb_our_beers {
+
+	.wrap {
+		.single-beer-inner-wrap {
+			max-width:883px;
+			overflow:visible;
+		}
+	}
+
+#inner-content {
+padding-top:30px;
+
+background-image: url(../../images/our-beers/backgrounds/bg-tile-new-15.png);
+
+}
+
+	.post-navigation a {
+		display:block;
+		background:$gfb-sprite;
+		width:30px;
+		height:60px;
+		position:absolute;
+		top:190px;
+	}
+	.nav-next a {
+		right:0px;
+		background-position:-430px -68px;
+	}
+	.nav-previous a {
+		left:0px;
+		background-position:-400px -68px;
+	}
+
+	#content {
+
+		
+
+		div.left-column,
+		div.right-column {margin:0;}
+
+		div.left-column {width:55.49%;}
+		div.right-column {
+			width:44.51%;
+			//background:#ffffff;
+			img {
+				display:block;
+			}
+		}
+
+
+		.left-column-padding {
+			padding-right:36px;
+			h2 {
+				margin-bottom:0px;
+			}
+
+			.beer-main-content {
+				border-bottom:3px solid #ffffff;
+				margin-bottom:20px;
+				padding-bottom:10px;
+			}
+
+			.chucksilva {
+				display:inline-block;
+				background:$gfb-sprite;
+				background-position:-228px -239px;
+				width:196px;
+				height:27px;
+				position:relative;
+				top:2px;
+				margin-left:8px;
+			}
+		}
+		
+		p {
+			font-size:14px;
+			line-height:19px;
+		}
+		
+
+		.beer-header {
+			border-bottom:3px solid #ffffff;
+			overflow:hidden;
+			width:100%;
+			margin-bottom:24px;
+		}
+
+		.single-beer-title,
+		.single-beer-category {
+			float:left;
+			margin:0;
+			line-height:50px;
+
+
+		}
+
+		.single-beer-title {
+			font-size:48px;
+			margin:0 24px 2px 0;
+
+			sup {
+				font-family:$sans-serif;
+				font-size:14px;
+				position:relative;
+				top:-24px;
+			}
+
+		}
+
+		.single-beer-category {
+			position:relative;
+			top:8px;
+		}
+
+		.flash-of-genius-txt {
+			background:$gfb-sprite;
+			background-position:-398px -646px;
+			width:200px;
+			height:15px;
+			position:absolute;
+			top:28px;
+			right:0px;
+			margin-top:0;
+			
+			span.title {
+				position:absolute;
+				top:0px;
+				left:-9999px;
+			}
+			span.number {
+				display:block;
+				width:24px;
+				height:15px;
+				float:right;
+				background:$gfb-sprite;
+				position:absolute;
+				top:0px;
+				right:0px;
+				&.number-01 {background-position:-598px -646px;}
+				&.number-02 {background-position:-622px -646px;}
+				&.number-03 {background-position:-646px -646px;}
+				&.number-04 {background-position:-670px -646px;}
+				&.number-05 {background-position:-694px -646px;}
+				&.number-06 {background-position:-718px -646px;}
+
+				&.number-07 {background-position:-398px -661px;}
+				&.number-08 {background-position:-422px -661px;}
+				&.number-09 {background-position:-446px -661px;}
+				&.number-10 {background-position:-470px -661px;}
+				&.number-11 {background-position:-494px -661px;}
+				&.number-12 {background-position:-518px -661px;}
+				&.number-13 {background-position:-542px -661px;}
+				&.number-14 {background-position:-566px -661px;}
+				&.number-15 {background-position:-590px -661px;}
+				&.number-16 {background-position:-614px -661px;}
+			}
+			
+
+		}
+
+		.hero-image {
+			margin-bottom:18px;
+			position:relative;
+			left:-10px;
+			img {
+				max-width:105%;
+			}
+		}
+
+
+		.store {
+			h2 {
+				background:$gfb-sprite;
+				background-position:0px -189px;
+				width:393px;
+				height:50px;
+			}
+
+			.sixcol {
+				
+			}
+
+			.store-image {
+				img {
+					max-width:191px;
+					max-height:192px;
+				}
+			}
+
+			.store-details {
+				background:#ffffff;
+				padding:8px;
+				width:100%;
+				position:absolute;
+				left:0px;
+				bottom:0px;
+				display:none;
+				h3,p,a {
+					color:$text-gray;
+					margin:0;
+				}
+
+				h3 {
+					font-size:20px;
+					letter-spacing:.03rem;
+				}
+				a {
+					text-decoration:none;
+					float:right;
+					&:hover {
+						font-weight:bold;
+					}
+				}
+				p,a {
+					font-size:12px;
+				}
+				.triangle {
+					background:$gfb-sprite;
+					background-position:-404px -191px;
+					width:5px;
+					height:9px;
+					display:block;
+					float:right;
+					margin:4px 0 0 5px;
+					text-indent:-50px;
+					overflow:hidden;
+				}
+			}
+		}
+
+		#shop-now {
+			position:absolute;
+			top:11px;
+			right:0px;
+		}
+		.rate-beer {
+			h2 {
+				background:$gfb-sprite;
+				background-position:0px -138px;
+				width:393px;
+				height:51px;
+			}
+			a {
+				display:block;
+				background:$gfb-sprite;
+				height:27px;
+				position:absolute;
+				top:11px;
+				&#rate-beer {
+					background-position:-142px -239px;
+					width:86px;
+					right:148px;
+					&:hover {
+						background-position: -664px -414px;
+					}
+				}
+				&#beer-advocate {
+					background-position: 0px -239px;
+					width:142px;
+					right:0px;
+					&:hover {
+						background-position: -608px -442px;
+					}
+				}
+			}
+		}
+
+		#all-beers-link {
+			float:right;
+			margin:24px 0;
+		}
+
+		.search-beers {
+			width:61.83%;
+			margin:-24px 0 0 0;
+			img.image-lockup-right-5 {
+				width:110%;
+				max-width:110%;
+				position:relative;
+				left:-8px;
+			}
+			//background:#ffffff;
+		}
+		.main-beer-image {
+			width:38%;
+			//position:relative;
+			//top:38px;
+		}
+
+		.image-search {
+			position:relative;
+			//min-height:391px;
+		}
+		#find-this-beer {
+			width:83px;
+			height:90px;
+			position:absolute;
+			right:0px;
+			bottom:15px;
+			label {
+				display:none;
+			}
+			h2 {
+				background:$gfb-sprite;
+				background-position: 0 -266px;
+				width:83px;
+				height:64px;
+				margin:0;
+			}
+
+			form {
+				position:absolute;
+				left:0px;
+				bottom:0px;
+				height:20px;
+				width:100%;
+				input#zipcode {
+					width:63px;
+					float:left;
+					height:20px;
+					padding:0 0 0 3px;
+					border:none;
+					color:$text-gray;
+					font-size:12px;
+					text-align:left;
+				}
+			}
+
+			#zip-submit {
+				background:$gfb-sprite;
+				background-position: -480px -127px;
+				display:block;
+				width:20px;
+				height:20px;
+				border:none;
+				padding:0;
+			}
+		}
+
+		#small-beers {
+			position:absolute;
+			bottom:-160px;
+			left:0px;
+			width:100%;
+		}
+
+
+		.specs {
+			font-family:$font-desktop;
+			text-transform:uppercase;
+			p {
+				font-size:30px;
+				line-height:40px;
+				margin:0;
+				&.options-cat-5 {
+					// position:absolute;
+					// top:15px;
+					// right:0px;
+					// text-align:right;
+
+				}
+				span {
+					font-style:italic;
+					font-size:14px;
+					display:inline-block;
+					background:$gfb-sprite;
+					margin-right:3px;
+					&.ibus {
+						background-position:-461px -84px;
+						width:38px;
+						height:14px;
+					}
+					&.abv {
+						background-position:-461px -68px;
+						width:29px;
+						height:14px;
+						margin-left:10px;
+					}
+					&.style {
+						background-position:-461px -100px;
+						width:39px;
+						height:21px;
+						position:relative;
+						top:6px;
+					}
+					&.availability {
+						background-position:-401px -130px;
+						width:76px;
+						height:21px;
+						position:relative;
+						top:6px;
+						margin-left:10px;
+					}
+				}
+			}
+
+			.options {
+				margin:12px 0 24px 0;
+				height:100px;
+				//border-bottom:3px solid #ffffff;
+				padding:0;
+				span {
+					//margin:0 8px -4px 0;
+					background:$gfb-sprite;
+					height:100px;
+					min-height:100px;
+					display:inline-block;
+				}
+				.twelve-oz {
+					background-position:-588px -691px;
+					width:60px;
+					top:0px;
+				}
+				.twenty-two-oz {
+					background-position:-534px -691px;
+					width:28px;
+					top:0px;
+				}
+				.keg {
+					background-position:-467px -691px;
+					width:36px;
+					top:0px;
+				}
+				.cans {
+					background-position:-671px -691px;
+					width:66px;
+					top:0px;
+				}
+			}
+		}
+
+	}
+
+
+
+	.video-reviews {
+		h2.review-title-custom {
+			padding:0 100px 0 0;
+		}
+	}
+	
+
+
+} // EOF INDIVIDUAL BEER PAGES
+
+// START RELEASE CALENDAR PAGE
+.page-template-template-release-calendar-php {
+
+	.first.beer-locator {
+		background:#ffffff;
+	}
+
+	
+	.hero-image {
+			img {
+				width:100%;
+			}
+		}
+	#release-calendar-content {
+		margin-top:10px;
+		padding:40px 0px;
+
+
+		
+		.cal-images {
+			position:relative;
+			padding:24px 0 36px 0;
+		}
+
+		#txt-year-round,
+		#txt-seasonal,
+		#txt-hop-odyssey {
+			max-width:100%;
+			height:42px;
+			background: url(../../images/release-calendar/txt-year-round.png) no-repeat 0px 0px;
+			background-size:contain;
+		}
+
+		//#txt-year-round {}
+
+
+		#txt-seasonal {background-image: url(../../images/release-calendar/txt-seasonal.png);}
+		#txt-hop-odyssey {background-image: url(../../images/release-calendar/txt-hop-odyssey.png);}
+
+		.cal-images {
+			padding:24px 0 36px 0;
+			li {
+				width:11.6%;
+				float:left;
+				margin:0 1.02857% 10px 0;
+				height:auto;
+				//border:1px solid red;
+				&.last {
+					float:right;
+					margin-right:0;
+				}
+				img {display:block;}
+
+
+				a {
+					text-decoration:none;	
+					span.dates {
+						display:block;
+						padding-left:0;
+						text-align:center;
+						color:$text-gray;
+						text-decoration:none;
+						margin-top:8px;
+						font-size:20px;
+						}
+				}
+			}
+		}
+
+		.available,
+		.draft,
+		a span.dates {
+			font-family: $font-desktop;
+			text-transform:uppercase;
+			font-size:20px;
+		}
+
+		.available,
+		a span.dates {
+			background:#ffffff;
+			line-height:20px;
+			padding:2px 0 2px 24px;
+			clear:both;
+			margin:0;
+		}
+
+		.draft {
+			width:195px;
+			float:right;
+			position:absolute;
+			bottom:-30px;
+			right:0px;
+			text-align:right;
+			span {
+				display:block;
+				width:21px;
+				height:27px;
+				background: $gfb-sprite;
+				background-position: -580px -520px;
+				float:left;
+				margin-right:10px;
+			}
+		}
+	}	
+}
+
+
+// CALENDAR/EVENTS PAGES
+
+.events-archive.events-gridview #tribe-events-content table .vevent {
+		border:none;
+		margin:0;
+		padding:0;
+	}
+
+// We can use for any page dimming that we need.
+#dim {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	min-height:100%;
+	background:#cccccc;
+	z-index:10000;
+	display:none;
+}
+
+.full-width-nav #event-navigation,
+#tribe-events-pg-template #event-navigation,
+#tasting-room-box-nav {
+		margin:50px 0;
+		
+		.twocol {
+			width:15.8%;
+			margin-left:1%;
+			margin-right:0;
+		}
+		.first {
+			margin-left: 0;
+		}
+	}
+
+.event-sidebar {
+	#tribe-events-pg-template & #event-navigation,
+	#event-navigation {
+			.twocol,
+			.threecol {
+				width:158px;
+				float:right;
+			}
+		}
+	}
+
+
+#tribe-events-pg-template .news-events-banner,
+.news-events-banner {
+		width:100%;
+		img {width:100%;height:auto;}
+	}
+
+
+#tribe-events-pg-template {
+	padding-top:120px;
+
+	
+
+	#events-banner {
+		width:100%;
+	}
+
+	#tribe-events-content {
+		margin-bottom:24px;
+	}
+
+	.first.newsletter {
+		//max-width:1400px;
+		width:100%;
+		margin:0 auto;
+		float:none;
+		.inner-wrap {
+			max-width:1000px;
+			margin:0 auto;
+		}
+	}
+
+	#inner-content {
+		
+	}
+
+	.gray {
+		background: #eeece9;
+		padding:40px 0 0 0;
+	}
+
+	
+
+	
+
+	// .event-sidebar {
+	// 	#event-navigation {
+	// 		.twocol {
+	// 			width:158px;
+	// 			float:right;
+	// 		}
+	// 	}
+	// }
+
+	#tribe-events-content {
+		h2 {
+			clear:both;
+		}
+	}
+
+	// THE CALENDAR BAR: SEARCH, VIEWS
+	#tribe-events-bar * {
+		padding:0;
+		margin:0;
+		width:auto;
+		float:none;
+
+	}
+
+	#tribe-events-bar {
+		background: url('../../images/events/txt-event-calendar-header.png') no-repeat;
+		height:50px;
+		clear:both;
+		position:relative;
+		margin-bottom:30px;
+		position:relative;
+		z-index:500;
+
+
+		#tribe-bar-form {
+			height:50px;
+			background-color:transparent;
+			padding:0;
+			
+
+		}
+
+		
+		#tribe-geo-links {
+			z-index:500;
+			position:relative;
+			left:77px; 
+			a {
+			display:block;
+			background:#ffffff;
+			}
+		}
+
+		#tribe-bar-views {
+			padding:0;
+			width:127px;
+			height:27px;
+			position:absolute;
+			top:11px;
+			right:0px;
+			
+			label,
+			select {
+				display:none;
+			}
+
+			li, ul,
+			.tribe-bar-views-inner {
+				margin:0;
+				padding:0;
+			}
+
+			.tribe-bar-views-inner {
+				height:27px;
+			}
+
+			li a {
+					background:$gfb-sprite;
+					display:block;
+					width:127px;
+					height:27px;
+					span {display:none;}
+			}
+
+			.tribe-bar-views-option {
+
+			}
+
+			.tribe-bar-active {
+				display:none;
+			}
+
+			.tribe-bar-views-option-upcoming {
+				a {
+					background-position:-293px -267px;
+					&:hover {
+						background-position:-293px -294px;
+					}
+				}
+			}
+
+			.tribe-bar-views-option-month {
+				a {
+					background-position:-166px -267px;
+					&:hover {
+						background-position:-166px -294px;
+					}
+				}
+			}
+
+			.tribe-bar-views-option-list  {
+				a {
+					background-position:-303px -267px;
+					&:hover {
+						background-position:-303px -294px;
+					}
+				}
+			}
+
+		} // EOF VIEWS
+
+		#tribe-bar-collapse-toggle {display:none;}
+
+		.tribe-bar-filters {
+			position:absolute;
+			left:45%;
+			top:11px;
+			.tribe-events-button {
+				background: $gfb-sprite;
+				border:none;
+				width:27px;
+				height:27px;
+				background-position:-404px -202px;
+				&:hover {
+					background-position:-431px -202px;
+				}
+			}
+
+			.tribe-bar-geoloc-filter,
+			.tribe-bar-submit {
+				float:left;
+				height:27px;
+			}
+
+			.tribe-bar-geoloc-filter * {
+				height:27px;
+				border:none;
+			}
+
+			.tribe-bar-geoloc-filter {
+				label {
+					font-family: $font-desktop;
+					font-size:20px;
+					line-height:27px;
+					display:block;
+					margin:0 6px 0 0;
+					padding:0;
+					float:left;
+				}
+			}
+
+		}
+
+	} // EOF TRIBE EVENTS BAR
+
+
+	
+
+	// MONTH VIEW
+	.tribe-events-month {
+		.vevent {
+			//z-index:-1;
+		}
+
+		#calendar-header {
+			background: url('../../images/events/bg-calendar-header.jpg') repeat;
+			background-size:contain;
+			width:100%;
+			height:80px;
+			position:relative;
+			margin-bottom:12px;
+		}
+
+
+		.tribe-events-page-title {
+			background:$gfb-sprite;
+			background-position:0px 0px;
+			width:410px;
+			margin:0 auto 0 auto;
+			position:relative;
+			top:18px;
+			height:42px;
+			&.january {width:308px;height:53px;background-position:-426px -299px;}
+			&.february {width:374px;background-position:0px -373px;}
+			&.march {width:261px;background-position:-460px -202px;}
+			&.april {width:219px;background-position:0px -457px;}
+			&.may {width:148px;background-position:-594px -245px;}
+			&.june {width:166px;height:53px;background-position:-426px -245px;}
+			&.july {width:154px;height:53px;background-position:-409px -415px;}
+			&.august {width:262px;background-position:-376px -373px;}
+			&.september {width:439px;background-position:0px -499px;}
+			&.october {width:339px;background-position:0px -541px;}
+			&.november {width:408px;background-position:0px -331px;}
+			&.december {width:410px;background-position:0px -415px;}
+		}
+
+		.tribe-events-sub-nav2,
+		.tribe-events-sub-nav {
+			li {
+				position:absolute;
+				top:32px;
+				width:auto;
+				height:12px;
+				&.tribe-events-nav-previous,
+				&.tribe-events-nav-next {
+					.arrow {
+						display:inline-block;
+						background:$gfb-sprite;
+						width:8px;
+						height:13px;
+
+					}
+
+				&.january a {
+						width:91px;
+						height:16px;
+						background-position:-500px -103px;
+					}
+				&.january a:hover,
+				&.january:hover a {
+							background-position:-592px -103px;
+						}
+				&.february a {
+						width:111px;
+						background-position:-500px -51px;
+					}
+				&.february a:hover,
+				&.february:hover a {
+							background-position:-612px -51px;
+						}
+				&.march a {
+						width:79px;
+						background-position:-500px -137px;
+					}
+				&.march a:hover,
+				&.march:hover a {
+							background-position:-500px -176px;
+						}
+				&.april a {
+						width:65px;
+						background-position:-500px -90px;
+					}
+				&.april a:hover,
+				&.april:hover a {
+							background-position:-566px -90px;
+						}
+				&.may a {
+						width:45px;
+						background-position:-632px -90px;
+					}
+				&.may a:hover,
+				&.may:hover a {
+							background-position:-678px -90px;
+						}
+				&.june a {
+						width:49px;
+						height:16px;
+						background-position:-592px -120px;
+					}
+				&.june a:hover,
+				&.june:hover a {
+							background-position:-642px -120px;
+						}
+				&.july a {
+						width:45px;
+						height:16px;
+						background-position:-500px -120px;
+					}
+				&.july a:hover,
+				&.july:hover a {
+							background-position:-546px -120px;
+						}
+				&.august a {
+						width:80px;
+						background-position:-500px -77px;
+					}
+				&.august a:hover,
+				&.august:hover a {
+							background-position:-580px -77px;
+						}
+				&.september a {
+						width:130px;
+						background-position:-580px -137px;
+					}
+				&.september a:hover,
+				&.september:hover a {
+							background-position:-580px -176px;
+						}
+				&.october a {
+						width:102px;
+						background-position:-500px -163px;
+					}
+				&.october a:hover,
+				&.october:hover a {
+							background-position:-603px -163px;
+						}
+				&.november a {
+						width:121px;
+						background-position:-500px -150px;
+					}
+				&.november a:hover,
+				&.november:hover a {
+							background-position:-622px -150px;
+						}
+				&.december a {
+						width:121px;
+						background-position:-500px -64px;
+					}
+				&.december a:hover,
+				&.december:hover a {
+							background-position:-622px -64px;
+						}
+				}
+
+				a {
+					background:$gfb-sprite;
+					display:block;
+					height:12px;
+					width:200px;
+
+				}
+
+				&.tribe-events-nav-previous {
+					left:18px;
+					a {margin-left:12px;}
+					.arrow {
+						float:left;
+						background-position:-723px 0px;
+					}
+					&:hover .arrow {
+						background-position:-723px -13px;
+					}
+				}
+				&.tribe-events-nav-next {
+					right:18px;
+					a {margin-right:12px;}
+					.arrow {
+						float:right;
+						background-position:-731px 0px;
+					}
+					&:hover .arrow {
+						background-position:-731px -13px;
+					}
+					
+				}
+				
+			}
+		}
+		.tribe-events-notices {
+			clear:both;
+			margin:0 0 10px 0;
+			background:#000;
+			color:#fff;
+			text-shadow:none;
+			border:1px solid red;
+
+		}
+
+
+
+		// START CALENDAR TABLE
+	.tribe-events-calendar {
+		border:none;
+		background:#ffffff;
+
+		th,
+		td {
+			border:12px solid $bg-gray;
+			padding:0;
+			
+		}
+
+		.td-bg {
+			width:100%;
+			height:100%;
+		}
+
+		td.tribe-events-othermonth .td-bg {
+			background:#e5e2dd;
+			// had to do it this way for FF
+		}
+
+		td, td * {
+			//position:static;
+		}
+
+		th {
+			border-top:none;
+			padding:2px 0px;
+		}
+
+		th div {
+			background:$gfb-sprite;
+			height:24px;
+			margin:0 auto;
+		}
+
+		.t-between {
+			
+		}
+
+		.t-first {
+			border-left:none;
+		}
+
+		.t-last {
+			border-right:none;
+		}
+
+		#tribe-events-sunday div {
+			width:60px;
+			background-position: -487px 0px;
+		}
+		#tribe-events-monday div {
+			width:61px;
+			background-position:-549px 0px;
+		}
+		#tribe-events-tuesday div {
+			width:58px;
+			background-position:-612px 0px;
+		}
+		#tribe-events-wednesday div {
+			width:84px;
+			background-position:-487px -24px;
+		}
+		#tribe-events-thursday div {
+			width:70px;
+			background-position:-573px -24px;
+		}
+		#tribe-events-friday div {
+			width:50px;
+			background-position:-671px 0px;
+		}
+		#tribe-events-saturday div {
+			width:73px;
+			background-position:-644px -24px;
+		}
+
+		.tribe-day-num {
+			background:$bg_gray;
+			width:25%;
+			float:left;
+			padding:0;
+			text-align:center;
+			a {
+				text-decoration:none;
+				width:100%;
+				height:100%;
+				display:block;
+			}
+		}
+
+		td:hover {
+			.is_a_link {
+				background:$text-gray;
+				a {
+				color:$gfb-green;
+
+				}
+			}
+		}
+		
+
+		div[id*="tribe-events-daynum-"],
+		div[id*="tribe-events-daynum-"] a {
+			font-family:$font-desktop;
+			font-size:24px;
+			color:$text-gray;
+			font-weight:normal;
+		}
+
+		h3, h3 a {
+			color:$text-gray;
+			font-family:$sans-serif;
+			text-transform:none;
+			font-size:11px;
+			margin:0;
+			padding:0;
+			line-height:12px;
+			&:hover {
+				color:#000000;
+			}
+		}
+
+
+		h3 {
+			margin-bottom:3px;
+		}
+
+		h3.hide-title {display:none;}
+
+		.full-title {
+			display:none;
+		}
+
+		.one-day-list {
+			padding:4px;
+			clear:both;
+		}
+
+		.open-lightbox {
+			display:inline-block;
+			color:$text-gray;
+			text-decoration:none;
+			font-weight:normal;
+			margin-left:10px;
+			position:absolute;
+			top:10px;
+			left:28%;
+			.inactive,
+			.active {
+				background:$gfb-sprite;
+				display:inline-block;
+				width:12px;
+				height:11px;
+				position:relative;
+				top:2px;
+				left:6px;
+			}
+
+			.inactive {
+				background-position:-720px -30px;
+			}
+
+			.active {
+				background-position:-732px -30px;
+				display:none;
+			}
+
+			&:hover {
+				color:#000000;
+			}
+
+			&:hover .inactive {display:none;}
+			&:hover .active {display:inline-block;}
+		}
+
+		.exit-lightbox {display:none;}
+		
+
+
+		// The popup lightbox
+		.one-day-lightbox,
+		.tribe-events-tooltip {
+			width:100%;
+			position:fixed;
+			top:30%;
+			left:0px;
+			height:265px;
+			background:#ffffff;
+			z-index:1000;
+			padding-top:50px;
+			z-index:20000;
+			border:none;
+
+			.full-title {
+				display:block;
+			}
+
+			.partial-title {
+				display:none;
+			}
+
+			.open-lightbox {display:none;}
+
+			.one-day-list {
+				clear:none;
+				overflow:hidden;
+				margin:-12px 0 0 0;
+			}
+
+			a:hover img {
+				opacity: 0.7;
+			}
+
+			
+
+			.vevent {
+				width:45%;
+				float:left;
+				//border:1px solid #000000;
+				margin:0 0 12px 0;
+			}
+
+			.vevent:nth-of-type(odd) {
+				margin-right:6%;
+			}
+
+
+
+			.tribe-day-num {
+				background:$text-gray;
+				color:$gfb-green;
+				height:157px;
+				width:157px;
+				line-height:157px;
+				text-align:center;
+				font-size:100px;
+				float:left;
+				margin:0 24px 0 0;
+			}
+
+			.is_a_link a {
+				color:$gfb-green;
+				font-size:100px;
+			}
+
+			h3, h3 a {
+			color:$text-gray;
+			font-family:$font-desktop;
+			font-weight:normal;
+			text-transform:uppercase;
+			font-size:24px;
+			margin:0;
+			padding:0;
+			line-height:20px;
+				&:hover {
+					color:#000000;
+				}
+			}
+
+			h3.hide-title {display:block;}
+
+			.exit-lightbox {
+				clear:both;
+				text-align:right;
+				display:block;
+				color:#cccccc;
+				line-height:14px;
+				font-size:14px;
+
+			.exit-x {
+				background:$gfb-sprite;
+				background-position:-164px 0px;
+				display:inline-block;
+				width:12px;
+				height:12px;
+				margin:0 0 0 12px;
+				position:relative;
+				top:1px;
+			}
+
+			&:hover {color:#000;}
+			&:hover .exit-x {background-position:-176px 0px;}
+
+			}
+		} // EOF LIGHTBOX
+
+		
+		//#tribe-events-tooltip-74-22 {display:block;} // for testing
+		//.tribe-events-tooltip {border-top:4px solid #000000;border-bottom:4px solid #000000;}
+
+		// extra tooltip css
+		.tribe-events-tooltip {
+			padding-top:40px;
+
+			.tribe-events-event-thumb {
+				margin-right:24px;
+			}
+
+			h4 {
+				margin:0;
+				font-size:30px;
+			}
+
+			.tooltip-excerpt,
+			.date {
+				font-size:14px;
+				color:$text-gray;
+			}
+
+			.date {
+				text-transform:uppercase;
+			}
+
+			.exit-lightbox {
+				clear:none;
+				width:300px;
+				float:right;
+			}
+
+			.excerpt-read-more {display:none;}
+			
+
+			
+		}
+
+	}
+	// EOF CALENDAR TABLE
+
+
+	} // EOF MONTH VIEW
+
+	// Learn more button for calendar and list view
+	.tribe-events-calendar,
+	.tribe-events-list {
+		.learn-more {
+				background:$text-gray;
+				color:#ffffff;
+				position:relative;
+				left:0px;
+				top:0px;
+				text-decoration:none;
+				display:inline-block;
+				font-size:20px;
+				width:85px;
+				height:27px;
+				line-height:27px;
+				margin-top:18px;
+				&:hover {
+					background:#000000;
+				}
+			}
+		}
+
+	.tribe-events-sub-nav {
+		.learn-more {
+			width:150px;
+		}
+
+		.tribe-events-nav-left {
+			float:left;
+		}
+
+		.tribe-events-nav-right {
+			float:right;
+		}
+	}
+	
+
+	// LIST VIEW
+	.tribe-events-list {
+		
+
+		.list-view-main-image,
+		.list-view-main-content {
+			margin-bottom:36px;
+		}
+
+		.list-view-main-image {
+
+			img:hover {
+				opacity:0.7;
+			}
+
+		}
+
+		.list-view-main-content {
+			font-size:14px;
+			h2,
+			h2 a {
+				color:$text-gray;
+				font-size:36px;
+				line-height:1em;
+				&:hover {
+					color:#000000;
+				}
+			}
+			h2 {
+				margin:0 0 8px 0;
+			}
+
+			p {
+				//margin:0;
+			}
+
+			.tribe-events-event-meta {
+				margin:0;
+
+			}
+
+			.time-details {
+				text-transform:uppercase;
+				font-size:14px;
+				p {
+					margin:0;
+					padding:0;
+				}
+			}
+		}
+
+		.learn-more {
+			margin:0;
+		}
+	} // eof list view
+
+	
+}
+
+// single event page
+	.single-tribe_events,
+	.events-single {
+		#tribe-events-content {
+			margin-bottom:0px;
+			
+		}
+
+		#tribe-events-pg-template .gray {
+			border-bottom:24px solid #ffffff;
+			padding-top:0;
+		}
+
+		.tribe-events-schedule {
+			h3 {
+				font-family:$sans-serif;
+				font-size:14px;
+			}
+		}
+
+		.tribe-events-single {
+			.eightcol {
+				padding-top:50px;
+			}
+		}
+	}
+
+/*********************
+Black Background Page
+*********************/
+.page-template-page-blackbg-php .wrap {
+	background:#000000;
+}
+
+
+/*********************
+Main Blog Page
+*********************/
+.blog,
+.single-post {
+	#inner-content #main {
+		padding-top:60px;
+	}
+
+	.byline {
+		padding:0;
+		margin:-8px 0 4px 0;
+		.updated {
+		text-transform:uppercase;
+		font-size:14px;
+		}
+	}
+}
+
+.blog {
+	.blog-image-container,
+	.blog-content-container {
+		margin-bottom:36px;
+	}
+}
+
+
+/*********************
+HEADER STYLES
+*********************/
+
+
+#logo {
+	float:left;
+	margin-right:10%;
+}
+
+#social-links-header {
+	position:absolute;
+	top:67px;
+	right:0px;
+	width:auto;
+	li {
+		
+	}
+
+
+	a {
+		
+	}
+}
+	#facebook {}
+	#twitter {}
+	#instagram {}
+	#youtube {}
+
+#header-top-bar {
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:auto;
+	display:block;
+	z-index:2000;
+	.button,
+	input,
+	div a {
+		font-size:12px;
+		height:27px;
+		line-height:27px;
+		padding:0 8px;
+		width:auto;
+		text-align:left;
+	}
+	div {
+		float:left;
+	}
+}
+	#partner-login,
+	#retailer-login {float:right;}
+	#my-cart {
+		margin:0 12px;
+		.cart-status {
+			display:block;
+			float:left;
+		}
+	}
+
+
+.page-template-template-distributor-home-php,
+.page-template-template-retailer-home-php {
+
+	.dlinks-content {
+		margin-bottom:30px;
+	}
+
+	.dlinks-inner,
+	.dlinks-inner a {
+		max-width:160px;
+		height:160px;
+		display:block;
+		background:#585858;
+	}
+
+	.dlinks-inner {
+		position:relative;
+		a {
+			
+			text-align:center;
+		}
+		span.title {
+				display:block;
+				text-align:center;
+				position:absolute;
+				left:0px;
+				bottom:4px;
+				width:100%;
+				color:$gfb-green;
+				font-family:$font-desktop;
+				text-transform:uppercase;
+				font-size:26px;
+				line-height:24px;
+
+
+
+			}
+		img {
+			max-width:115px;
+			max-height:115px;
+			margin-top:6px;
+		}
+		span.coming-soon {
+			font-family:$font-desktop;
+			text-transform:uppercase;
+			display:block;
+			width:80%;
+			background:#ffffff;
+			font-size:28px;
+			color:#000000;
+			text-align:center;
+			margin:0 auto;
+			position:relative;
+			top:24px;	
+		}
+		
+	}
+
+}
+
+
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+#main-navigation {
+	display:block;
+	margin:0;
+	position:relative;
+	top:60px;
+	.nav {	
+		height:40px;
+	}
+	
+
+}
+
+.nav {
+	background-color:transparent;
+	padding:0;
+	margin:0;
+	height:auto;
+	font-family: $font-desktop;
+	
+
+
+	li {
+		float: left;
+		position: relative;
+		margin:0;
+		padding:0;
+		border:none;
+
+		a {
+			border-bottom: 0;
+			padding:0 10px;
+			font-family: $font-desktop;
+			font-size:24px; // fallback for IE 8
+			font-size:1.5rem;
+			letter-spacing:1px;
+			font-weight:normal;
+			text-align:left;
+			sup {display:none;}
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				
+
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		// Second Level
+		//************************
+		//************************
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border-top: 0;
+			position: absolute;
+			padding:24px 0 12px 0;
+			background:#000000;
+			display: none;
+			// display: block; // TEST
+			z-index: 8999;
+
+			li {
+				border:none;
+				position:static;
+				padding:5px 0;
+				a {
+					padding-left: 10px;
+					border-right: 0;
+					display: block;
+					width: 180px;
+					color:#ffffff;
+					font-size:19px; // fallback for IE 8
+					font-size:1.3rem;
+					line-height:19px;
+					
+
+					&:hover,
+					&:focus {color:$gfb-green;}
+
+					&:link {}
+				}
+
+				&:first-child {border-top:none;}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				// Third Level
+				//************************
+				//************************
+				ul {
+					display:none;
+					// display:block; // TEST
+					position:absolute;
+					top:12px;
+					left:180px;
+					padding:0;
+					
+					li {
+						a {
+							padding-left:10px;
+						}
+					}
+				}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current-page-ancestor {
+				a {color:$gfb-green;}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover ul {
+			top: auto;
+			display: block;
+			ul {
+				display:none;
+			}
+			li:hover {
+				ul {
+					display:block;
+				}
+			}
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+		a {color:#ffffff;}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+/*********************
+Generic Pages
+*********************/
+
+.page,
+.single,
+.archive {
+	#content {
+		background: $bg-gray;
+	}
+	.page-banner-image {
+		img {
+			width:100%;
+		}
+	}
+
+	.has_no_hero_image {
+		margin-top:40px;
+	}
+}
+
+.page-template-template-home-php,
+.page-template-template-home-2015-php,
+.page-template-template-home-2015-2-php,
+.page-template-template-our-beers-php,
+.page-template-template-our-beers-2015-php,
+.page-template-template-release-calendar-php,
+.page-template-template-our-beers-2015-simple-php {
+	#content {
+		background:#ffffff;
+	}
+}
+
+.page-template-template-splash-php {
+	#content {
+		background:transparent;
+	}
+}
+
+
+.parent-pageid-445 #content .entry-content {
+	ul {
+		margin:0;
+		li {
+			list-style-type:none;
+			width:33.3%;
+			float:left;
+		}
+	}
+}
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+	margin-top: 2.2em;
+}
+
+	.widgettitle {
+		border-bottom: 2px solid #444;
+		margin-bottom: 0.75em;
+		font-size:16px;
+		font-size:1.4rem;
+	}
+
+	.widget {
+		padding: 0 10px;
+		margin: 2.2em 0;
+
+		ul {
+			li {
+				margin-bottom: 0.25em;
+
+				&.current-menu-item a {
+					font-weight:bold;
+					&:hover {
+						text-decoration:none;
+					}
+				}
+
+				&:first-child {}
+				&:last-child {}
+				a {
+					text-decoration:none;
+					&:hover {
+						text-decoration:underline;
+					}
+				}
+				/* deep nesting */
+
+				ul {
+					margin-top: 0.75em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+
+/*********************
+DESKTOP GENERIC PAGE STYLES
+*********************/
+
+.entry-content {
+
+	.page-template-template-tasting-room-php & {
+
+		table {
+			width:45%;
+		}
+
+		.sixcol table {
+			width:100%;
+		}
+
+	}
+
+	.required {
+			color:red;
+		}
+
+// form 7 forms
+	.wpcf7 {
+
+		
+
+		fieldset {
+			margin-bottom:24px;
+		}
+
+		legend {
+			font-weight:bold;
+			font-size:18px;
+		}
+
+		label {
+			font-weight:bold;
+		}
+
+		span.wpcf7-not-valid-tip {
+			clear:left;
+		}
+
+		input[type="submit"] {
+			width:100px;
+			color:#ffffff;
+		}
+
+		.sixcol.first {
+			clear:both;
+		}
+
+		.wpcf7-checkbox .wpcf7-list-item {
+
+			label {font-weight:normal;}
+
+			&.first,
+			&.last {
+				float:left;
+			}
+
+			display:block;
+			float:left;
+			text-align:left;
+		}
+
+		#preferred.wpcf7-checkbox .wpcf7-list-item {
+			display:inline;
+		}
+
+
+
+		#other-option {
+			// display:block;
+			// position:relative;
+			// left:75px;
+			// margin-top:-22px;
+			// width:150px;
+		}
+
+	}
+
+}
+
+
+.gallery {
+
+	br {display:inline;}
+
+	&.gallery-columns-2 dl {width:49.9%;}
+	&.gallery-columns-3 dl {width:33.9%;}
+	&.gallery-columns-4 dl {width:24.9%;}
+	&.gallery-columns-5 dl {width:19.9%;}
+	&.gallery-columns-6 dl {width:16.6%;}
+
+} /* end .gallery */
+
+//.page-id-616,
+.page-id-2929,
+.gallery {
+			
+		p.bio-management,
+		dd {
+				
+				strong {
+				font-family: $font-desktop;
+
+		}
+
+
+				
+	}
+
+	p.bio-management {
+			margin-top:40px;
+		}
+}
+
+
+// jobs page
+.page-template-template-gfb-jobs-php,
+.page-template-template-gfb-jobs2 {
+
+	.green {
+		background: #B4C402;
+		padding-bottom:80px;
+		&, h2 {
+			color:#ffffff;
+		}
+	}
+
+	.white {
+		background:#ffffff;
+	}
+
+	.padding {
+		padding:100px 0;
+		&.gray {
+			overflow:hidden;
+			padding-bottom:60px;
+		}
+	}
+
+	.video {
+		padding:50px 0;
+	}
+	#jobs-list {
+		margin:0;
+		padding-bottom:36px;
+		li {
+			list-style-type:none;
+			font-family:$font-desktop;
+			font-size:24px;
+			&:hover {
+				color:$text-gray;
+			}
+		}
+	}
+
+	.job-content {
+		display:none;
+		position:fixed;
+		width:60%;
+		left:20%;
+		top:175px;
+		background:#ffffff;
+		max-height:75%;
+		padding:36px 100px 36px 36px;
+		overflow:scroll;
+		border:10px solid #999999;
+		z-index:20000;
+		.job-close {
+			display:block;
+			position:fixed;
+			top:185px;
+			right:22%;
+			background:#000000;
+			display:block;
+			height:20px;
+			width:60px;
+			line-height:20px;
+			font-size:12px;
+			text-align:center;
+			color:#ffffff;
+			cursor:default;
+			&:hover {
+				background:#555555;
+			}
+		}
+	}
+
+	//#job-content-1 {display:block;} // testing only
+}
+
+.page-template-template-gfb-jobs2 {
+	h2 {
+		font-size:30px;
+	}
+
+	#jobs-list {
+		li a {
+			font-family: $sans-serif;
+			font-size:16px;
+			color:$text-gray;
+			&:hover {
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.footer {
+	//background: #000000 url('../../images/footer-background.png') top center;
+	background: #000000;
+	#tasting-room-hours {
+		@include headings-desktop;
+		font-size:24px;
+		font-size:1.5rem;
+		letter-spacing:1px;
+	}
+}
+
+#shopifystore {
+	width:960px;
+}
+
+/* Layout helpers jQUERY UI
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 2px;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; /* support: IE7 */
+}
+.ui-accordion .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-noicons {
+	padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+.ui-button {
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	line-height: normal;
+	margin-right: .1em;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	overflow: visible; /* removes extra width in IE */
+}
+.ui-button,
+.ui-button:link,
+.ui-button:visited,
+.ui-button:hover,
+.ui-button:active {
+	text-decoration: none;
+}
+/* to make room for the icon, a width needs to be set here */
+.ui-button-icon-only {
+	width: 2.2em;
+}
+/* button elements seem to need a little more width */
+button.ui-button-icon-only {
+	width: 2.4em;
+}
+.ui-button-icons-only {
+	width: 3.4em;
+}
+button.ui-button-icons-only {
+	width: 3.7em;
+}
+
+/* button text element */
+.ui-button .ui-button-text {
+	display: block;
+	line-height: normal;
+}
+.ui-button-text-only .ui-button-text {
+	padding: .4em 1em;
+}
+.ui-button-icon-only .ui-button-text,
+.ui-button-icons-only .ui-button-text {
+	padding: .4em;
+	text-indent: -9999999px;
+}
+.ui-button-text-icon-primary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+	padding: .4em 1em .4em 2.1em;
+}
+.ui-button-text-icon-secondary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+	padding: .4em 2.1em .4em 1em;
+}
+.ui-button-text-icons .ui-button-text {
+	padding-left: 2.1em;
+	padding-right: 2.1em;
+}
+/* no icon support for input elements, provide padding by default */
+input.ui-button {
+	padding: .4em 1em;
+}
+
+/* button icon element(s) */
+.ui-button-icon-only .ui-icon,
+.ui-button-text-icon-primary .ui-icon,
+.ui-button-text-icon-secondary .ui-icon,
+.ui-button-text-icons .ui-icon,
+.ui-button-icons-only .ui-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-button-icon-only .ui-icon {
+	left: 50%;
+	margin-left: -8px;
+}
+.ui-button-text-icon-primary .ui-button-icon-primary,
+.ui-button-text-icons .ui-button-icon-primary,
+.ui-button-icons-only .ui-button-icon-primary {
+	left: .5em;
+}
+.ui-button-text-icon-secondary .ui-button-icon-secondary,
+.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-icons-only .ui-button-icon-secondary {
+	right: .5em;
+}
+
+/* button sets */
+.ui-buttonset {
+	margin-right: 7px;
+}
+.ui-buttonset .ui-button {
+	margin-left: 0;
+	margin-right: -.3em;
+}
+
+/* workarounds */
+/* reset extra padding in Firefox, see h5bp.com/l */
+input.ui-button::-moz-focus-inner,
+button.ui-button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+body .ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+	background-color:#000000;
+}
+
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+	border-color:#ffffff;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+	border-color:#ffffff;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 49%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+.ui-dialog {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .2em;
+	outline: 0;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+}
+.ui-dialog .ui-dialog-title {
+	float: left;
+	margin: .1em 0;
+	white-space: nowrap;
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 20px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 20px;
+}
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	overflow: auto;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: .5em;
+	padding: .3em 1em .5em .4em;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: right;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+.ui-dialog .ui-resizable-se {
+	width: 12px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
+.ui-menu {
+	list-style: none;
+	padding: 2px;
+	margin: 0;
+	display: block;
+	outline: none;
+}
+.ui-menu .ui-menu {
+	margin-top: -3px;
+	position: absolute;
+}
+.ui-menu .ui-menu-item {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/* support: IE10, see #8844 */
+	list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+.ui-menu .ui-menu-divider {
+	margin: 5px -2px 5px -2px;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 1px 0 0 0;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration: none;
+	display: block;
+	padding: 2px .4em;
+	line-height: 1.5;
+	min-height: 0; /* support: IE7 */
+	font-weight: normal;
+}
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	margin: -1px;
+}
+
+.ui-menu .ui-state-disabled {
+	font-weight: normal;
+	margin: .4em 0 .2em;
+	line-height: 1.5;
+}
+.ui-menu .ui-state-disabled a {
+	cursor: default;
+}
+
+/* icon support */
+.ui-menu-icons {
+	position: relative;
+}
+.ui-menu-icons .ui-menu-item a {
+	position: relative;
+	padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+	position: absolute;
+	top: .2em;
+	left: .2em;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+	position: static;
+	float: right;
+}
+.ui-progressbar {
+	height: 2em;
+	text-align: left;
+	overflow: hidden;
+}
+.ui-progressbar .ui-progressbar-value {
+	margin: -1px;
+	height: 100%;
+}
+.ui-progressbar .ui-progressbar-overlay {
+	background: url("../../images/jqui-images/animated-overlay.gif");
+	height: 100%;
+	filter: alpha(opacity=25);
+	opacity: 0.25;
+}
+.ui-progressbar-indeterminate .ui-progressbar-value {
+	background-image: none;
+}
+.ui-resizable {
+	position: relative;
+}
+.ui-resizable-handle {
+	position: absolute;
+	font-size: 0.1px;
+	display: block;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+	display: none;
+}
+.ui-resizable-n {
+	cursor: n-resize;
+	height: 7px;
+	width: 100%;
+	top: -5px;
+	left: 0;
+}
+.ui-resizable-s {
+	cursor: s-resize;
+	height: 7px;
+	width: 100%;
+	bottom: -5px;
+	left: 0;
+}
+.ui-resizable-e {
+	cursor: e-resize;
+	width: 7px;
+	right: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-w {
+	cursor: w-resize;
+	width: 7px;
+	left: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-se {
+	cursor: se-resize;
+	width: 12px;
+	height: 12px;
+	right: 1px;
+	bottom: 1px;
+}
+.ui-resizable-sw {
+	cursor: sw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	bottom: -5px;
+}
+.ui-resizable-nw {
+	cursor: nw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	top: -5px;
+}
+.ui-resizable-ne {
+	cursor: ne-resize;
+	width: 9px;
+	height: 9px;
+	right: -5px;
+	top: -5px;
+}
+.ui-selectable-helper {
+	position: absolute;
+	z-index: 100;
+	border: 1px dotted black;
+}
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+.ui-spinner {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 0;
+	vertical-align: middle;
+}
+.ui-spinner-input {
+	border: none;
+	background: none;
+	color: inherit;
+	padding: 0;
+	margin: .2em 0;
+	vertical-align: middle;
+	margin-left: .4em;
+	margin-right: 22px;
+}
+.ui-spinner-button {
+	width: 16px;
+	height: 50%;
+	font-size: .5em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	cursor: default;
+	display: block;
+	overflow: hidden;
+	right: 0;
+}
+/* more specificity required here to override default borders */
+.ui-spinner a.ui-spinner-button {
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+/* vertically center icon */
+.ui-spinner .ui-icon {
+	position: absolute;
+	margin-top: -8px;
+	top: 50%;
+	left: 0;
+}
+.ui-spinner-up {
+	top: 0;
+}
+.ui-spinner-down {
+	bottom: 0;
+}
+
+/* TR overrides */
+.ui-spinner .ui-icon-triangle-1-s {
+	/* need to fix icons sprite */
+	background-position: -65px -16px;
+}
+.ui-tabs {
+	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .2em;
+}
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: .2em .2em 0;
+}
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px .2em 0 0;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+	cursor: text;
+}
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+	cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 1em 1.4em;
+	background: none;
+}
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+}
+body .ui-tooltip {
+	border-width: 2px;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #dddddd;
+	background: #eeeeee url("../../images/jqui-images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x;
+	color: #333333;
+}
+.ui-widget-content a {
+	color: #333333;
+}
+.ui-widget-header {
+	border: 1px solid #666666;
+	background: #000000;
+	color: #ffffff;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #ffffff;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #cccccc;
+	background: #000000 url("../../images/jqui-images/ui-bg_glass_100_f6f6f6_1x400xx.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #ffffff;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #1c94c4;
+	text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #cccccc;
+	background: #ffffff url("../../images/jqui-images/ui-bg_glass_100_fdf5ce_1x400xx.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #000000;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited {
+	color: #c77405;
+	text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #000000;
+	background: #ffffff url("../../images/jqui-images/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #eb8f00;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #eb8f00;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #fed22f;
+	background: #ffe45c url("../../images/jqui-images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x;
+	color: #363636;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+	color: #363636;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a;
+	background: #b81900 url("../../images/jqui-images/ui-bg_diagonals-thick_18_b81900_40x40.png") 50% 50% repeat;
+	color: #ffffff;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+	color: #ffffff;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+	color: #ffffff;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70);
+	font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35);
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* For IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	width: 16px;
+	height: 16px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+	background-image: url("../../images/jqui-images/ui-icons_222222_256x240.png");
+}
+.ui-widget-header .ui-icon {
+	background-image: url("../../images/jqui-images/ui-icons_ffffff_256x240.png");
+	//background-image: url("../../images/jqui-images/ui-icons_222222_256x240.png");
+}
+.ui-state-default .ui-icon {
+	background-image: url("../../images/jqui-images/ui-icons_ef8c08_256x240.png");
+	//background-image: url("../../images/jqui-images/ui-icons_222222_256x240.png");
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+	//background-image: url("../../images/jqui-images/ui-icons_ef8c08_256x240.png");
+	background-image: url("../../images/jqui-images/ui-icons_222222_256x240.png");
+}
+.ui-state-active .ui-icon {
+	//background-image: url("../../images/jqui-images/ui-icons_ef8c08_256x240.png");
+	background-image: url("../../images/jqui-images/ui-icons_222222_256x240.png");
+}
+.ui-state-highlight .ui-icon {
+	//background-image: url("../../images/jqui-images/ui-icons_228ef1_256x240.png");
+	background-image: url("../../images/jqui-images/ui-icons_222222_256x240.png");
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	//background-image: url("../../images/jqui-images/ui-icons_ffd27a_256x240.png");
+	background-image: url("../../images/jqui-images/ui-icons_222222_256x240.png");
+}
+
+/* positioning */
+.ui-icon-blank { background-position: 16px 16px; }
+.ui-icon-carat-1-n { background-position: 0 0; }
+.ui-icon-carat-1-ne { background-position: -16px 0; }
+.ui-icon-carat-1-e { background-position: -32px 0; }
+.ui-icon-carat-1-se { background-position: -48px 0; }
+.ui-icon-carat-1-s { background-position: -64px 0; }
+.ui-icon-carat-1-sw { background-position: -80px 0; }
+.ui-icon-carat-1-w { background-position: -96px 0; }
+.ui-icon-carat-1-nw { background-position: -112px 0; }
+.ui-icon-carat-2-n-s { background-position: -128px 0; }
+.ui-icon-carat-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-on { background-position: -96px -144px; }
+.ui-icon-radio-off { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 4px;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+	background: #666666 url("../../images/jqui-images/ui-bg_diagonals-thick_20_666666_40x40.png") 50% 50% repeat;
+	opacity: .5;
+	filter: Alpha(Opacity=50);
+}
+.ui-widget-shadow {
+	margin: -5px 0 0 -5px;
+	padding: 5px;
+	background: #000000 url("../../images/jqui-images/ui-bg_flat_10_000000_40x100.png") 50% 50% repeat-x;
+	opacity: .2;
+	filter: Alpha(Opacity=20);
+	border-radius: 5px;
+}
+
+

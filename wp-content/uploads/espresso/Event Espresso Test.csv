@@ -1,0 +1,15 @@
+0,event_name,event_desc,address,city,state,country,zip,phone,display_desc,event_identifier,start_date,end_date,start_time,end_time,reg_limit,event_cost,allow_multiple,additional_limit,send_mail,is_active,conf_mail,registration_start,registration_end
+0,The event name,"The event description, basic html is allowed",First line of the address (not venue),City of the address (not venue),State/province of the address (not venue),Country of the address (not venue),Zip/postal code of the address (not venue),Phone number of the address (not venue),Display the event description? Use Y or N,Add a unique event identifier,Add the event start date (format = Y-m-d for example 2013-07-25),Add the event end date (format = Y-m-d for example 2013-07-25),Add the event start time (format = 10:00:00 AM),Add the event end time (format = 10:00:00 AM),"Add the maximum number of attendees for the event, enter 999999 for unlimited","The event price, do not use currency symbols!",Allow group registrations? Use Y or N,"Group size, use numbers only.",Send the registration confirmation email? Use Y or N,Is this an active event? Use Y or N,"Add the content of your confirmation email here, basic HTML and email tags are allowed.",Add the registration start date (format = Y-m-d for example 2013-07-25),Add the registration end date (format = Y-m-d for example 2013-07-25)
+1,Public Tour[Public_tour]',,6550 Mira Mesa Blvd,San Diego,CA,United States,92121,,N,,2014-05-11,2014-05-11,2:00:00 PM,3:00:00PM,25,,N,,Y,Y,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,

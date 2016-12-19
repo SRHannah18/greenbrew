@@ -1,0 +1,291 @@
+// SPLASH PAGE
+.page-template-template-splash-php {
+
+	#yes {
+		left:12.0%;
+		top:66.6%;
+	}
+	#no {
+		left:61%;
+		top:66.4%;
+	}
+
+} // EOF SPLASH PAGE
+
+.page,
+.single-beer-inner-wrap
+ {
+	#main  {
+		padding-left:12px;
+		padding-right:12px;
+	}
+}
+
+.page-template-template-home-php,
+.page-template-template-home-2015-php,
+.page-template-template-home-2015-2-php { 
+	#content {
+		.boxes {
+			#featured-beer-bottle {
+				height:70%;
+				width:auto;
+				left:-20px;
+			} 
+
+		.fourcol {
+			width:32%;
+			&.first {
+				margin-right:2.2%;
+			}
+		}
+		}
+		.instagram-wrapper {
+			#home-instagram {
+				height:250px;
+			}
+		}
+
+		.tasteitonce {
+			//background-position:-400px bottom;
+		}
+
+		.ratereviewbeer {
+			
+			#txt-enlighten {margin-left:10%;width:50%;}
+			#txt-ratereview {position:relative;top:-5px;}
+			#btn-ratebeer {clear:left;margin-left:22%;}
+			#btn-beer-advocate {float:left;margin-left:6px;}
+		}
+
+		.youtube {
+			
+			h2 {
+				width:80%;
+			}
+		}
+	}
+}
+
+
+.page-template-template-our-beers-php,
+.page-template-template-our-beers-2015-php,
+.page-template-template-our-beers-2015-simple-php {
+
+	#national {
+		#slide-secondary-1 {
+			h3 {
+				font-size:30px;
+			}
+		}
+	}
+
+	// Discovery Pack
+	#discovery-pack {
+		
+
+		#slide-discovery {
+			height:42.75%;
+			img {
+				width:auto;
+				margin-top:-110px;
+			}
+			
+		}
+
+	}
+
+	
+	#genius {
+
+		h2 {
+			margin:-14px 230px 0 10px;
+		}
+
+		h3 {
+			
+			font-size:30px;
+			//font-size:3.1rem;
+			line-height:30px;
+			width:220px;
+			span {
+				font-size:42px;
+			}
+		}
+
+		.genius-content {
+			width:220px;
+			line-height:17px;
+		}
+	} // EOF GENIUS
+
+	#hop {
+	#slide-secondary-2 {
+		.hop-content {
+			width:30%;
+			position:relative;
+			left:8px;
+			//border:1px solid red;
+		}
+
+		#six-beer-bottles {
+
+		}
+	
+
+			#hop-odyssey-logo {
+				float:right;
+				width:35%;
+				position:relative;
+				top:35px;
+			}
+			// #hop-image-middle {
+			// 	float:left;
+			// 	width:40%;
+			// }
+
+			#six-beer-bottles {left:25px;top:100px;}
+			#six-beer-bottles li {
+				margin:0 -2px;
+				img {position:relative;display:block;}
+				float:left;
+				&.beer-1 {width:3.75%;img {top:50px;}}
+				&.beer-2 {width:4.25%;img {top:40px;}}
+				&.beer-3 {width:4.75%;img {top:30px;}}
+				&.beer-4 {width:5.25%;img {top:20px;}}
+				&.beer-5 {width:5.75%;img {top:10px;}}
+				&.beer-6 {width:6.25%;}
+				img {width:100%;}
+			}
+		}
+	}
+
+	#slide-beers ul,
+	#slide-kegs ul {
+		left:-40px;
+	}
+
+
+	#genuis2 {
+		
+		#slide-secondary-5 {
+			.genius-content {
+				padding-top:40px;
+				line-height:18px;	
+		}
+	}
+
+	} // EOF New Genius Lab
+
+
+} // EOF BEER PAGE
+
+
+// START OF INDIVIDUAL BEER PAGES
+.single-gfb_our_beers {
+
+	#content {
+
+		overflow:hidden;
+
+		#shop-now {
+			position:relative;
+			top:0px;
+			right:0px;
+			margin:0 auto 12px auto;
+		}
+		.rate-beer {
+			
+			a {
+				position:relative;
+				top:0px;
+				&#rate-beer {
+					right:0px;
+					float:left;
+					margin-right:10px;
+				}
+				&#beer-advocate {
+					right:0px;
+				}
+			}
+		}
+
+
+
+		#find-this-beer {
+			width:60px;
+			height:72px;
+			right:20px;
+			h2.image-replacement2 {
+				background:none;
+				text-indent:0;
+				white-space: normal;
+				line-height:24px;
+			}
+
+			form input#zipcode {
+				width:55px;
+			}
+
+			form input#zip-submit {
+				position:absolute;
+				bottom:0px;
+				right:-15px;
+			}
+		}
+	}
+
+	#small-beers {
+		ul {
+				li {
+					width:25px;
+					a {
+						width:23px;
+					}
+				}
+			}
+		}
+
+	.search-beers {
+		position:relative;
+		top:65px;
+	}
+	
+
+} // EOF SINGLE BEER PAGE
+
+.page-template-default #inner-content {padding-left:8px;padding-right:8px;}
+
+
+
+// CALENDAR PAGE
+
+#tribe-events-pg-template {
+
+	.news-events-header{
+		height:170px;
+	}
+
+}
+
+// EOF CALANDAR PAGE
+
+#main-navigation {
+	left:-70px;
+}
+
+.entry-content {
+	// form 7 forms
+	.wpcf7 {
+		.sixcol {
+			width:45%;
+			input[type="text"],
+			input[type="email"],
+			input[type="tel"] {
+			width:100%;
+			}
+		}
+	}
+
+}
+
+

@@ -1,0 +1,797 @@
+.post-type-archive-espresso_events #main table td a.ee-button,
+.post-type-archive-espresso_events #main table td a.ee-button:active, 
+.post-type-archive-espresso_events #main table td a.ee-button:visited,
+.post-type-archive-espresso_events #main table td .ee-status,
+.post-type-archive-espresso_events #main table td .ee-status:active, 
+.post-type-archive-espresso_events #main table td .ee-status:visited {
+	display:block;
+	float:none;
+	position:relative;
+	top:0;
+	left:0;
+	width:50px;
+	margin:6px 0;
+
+}
+
+.page-template-template-home-php #content .bg-gray,
+.page-template-template-home-php #content .bg-gray.boxes,
+.page-template-template-home-2015-php #content .bg-gray,
+.page-template-template-home-2015-php #content .bg-gray.boxes,
+.page-template-template-home-2015-2-php #content .bg-gray,
+.page-template-template-home-2015-2-php #content .bg-gray.boxes,
+ #hop,
+ #calendar,
+ #tribe-events-pg-template .newsletter {
+	background:$bg-gray;
+	padding:18px 0;
+	margin:12px 0;
+}
+
+ .tasteitonce {overflow:hidden;}
+
+ #slide-kegs {
+	background:#ffffff;
+	padding:12px 0;
+	overflow:hidden;
+}
+
+ .mobile-border-bottom {
+	border-bottom:1px solid #ffffff;
+	margin-bottom:18px;
+	padding-bottom:18px;
+}
+
+ #three-boxes {overflow:hidden;}
+
+ .mobile-border-top {
+	border-top:1px solid #ffffff;
+	margin-top:18px;
+	padding-top:18px;
+}
+
+// mobile only
+.page-template-template-home-php,
+.page-template-template-home-2015-php,
+.page-template-template-home-2015-2-php {
+	#content {
+
+		#three-boxes .fourcol {
+			width:30%;
+			margin-right:5%;
+			float:left;
+			&.last {
+				float:right;
+				margin-right:0;
+			}
+
+			h2 {font-size:1rem;}
+
+			.box-content {display:none;}
+		}
+
+
+		.beer-locator h2 {
+			clear:both;
+		}
+
+		.tasteitonce { 
+			background:#000000 url(../../images/home/tasteonce/a-flash-of-genius-bg-mobile.jpg) no-repeat top center;
+			background-size:cover;
+			text-align:center;
+			color:#ffffff;
+			padding:90px 0 60px 0;
+				h2 {
+					//display:none;
+					color:#ffffff;
+					text-align:center;
+
+
+				}
+
+				#taste-it-once-glass {
+					display:none;
+				}
+
+			}
+
+		}
+
+		.youtube {
+			iframe{width:100%;
+				max-width:100%;}
+		}
+
+		.ratereviewbeer {
+			//border-bottom:1px solid #cccccc;
+			//margin-bottom:18px;
+			background:#F79101;
+			color:#ffffff;
+			text-align:center;
+			font-size:20px;
+			h2 {
+				color:#ffffff;
+				padding-top:18px;
+				font-size:26px;
+			}
+		}
+
+		#home-mobile-rate-review {
+			overflow:hidden;
+
+			li {
+			float:left;
+			margin-right:12px;
+			}
+			
+		}
+
+	}
+
+.page-template-template-release-calendar-php #release-calendar-content .available, 
+.page-template-template-release-calendar-php #release-calendar-content a span.dates
+{
+	clear:both;
+	font-size:24px;
+	color:$text-gray;
+}
+
+.page-template-template-release-calendar-php {
+
+	#find-beer {
+		background: $bg-gray;
+		padding:12px 0;
+	}
+
+}
+
+
+//******************************************************
+// EOF HOME PAGE
+
+// BEER PAGE BASE PHONES
+//******************************************************
+//******************************************************
+//******************************************************
+.page-template-template-our-beers-php {
+
+		#slide-kegs,
+		#slide-beers {
+			li {
+				float:left;
+				span {
+					display:none;
+				}
+			}
+		}
+
+		#slide-beers li {width:12%;}
+		#slide-kegs li {width:15%;}
+
+		#hop-odyssey-logo {
+			background:#434746;
+			margin-top:-160px;
+		}
+
+		#six-beer-bottles {
+			position:relative;
+			left:-9999px;
+		}
+
+		#calendar {padding:0;}
+
+		.mobile-beers {
+			overflow:hidden;
+		li {
+			width:23%;
+			margin-right:2%;
+			float:left;
+			img {
+				//max-width:100%;
+				//height:auto;
+			}
+		}
+	}
+
+} // EOF BEER PAGE
+
+
+
+// START OF INDIVIDUAL BEER PAGES PHONES
+.single-gfb_our_beers {
+
+	#content {
+
+	.post-navigation {
+		width:45%;
+		position:absolute;
+		top:10px;
+		a {
+			font-size:18px;
+			text-transform:uppercase;
+			text-decoration:none;
+		}
+		&.nav-previous {float:left;left:6px;}
+		&.nav-next {float:right;right:6px;}
+	}
+
+
+	// .specs p span.abv,
+	// .specs p span.ibus,
+	// .specs p span.availability {
+	// 	font-size:1.0rem;
+	// 	font-style:normal;
+	// }
+
+
+	#all-beers-link,
+	#shop-now {
+		font-size:20px;
+		margin-top:18px;
+		font-weight:bold;
+		display:block;
+		text-align:left;
+		text-transform:uppercase;
+	}
+
+	.main-beer-image {float:left;width:30%;}
+	.mobile-image-lockup {width:100%;}
+	#lockup-container {float:right;width:65%;position:relative;}
+	#half-flash {
+		position:absolute;
+		width:35%;
+		height:auto;
+		right:3%;
+		bottom:6%;
+	}
+
+	.single-beer-inner-wrap,
+	#find-this-beer,
+	#store-div {clear:both;}
+
+	#small-beers li {
+		float:left;
+		margin-right:6px;
+		span {display:none;}
+	}
+
+	.availability:before {
+		content:"\a";
+		white-space: pre;
+	}
+
+	.rate-beer {
+		overflow:hidden;
+		clear:both;
+		border-top:1px solid #ffffff;
+		padding-top:24px;
+	}
+
+	#rate-beer,
+	#beer-advocate {float:left;margin-right:12px;}
+
+	.store {
+		overflow:hidden;
+		.store-details {
+			h3 {font-size:16px;}
+			.cost {display:block;}
+		}
+	}
+
+	.store .first.store-image,
+	.store .last.store-image {
+		width:48%;
+		float:left;
+	}
+
+	.store .last.store-image {float:right;}
+
+}
+
+	#content .store .store-details h3 {
+		margin-bottom:0px;
+	}
+
+
+} // EOF INDIVIDUAL BEER PAGES
+
+
+
+// .single-gfb_our_beers {
+
+// 	#content {
+
+// 	.post-navigation {
+// 		width:45%;
+// 		position:absolute;
+// 		top:10px;
+// 		a {
+// 			font-size:18px;
+// 			text-transform:uppercase;
+// 			text-decoration:none;
+// 		}
+// 		&.nav-previous {float:left;left:6px;}
+// 		&.nav-next {float:right;right:6px;}
+// 	}
+
+// 	.specs p {font-size:1.5rem;}
+// 	p.options .twelve-oz,
+// 	p.options .twenty-two-oz,
+// 	p.options .keg {
+// 		font-size:1.5rem;
+// 		margin-right:12px;
+// 	}
+// 	.specs p span.abv,
+// 	.specs p span.ibus,
+// 	.specs p span.availability {
+// 		font-size:1.0rem;
+// 	}
+
+// 	#all-beers-link,
+// 	#shop-now {
+// 		font-size:20px;
+// 		margin-top:18px;
+// 		font-weight:bold;
+// 		display:block;
+// 		text-align:center;
+// 		text-transform:uppercase;
+// 	}
+
+// 	.main-beer-image {float:left;width:30%;}
+// 	.mobile-image-lockup {float:right;width:65%;}
+
+// 	.single-beer-inner-wrap,
+// 	#find-this-beer,
+// 	#store-div {clear:both;}
+
+// 	#small-beers li {
+// 		float:left;
+// 		margin-right:6px;
+// 		span {display:none;}
+// 	}
+
+// 	.availability:before {
+// 		content:"\a";
+// 		white-space: pre;
+// 	}
+
+// 	// reposition for Smartphones
+// 	.hero-image,
+// 	.main-beer-image,
+// 	.mobile-image-lockup,
+// 	.beer-header {
+// 		position:absolute;
+// 		top:0px;
+// 	}
+
+// 	.hero-image {left:0px;top:40px;height:200px;width:auto;}
+
+// 	.main-beer-image,
+// 	.mobile-image-lockup {top:250px;height:500px;width:auto;}
+
+// 	.main-beer-image {left:0px;top:375px;}
+// 	.mobile-image-lockup {right:0px;height:600px;}
+// 	.beer-header {left:10px;top:900px;width:100%;}
+// 	.beer-main-content{
+// 		margin-top:950px;
+// 	}
+
+
+
+	
+// }
+
+// }
+
+// .single-gfb_our_beers.beer-cat-hop-odyssey #content {
+
+// 		.main-beer-image,
+// 		.mobile-image-lockup {top:40px;}
+
+// 		.mobile-image-lockup {
+// 			height:500px;
+// 		}
+
+// 		.main-beer-image {
+// 			top:90px;
+// 		}
+
+// 		.beer-header {left:12px;top:620px;}
+// 		.beer-main-content{
+// 			margin-top:600px;
+// 		}
+
+// 	}
+
+#tribe-events-pg-template {
+
+		#inner-content {overflow:hidden;}
+
+		#tribe-events-bar #tribe-bar-form {
+			height:100px;
+			margin-bottom:60px;
+			input#tribe-bar-geoloc {
+				margin-bottom:12px;
+			}
+		}
+
+		#tribe-bar-collapse-toggle {
+			font-size:18px;
+			font-weight:bold;
+			text-transform:uppercase;
+		}
+
+		#tribe-events-content {
+			padding-top:50px;
+		}
+
+		.tribe-bar-views-inner {
+			display:none;
+		}
+
+		.tribe-bar-filters {
+			float:none;
+			width:100%;
+		}
+
+		#tribe-events-bar .tribe-bar-filters .tribe-bar-geoloc-filter label {
+			float:none;
+			display:block;
+			text-align:left;
+			width:100%;
+			position:absolute;
+			top:40px;
+			left:10px;
+			font-size:18px;
+		}
+
+	}
+
+	#find-beer {
+		//background:#C03900;
+		background:#C03900 url('../../images/home/findbeer/find-beer-bg-mobile.jpg') no-repeat;
+		background-size:contain;
+		padding-bottom:36px;
+	}
+
+	#find-beer h2 {
+		
+		height:300px;
+		width:100%;
+	}
+
+@media only screen 
+and (max-width : 320px) {
+ #find-beer h2 {
+		height:80px;
+	}
+}
+
+
+// Main Navigation
+#main-navigation {
+	#menu-item-91 ul {display:none;}
+}
+
+body form input[type="text"],
+body form input[type="email"],
+body form input[type="tel"],
+body form input[type="submit"] {
+	border:1px solid #cccccc;
+	line-height:20px;
+	display:inline-block;
+	padding:5px 10px;
+	width:90%;
+	font-size:16px;
+}
+
+body #find-beer form input[type="text"],
+body #find-this-beer form input[type="text"] {
+	width:50%;
+}
+
+body form input[type="submit"] {
+	background:$black;
+	color:#FFFFFF;
+	width:auto;
+	border:none;
+	font-weight:normal;
+	
+}
+
+body .nav {
+	li {
+		//padding:10px 0px;
+	}
+	ul {
+		margin:0;
+		margin:10px 0 0 0;
+		li:last-child {
+			padding-bottom:2px;
+		}
+	}
+}
+
+// #container #inner-header #header-top-bar #header-search #searchform input#s.button:-moz-placeholder {
+// 	color:$text-gray;
+// }
+
+body #header-search #searchform {
+	
+	input#s,
+	#searchsubmit  {
+		color:$text-gray;
+		font-weight:bold;
+	}
+}
+
+
+
+
+.newsletter .inner-wrap {
+	padding:0 2%;
+}
+
+.page-id-155 #main header h1,
+.label-what-is-zipcode {
+	display:none;
+}
+
+.ui-datepicker {
+	background:#efefef;
+	width:90%;
+	padding:1%;
+	.ui-datepicker-header {
+		background:$black;
+		padding:6px 4px;
+	}
+	.ui-datepicker-calendar {
+		width:100%;
+		td {
+			text-align:center;
+			background:$black;
+			color:#ffffff;
+			border:1px solid #efefef;
+			a {
+				color:#ffffff;
+			}
+			&.ui-datepicker-unselectable {
+				background:#cccccc;
+			}
+		}
+	}
+	.ui-datepicker-title {
+		text-align:center;
+	}
+	.ui-datepicker-prev {
+		float:left;
+		margin-left:3%;
+	}
+	.ui-datepicker-next {
+		float:right;
+		margin-right:3%;
+	}
+
+
+	.ui-datepicker-title,
+	.ui-datepicker-prev,
+	.ui-datepicker-next {
+		color:#ffffff;
+		font-weight:bold;
+		font-size:20px;
+	}
+}
+
+.entry-content .wpcf7 {
+
+	fieldset {
+		border:none;
+	}
+
+	legend {
+		font-weight:bold;
+	}
+
+	label, 
+	strong {
+		font-weight:normal;
+	}
+
+	select {
+		margin:0 6px 12px 0;
+	}
+
+	.wpcf7-list-item {
+		display:block;
+	}
+}
+
+
+.page-template-page-blackbg-php .wrap {
+	background:#000000;
+}
+
+
+
+.page-template-template-tasting-room-php .entry-content {
+	.sixcol {
+		width:48%;
+		&.first {
+			float:left;
+		}
+		&.last {
+			float: right;
+		}
+	}
+	.twelvecol {
+		clear:both;
+	}
+}
+
+// new beer page
+.page-template-template-our-beers-2015,
+.page-template-template-our-beers-2015-simple-php {
+	#main-beer-image {
+		margin:18px 0;
+	}
+
+	.cellar-3-buttons {
+		width:auto;
+		height:auto;
+		padding:4px 10px;
+		color:#ffffff;
+		position:relative;
+		margin:24px 0;
+		left:0;
+		top:0;
+	}
+
+	#find-beer-mobile,
+	#calendar {
+		padding:24px 0 0 0;
+		h2 {
+			margin:50px 0;
+		}
+	}
+
+	#calendar {
+		text-align:center;
+		background:#000000;
+		h2 {
+			background:url(../../images/our-beers/2015/beer-release-calendar-mobile.png) no-repeat center;
+			//width:332px;
+			height:160px;
+		}
+	}
+
+	#find-beer-mobile {
+		text-align:center;
+		background:#6f7071;
+		.cellar-3-buttons {
+			background:#6f7071;
+		}
+		h2 {
+		background:url(../../images/our-beers/2015/beer-locator-mobile.png) no-repeat center;
+		height:100px;
+		}
+	}
+
+	#discovery-pack {
+		padding:24px 0 60px 0;
+		h2 {
+			margin:0 0 36px 0;
+		}
+	}
+
+	#genuis2 {
+		padding:24px 0;
+		h2 {
+			margin:0 0 24px 0;
+		}
+		#slide-genuis2, p {
+			text-align:left;
+			line-height:28px;
+		}
+		a {
+			color:#ffffff;
+			text-decoration:none;
+		}
+	}
+	//* {overflow:visible;}
+	.bg-gray {
+		background:#a5a5a5;
+	}
+
+	.bg-black {
+		background:#000000;
+	}
+
+	
+		h2 {
+			background-repeat:no-repeat;
+			background-size:contain;
+			background-position:center;
+			//background-color:#000000;
+			text-indent:-9999px;
+			margin:0 0 0 0;
+		}
+	
+
+	.slide-overlay {
+		//overflow:hidden;
+		text-align:center;
+		li {
+				display:inline-block;
+				margin:0 12px 36px 12px;
+				&:after {
+					//content: "";
+				}
+		}
+
+		&#slide-beers li {
+			margin-left:28px;
+			margin-right:28px;
+		}
+	}
+}
+
+.page-template-template-our-beers-2015-simple-php {
+
+	#beer-list-color-bgs {
+		background:#000000;
+		overflow:hidden;
+		margin:0;
+		li {
+			margin:0;
+			width:33.333%;
+			float:left;
+			img {
+				display:block;
+				margin:0;
+			}
+		}
+	}
+
+	$mobile-border: 12px;
+
+	#find-beer-mobile,
+	#genuis2,
+	#calendar {
+		border:$mobile-border solid #ffffff;
+		padding:16px;
+		border-top:none;
+		border-bottom:none;
+		h2 {
+			background-size:contain;
+		}
+	}
+
+	#genuis2 {
+		border-top:$mobile-border solid #ffffff;
+		background-position:center;
+	}
+
+	#find-beer-mobile {
+		border-bottom:$mobile-border solid #ffffff;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

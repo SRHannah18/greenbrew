@@ -1,0 +1,498 @@
+# Copyright (C) 2015 WP NoteUp
+# This file is distributed under the same license as the WP NoteUp package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP NoteUp 1.1.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-noteup\n"
+"POT-Creation-Date: 2015-11-30 15:48:32+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: class/class-wp-noteup-cmb2.php:37 class/wp-noteup.php:112
+msgid "NoteUp"
+msgstr ""
+
+#: class/class-wp-noteup-wp-error.php:11
+msgid "Our CMB2 library failed to load."
+msgstr ""
+
+#: class/wp-noteup.php:57
+msgid ""
+"Sorry, but the data came back in a format we didn't understand, so we quit."
+msgstr ""
+
+#: cmb2/example-functions.php:82 cmb2/tests/test-cmb-field.php:228
+msgid "Test Metabox"
+msgstr ""
+
+#: cmb2/example-functions.php:93 cmb2/example-functions.php:380
+msgid "Test Text"
+msgstr ""
+
+#: cmb2/example-functions.php:94 cmb2/example-functions.php:106
+#: cmb2/example-functions.php:114 cmb2/example-functions.php:122
+#: cmb2/example-functions.php:131 cmb2/example-functions.php:139
+#: cmb2/example-functions.php:153 cmb2/example-functions.php:160
+#: cmb2/example-functions.php:168 cmb2/example-functions.php:185
+#: cmb2/example-functions.php:194 cmb2/example-functions.php:202
+#: cmb2/example-functions.php:209 cmb2/example-functions.php:216
+#: cmb2/example-functions.php:230 cmb2/example-functions.php:243
+#: cmb2/example-functions.php:256 cmb2/example-functions.php:268
+#: cmb2/example-functions.php:277 cmb2/example-functions.php:285
+#: cmb2/example-functions.php:294 cmb2/example-functions.php:301
+#: cmb2/example-functions.php:315 cmb2/example-functions.php:381
+#: cmb2/example-functions.php:476 cmb2/example-functions.php:484
+#: cmb2/example-functions.php:491 cmb2/example-functions.php:498
+#: cmb2/example-functions.php:505 cmb2/example-functions.php:512
+#: cmb2/example-functions.php:519 cmb2/example-functions.php:557
+#: cmb2/tests/test-cmb-field.php:240
+msgid "field description (optional)"
+msgstr ""
+
+#: cmb2/example-functions.php:105
+msgid "Test Text Small"
+msgstr ""
+
+#: cmb2/example-functions.php:113
+msgid "Test Text Medium"
+msgstr ""
+
+#: cmb2/example-functions.php:121
+msgid "Website URL"
+msgstr ""
+
+#: cmb2/example-functions.php:130
+msgid "Test Text Email"
+msgstr ""
+
+#: cmb2/example-functions.php:138
+msgid "Test Time"
+msgstr ""
+
+#: cmb2/example-functions.php:145 cmb2/example-functions.php:146
+msgid "Time zone"
+msgstr ""
+
+#: cmb2/example-functions.php:152
+msgid "Test Date Picker"
+msgstr ""
+
+#: cmb2/example-functions.php:159
+msgid "Test Date Picker (UNIX timestamp)"
+msgstr ""
+
+#: cmb2/example-functions.php:167
+msgid "Test Date/Time Picker Combo (UNIX timestamp)"
+msgstr ""
+
+#: cmb2/example-functions.php:184
+msgid "Test Money"
+msgstr ""
+
+#: cmb2/example-functions.php:193
+msgid "Test Color Picker"
+msgstr ""
+
+#: cmb2/example-functions.php:201
+msgid "Test Text Area"
+msgstr ""
+
+#: cmb2/example-functions.php:208
+msgid "Test Text Area Small"
+msgstr ""
+
+#: cmb2/example-functions.php:215
+msgid "Test Text Area for Code"
+msgstr ""
+
+#: cmb2/example-functions.php:222
+msgid "Test Title Weeeee"
+msgstr ""
+
+#: cmb2/example-functions.php:223
+msgid "This is a title description"
+msgstr ""
+
+#: cmb2/example-functions.php:229
+msgid "Test Select"
+msgstr ""
+
+#: cmb2/example-functions.php:235 cmb2/example-functions.php:248
+#: cmb2/example-functions.php:260
+msgid "Option One"
+msgstr ""
+
+#: cmb2/example-functions.php:236 cmb2/example-functions.php:249
+#: cmb2/example-functions.php:261
+msgid "Option Two"
+msgstr ""
+
+#: cmb2/example-functions.php:237 cmb2/example-functions.php:250
+#: cmb2/example-functions.php:262
+msgid "Option Three"
+msgstr ""
+
+#: cmb2/example-functions.php:242
+msgid "Test Radio inline"
+msgstr ""
+
+#: cmb2/example-functions.php:255
+msgid "Test Radio"
+msgstr ""
+
+#: cmb2/example-functions.php:267
+msgid "Test Taxonomy Radio"
+msgstr ""
+
+#: cmb2/example-functions.php:276
+msgid "Test Taxonomy Select"
+msgstr ""
+
+#: cmb2/example-functions.php:284
+msgid "Test Taxonomy Multi Checkbox"
+msgstr ""
+
+#: cmb2/example-functions.php:293
+msgid "Test Checkbox"
+msgstr ""
+
+#: cmb2/example-functions.php:300 cmb2/tests/test-cmb-field.php:239
+msgid "Test Multi Checkbox"
+msgstr ""
+
+#: cmb2/example-functions.php:306 cmb2/tests/test-cmb-field.php:245
+msgid "Check One"
+msgstr ""
+
+#: cmb2/example-functions.php:307 cmb2/tests/test-cmb-field.php:246
+msgid "Check Two"
+msgstr ""
+
+#: cmb2/example-functions.php:308 cmb2/tests/test-cmb-field.php:247
+msgid "Check Three"
+msgstr ""
+
+#: cmb2/example-functions.php:314
+msgid "Test wysiwyg"
+msgstr ""
+
+#: cmb2/example-functions.php:322
+msgid "Test Image"
+msgstr ""
+
+#: cmb2/example-functions.php:323
+msgid "Upload an image or enter a URL."
+msgstr ""
+
+#: cmb2/example-functions.php:329
+msgid "Multiple Files"
+msgstr ""
+
+#: cmb2/example-functions.php:330
+msgid "Upload or add multiple images/attachments."
+msgstr ""
+
+#: cmb2/example-functions.php:337
+msgid "oEmbed"
+msgstr ""
+
+#: cmb2/example-functions.php:338
+msgid ""
+"Enter a youtube, twitter, or instagram URL. Supports services listed at <a "
+"href=\"http://codex.wordpress.org/Embeds\">http://codex.wordpress.org/"
+"Embeds</a>."
+msgstr ""
+
+#: cmb2/example-functions.php:371
+msgid "About Page Metabox"
+msgstr ""
+
+#: cmb2/example-functions.php:402
+msgid "Repeating Field Group"
+msgstr ""
+
+#: cmb2/example-functions.php:410
+msgid "Generates reusable form entries"
+msgstr ""
+
+#: cmb2/example-functions.php:412
+msgid "Entry {#}"
+msgstr ""
+
+#: cmb2/example-functions.php:413
+msgid "Add Another Entry"
+msgstr ""
+
+#: cmb2/example-functions.php:414
+msgid "Remove Entry"
+msgstr ""
+
+#: cmb2/example-functions.php:427
+msgid "Entry Title"
+msgstr ""
+
+#: cmb2/example-functions.php:434
+msgid "Description"
+msgstr ""
+
+#: cmb2/example-functions.php:435
+msgid "Write a short description for this entry"
+msgstr ""
+
+#: cmb2/example-functions.php:441
+msgid "Entry Image"
+msgstr ""
+
+#: cmb2/example-functions.php:447
+msgid "Image Caption"
+msgstr ""
+
+#: cmb2/example-functions.php:468
+msgid "User Profile Metabox"
+msgstr ""
+
+#: cmb2/example-functions.php:475
+msgid "Extra Info"
+msgstr ""
+
+#: cmb2/example-functions.php:483
+msgid "Avatar"
+msgstr ""
+
+#: cmb2/example-functions.php:490
+msgid "Facebook URL"
+msgstr ""
+
+#: cmb2/example-functions.php:497
+msgid "Twitter URL"
+msgstr ""
+
+#: cmb2/example-functions.php:504
+msgid "Google+ URL"
+msgstr ""
+
+#: cmb2/example-functions.php:511
+msgid "Linkedin URL"
+msgstr ""
+
+#: cmb2/example-functions.php:518
+msgid "User Field"
+msgstr ""
+
+#: cmb2/example-functions.php:541
+msgid "Theme Options Metabox"
+msgstr ""
+
+#: cmb2/example-functions.php:556
+msgid "Site Background Color"
+msgstr ""
+
+#: cmb2/includes/CMB2.php:120
+msgid "Metabox configuration is required to have an ID parameter"
+msgstr ""
+
+#: cmb2/includes/CMB2.php:326
+msgid "Click to toggle"
+msgstr ""
+
+#: cmb2/includes/CMB2_Ajax.php:40
+msgid "Please Try Again"
+msgstr ""
+
+#: cmb2/includes/CMB2_Ajax.php:135 cmb2/tests/test-cmb-types.php:786
+msgid "Remove Embed"
+msgstr ""
+
+#: cmb2/includes/CMB2_Ajax.php:139 cmb2/tests/test-cmb-types.php:787
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr ""
+
+#: cmb2/includes/CMB2_Field.php:910
+msgid "Add Group"
+msgstr ""
+
+#: cmb2/includes/CMB2_Field.php:911
+msgid "Remove Group"
+msgstr ""
+
+#: cmb2/includes/CMB2_Field.php:933 cmb2/includes/CMB2_Field.php:937
+#: cmb2/tests/test-cmb-field.php:200
+msgid "None"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:86 cmb2/includes/CMB2_JS.php:119
+msgid "Clear"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:87
+msgid "Default"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:88
+msgid "Select Color"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:89
+msgid "Current Color"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:109
+msgctxt "Valid formatDate string for jquery-ui datepicker"
+msgid "mm/dd/yy"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:110
+msgid "Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:111
+msgid "Su, Mo, Tu, We, Th, Fr, Sa"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:112
+msgid "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:113
+msgid ""
+"January, February, March, April, May, June, July, August, September, "
+"October, November, December"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:114
+msgid "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:115
+msgid "Next"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:116
+msgid "Prev"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:117
+msgid "Today"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:118 cmb2/includes/CMB2_JS.php:128
+msgid "Done"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:122
+msgid "Choose Time"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:123
+msgid "Time"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:124
+msgid "Hour"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:125
+msgid "Minute"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:126
+msgid "Second"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:127
+msgid "Now"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:129
+msgctxt ""
+"Valid formatting string, as per http://trentrichardson.com/examples/"
+"timepicker/"
+msgid "hh:mm TT"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:135
+msgid "Use this file"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:136
+msgid "Use these files"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:137 cmb2/includes/CMB2_Types.php:990
+msgid "Remove Image"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:138 cmb2/includes/CMB2_Types.php:357
+#: cmb2/includes/CMB2_Types.php:1009 cmb2/tests/test-cmb-types.php:155
+#: cmb2/tests/test-cmb-types.php:163 cmb2/tests/test-cmb-types.php:735
+#: cmb2/tests/test-cmb-types.php:760
+msgid "Remove"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:139 cmb2/includes/CMB2_Types.php:1004
+#: cmb2/tests/test-cmb-types.php:736 cmb2/tests/test-cmb-types.php:761
+msgid "File:"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:140 cmb2/includes/CMB2_Types.php:1007
+#: cmb2/tests/test-cmb-types.php:734 cmb2/tests/test-cmb-types.php:759
+msgid "Download"
+msgstr ""
+
+#: cmb2/includes/CMB2_JS.php:141
+msgid "Select / Deselect All"
+msgstr ""
+
+#: cmb2/includes/CMB2_Types.php:298
+msgid "Add Row"
+msgstr ""
+
+#: cmb2/includes/CMB2_Types.php:735 cmb2/includes/CMB2_Types.php:783
+msgid "No terms"
+msgstr ""
+
+#: cmb2/includes/CMB2_Types.php:850 cmb2/tests/test-cmb-types.php:711
+#: cmb2/tests/test-cmb-types.php:737
+msgid "Add or Upload Files"
+msgstr ""
+
+#: cmb2/includes/CMB2_Types.php:912 cmb2/tests/test-cmb-types.php:747
+#: cmb2/tests/test-cmb-types.php:762
+msgid "Add or Upload File"
+msgstr ""
+
+#: cmb2/includes/helper-functions.php:249
+msgid "Save"
+msgstr ""
+
+#: wp-noteup.php:63
+msgid ""
+"Sorry but we can't activate WP NoteUp because it appears to be colliding "
+"with another theme or plugin."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP NoteUp"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/wp-noteup/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"WP NoteUp allows you to take simple notes when you're editing your Posts or "
+"Pages."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Aubrey Portwood"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://aubreypwd.com/"
+msgstr ""

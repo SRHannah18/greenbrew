@@ -1,0 +1,68 @@
+.page-template-template-home-php,
+.page-template-template-home-2015-php,
+.page-template-template-home-2015-2-php {
+	#content {
+
+		.ratereviewbeer {
+			//background: url(../../images/ipads/bg-rate-beer.jpg) no-repeat 0px 0px;
+		}
+
+	}
+}
+
+.newsletter {
+			background: url(../../images/ipads/bg-newsletter.jpg) no-repeat 0px 0px;
+		}
+
+
+.page-template-template-our-beers-php,
+.page-template-template-our-beers-2015-php,
+.page-template-template-our-beers-2015-simple-php {
+
+	#genius {
+
+		background: url(../../images/ipads/genius-lab-bg.jpg) no-repeat 0px 0px;
+		
+		#view-poster {
+			width:245px;
+			right:0px;
+		}
+
+		h2 {
+			background-size:cover;
+			width:133px;
+			height:162px;
+			margin:-14px 260px 0 10px;
+		}
+
+	} // EOF GENIUS
+
+	#seasonal ul {
+		text-align:center;
+	}
+
+	#calendar {
+		background: url(../../images/ipads/bg-rate-beer.jpg) no-repeat 0px 0px;
+	}
+
+
+
+} // EOF BEER PAGE
+
+#tribe-events-pg-template {
+
+	.news-events-header{
+		height:240px;
+	}
+
+	#event-navigation {
+		margin:0 0 18px 0;
+	}
+
+}
+
+#slide-beers,
+#slide-kegs {
+	left:0px;
+}
+

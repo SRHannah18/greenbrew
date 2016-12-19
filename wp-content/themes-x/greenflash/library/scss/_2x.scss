@@ -1,0 +1,55 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Retina Screens & Devices Stylesheet
+
+When handling retina screens you need to make adjustments, especially
+if you're not using font icons. Here you can add them in one neat
+place.
+
+******************************************************************/
+
+
+
+body #logo {
+	background:url(../../images/green-flash-logo2@2x.png);
+	background-size:155px 90px;
+}
+
+body #social-links-header #facebook {
+	background: url(../../images/social/facebook@2x.png) no-repeat;
+	&:hover,
+	&:active {background: url(../../images/social/facebook_on@2x.png) no-repeat;}
+}
+body #social-links-header #twitter {
+	background: url(../../images/social/twitter@2x.png) no-repeat;
+	&:hover,
+	&:active {background: url(../../images/social/twitter_on@2x.png) no-repeat;}
+}
+body #social-links-header #instagram {
+	background: url(../../images/social/instagram@2x.png) no-repeat;
+	&:hover,
+	&:active {background: url(../../images/social/instagram_on@2x.png) no-repeat;}
+}
+body #social-links-header #youtube {
+	background: url(../../images/social/youTube@2x.png) no-repeat;
+	&:hover,
+	&:active {background: url(../../images/social/youTube_on@2x.png) no-repeat;}
+}
+
+
+body #social-links-header #facebook,
+body #social-links-header #twitter,
+body #social-links-header #instagram,
+body #social-links-header #youtube,
+body #social-links-header #facebook:hover,
+body #social-links-header #twitter:hover,
+body #social-links-header #instagram:hover,
+body #social-links-header #youtube:hover,
+body #social-links-header #facebook:active,
+body #social-links-header #twitter:active,
+body #social-links-header #instagram:active,
+body #social-links-header #youtube:active {
+	background-size:22px 22px;
+}

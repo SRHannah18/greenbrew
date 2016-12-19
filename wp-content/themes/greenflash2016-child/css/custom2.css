@@ -1,0 +1,400 @@
+.splash-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+}
+
+#top #wrap_all #locator-section .content {
+    padding-bottom: 0px !important;
+}
+
+#top.page-id-12 .widget {
+    padding: 0 0 0 0 !important;
+}
+
+#locator-section {
+    min-height: 94px !important;
+}
+
+/*
+   TABLET ============================  
+   @media only screen and (max-width: 789px) and (min-width: 768px){
+   */
+
+@media only screen and (max-width: 789px) and (min-width: 600px) {
+  
+  
+  
+  #top #wrap_all #locator-section .content {
+    padding-bottom: 32px !important;
+  }
+  
+  #top #wrap_all .beer-finder-wrapper .contain-right {
+    clear: none !important;
+  }
+  
+  #top #wrap_all .beer-finder-wrapper h1 {
+    text-align: left !important;
+  }
+  
+  .post-entry-172:last-child {
+    padding-bottom: 40px;
+  }
+  #slide-beers {
+    margin-top: 38px !important;
+  }
+  
+  #top #wrap_all .banner .container .content .avia-image-container {
+    max-height: 258px !important;
+  }
+  
+  /*#locator-section .post-entry-12 {
+    position: relative;
+    left: -40px !important
+  }*/
+  
+  #top #wrap_all .rate-images .single-image:first-child {
+    max-width: 168px !important;
+  }
+  
+  #top #wrap_all .rate-images .single-image:last-child {
+    max-width: 238px !important;
+    top: 20px !important;
+  }
+  
+  #top #wrap_all .rate-images {
+    margin-top: 10px;
+  }
+  
+  #socket .container .copyright {
+    font-size: 11px;
+  }
+  
+  .socket_color a{
+    font-size: 11px;
+  }
+  
+  .textwidget {
+    text-align: left !important;
+  }
+  
+  .footer-email {
+    font-size: 13px;
+  }
+  
+  #top #wrap_all h1, #top #wrap_all .h1, #top #wrap_all #page404 .largest-text, .mfp-container .h1, .mfp-container h1 {
+    font-size: 65px !important;
+    line-height: 55px;
+  }
+  
+  #top #wrap_all .beer-finder-wrapper .bx-wrapper .bx-prev {
+    left: 28% !important;
+  }
+  
+  #top #wrap_all .beer-finder-wrapper .bx-wrapper .bx-next {
+    right: 28% !important;
+  }
+  
+  .responsive .container {
+      max-width: 782px !important;
+  }
+  .responsive .container {
+    max-width: 720px !important;
+  }
+  .instagram-header .h1 {
+    font-size: 69px !important;
+  }
+  
+  .discover-header .h1 {
+    font-size: 65px !important;
+  }
+  
+  #locator-section {
+    min-height: 66px !important;
+    padding-top: 10px !important;
+  }
+  
+  #top #wrap_all ul.social-icons#social-links-footer li {
+    margin: 0 5px 0 0 !important;
+  }
+  
+  #social-links-footer li a img {
+    max-width: 20px;
+  }
+  
+  #top #wrap_all div#footer h3.widgettitle, #top #wrap_all div#footer h3.new-widgettitle {
+    font-size: 21px;
+  }
+  
+  #top #wrap_all .gform_wrapper#gform_wrapper_1 .gfield_checkbox li label {
+    margin: 0px 11px 0 0px;
+  }
+  
+  .responsive .main_menu {
+    display: block !important;
+  }
+  
+}
+
+
+ /* MOBILE ============================ */
+
+@media screen and (max-width: 700px) {
+  
+  #top #wrap_all .gform_wrapper#gform_wrapper_1 div.ginput_container input[type='text'] {
+    width: calc(100% - 67px) !important;
+  }
+  
+  /* splash ============================ */
+  
+  .age-gate-div {
+    margin: 0 auto;
+    width: 311px;
+    height: 207px;
+    display: none;
+    position: relative;
+  }
+  .main-text {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .main-text img {
+    width: 100%; 
+  }
+  
+  .yes-div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    height: 59px;
+  }
+  .yes-div a, .no-div a{
+    display: block; 
+  }
+  .yes-div a{
+    background: url('../images/yes-no-retina.png') no-repeat 1px -67px;
+    background-size: 300px;
+    display:block;
+    width:150px;
+    height:50px;
+    text-indent: -999999999px;
+  }
+  .yes-div a:hover{
+    background: url('../images/yes-no-retina.png') no-repeat 1px -13px;
+    background-size: 300px;
+  }
+  .no-div {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 59px;
+  }
+  .no-div a{
+    background: url('../images/yes-no-retina.png') no-repeat -152px -67px;
+    background-size: 300px;
+    display:block;
+    width:150px;
+    height:50px;
+    text-indent: -999999999px;
+  }
+  .no-div a:hover{
+    background: url('../images/yes-no-retina.png') no-repeat -152px -13px;
+    background-size: 300px;
+  }
+  
+  
+  .age-gate-table {
+    max-width: 300px !important;
+  }
+  .splash-row-01 {
+      font-family: "SignPainterHouseScript", cursive;
+      border-top: 4px solid #fff !important;
+      border-bottom: 4px solid #fff !important;
+      padding: 0 20px;
+      line-height: 25px !important;
+      font-size: 25px !important;
+      color: #fff;
+  }
+  .splash-row-02 {
+      line-height: 1 !important;
+      font-size: 58px !important;
+      padding-top: 20px !important;
+  }
+  .splash-row-02 div{
+    width: 100%;
+    line-height: 58px;
+    text-align: center;
+  }
+  .splash-row-03-table {
+    max-width: 95%;
+  }
+  .splash-row-03{
+    padding: 0 !important;
+  }
+  .splash-row-03-col-01 {
+    vertical-align: middle !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+  }
+  .splash-row-03-col-01 div{
+      font-family: "SignPainterHouseScript", cursive !important;
+      border-top: 4px solid #fff !important;
+      border-bottom: 4px solid #fff !important;
+      font-size: 25px !important;
+      color: #fff !important;
+      line-height: .5 !important;
+      padding: 10px 0 !important;
+      text-align: center;
+  }
+  .splash-row-03-col-02 {
+      font-family: Franchise, Bebas, BebasNeue, "Bebas Neue", sans-serif !important;
+      font-size: 53px !important;
+      letter-spacing: 0 !important;
+      text-transform: uppercase !important;
+      display: inline-block !important;
+      line-height: .5 !important;
+      color: #fff;
+      padding: 0px !important;
+      padding-top: 12px !important;
+  }
+  
+  .splash-row-04-col-01,.splash-row-04-col-03 {
+      text-transform: uppercase;
+      font-family: "RockwellStd-ExtraBold", "Open Sans", Helvetica, Arial, sans-serif;
+      font-kerning: normal;
+      padding-top: 30px !important;
+  }
+  .splash-row-04-col-01 a, .splash-row-04-col-03 a {
+      text-transform: uppercase;
+      font-family: "RockwellStd-ExtraBold", "Open Sans", Helvetica, Arial, sans-serif;
+      font-kerning: normal;
+      line-height: .5;
+      font-size: 61px !important;
+      color: #fff;
+      /* padding-top: 26px !important; */
+  }
+  .splash-row-04-col-01 a:hover, .splash-row-04-col-03 a:hover {
+    text-decoration: none;
+    color: #b2cf42; 
+  }
+  .splash-row-04-col-02{
+      vertical-align: middle !important;
+      padding: 0;
+      box-sizing: border-box;
+      padding-left: 10px !important;
+      padding-right: 10px !important;    
+  }
+  .splash-row-04-col-02 div{
+      font-family: "SignPainterHouseScript", cursive !important;
+      border-top: 4px solid #fff !important;
+      border-bottom: 4px solid #fff !important;
+      font-size: 25px !important;
+      color: #fff !important;
+      line-height: .5 !important;
+      text-align: center;
+      padding: 12px 0;
+  }
+  
+  /* end splash ============================ */
+  
+  #top #wrap_all .fullsize .template-blog h1.post-title {
+    margin-bottom: 9px;
+    text-align: left !important;
+  }
+  
+  #get-involved-header .container .content {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+  }
+  
+  #text-5 {
+    overflow: visible !important;
+  }
+  #locator-section {
+    min-height: 112px !important;
+    padding-top: 15px !important;
+  }
+  
+  h1.single-beer-title {
+    text-align: left !important;
+    line-height: 38px !important;
+  }
+  
+  /*
+  #top #wrap_all h2 { */
+  .discover-header .h1 {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+  
+  .gform_wrapper ul.gfield_checkbox li {
+    margin-right: -1px;
+  }
+  
+  .select-gray{
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+    font-family: "Futura Condensed", "Open Sans", Helvetica, Arial, sans-serif !important;
+    background-color: #c8c6c3 !important;
+    box-shadow: 0px 0px 0px!important;
+    border-radius: 0 !important;
+    border: 0 none !important;
+  }
+  
+#locator-section .container {
+
+}
+
+  h2 {
+    /* font-family: 'Futura Condensed', sans-serif !important; */
+  }
+  
+  #top #wrap_all div#footer h3.widgettitle, #top #wrap_all div#footer h3.new-widgettitle {
+    max-width: 100%;
+  }
+  
+  #text-3,#text-6,#text-7 {
+    text-align: left;
+  }  
+  #top #wrap_all .supper-club-img-wrap {
+    margin-top: 60px;
+    margin-bottom: 65px;
+  }
+  #top #wrap_all .supper-club-img-wrap.last-item {
+    margin-bottom: 30px;
+  }
+  .banner #top #wrap_all #main .avia-no-border-styling {
+    border: none;
+    min-height: 265px;
+  }
+  #top #wrap_all .banner .container .content .avia-image-container > div {
+    height: 265px;
+  }
+  #top #wrap_all .banner .container .content .avia-image-container {
+    height: 265px;
+  }
+  
+  
+  .girl .avia-image-container-inner img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+  }
+  
+  
+  /*
+  @media only screen and (max-width: 767px)
+  #top #wrap_all .banner .container .content .avia-image-container {
+      max-width: 288px;
+  }*/
+
+}

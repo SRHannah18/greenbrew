@@ -1,0 +1,1384 @@
+#top #wrap_all .gform_wrapper .gfield_radio li {
+    display: inline !important;
+}
+
+.btn-white {
+  color: #fff;
+  border-color: #fff;
+}
+
+#top #wrap_all .gform_wrapper div.ginput_container {
+    margin: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+.gform_wrapper ul.gfield_checkbox li {
+    display: inline !important;
+}
+
+#top form{
+    margin-bottom: 0px;
+}
+#top #wrap_all input#tribe-bar-geoloc{
+    margin-bottom: 0px;
+}
+
+.tribe-events-back {  
+  display: none;
+}
+.tribe-events-event-meta:first-child {
+  border: 0px !important;
+  margin: 0px -4% 30px 0 !important;
+}
+
+#tribe-events-content ul.tribe-events-sub-nav li {
+  display: inline !important;
+}
+
+#top #searchform .ajax_search_response, .ajax_load { display: none !important; }
+
+.gform_wrapper .gform_body {
+    width: calc(100% + -17px) !important;
+}
+
+.tchest-2016 {
+  text-align: center;
+}
+
+.white-btn-wrapper {
+  padding-top: 20px;
+}
+
+.white-btn, .white-btn:hover {
+  padding: 10px 30px !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
+  text-decoration: none !important;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   /* IE10+ specific styles go here */  
+  
+  #top #wrap_all .gform_wrapper .gfield_radio li {
+    display: inline !important;
+  }
+  
+  .splash-row-01 {
+    text-rendering: optimizeSpeed;
+  }
+  .splash-row-02 div{
+     padding-bottom: 20px !important;
+  }
+   
+  .splash-row-04-col-01,.splash-row-04-col-03 {
+    padding-top: 10px !important;
+  }
+   
+  .splash-row-04-col-02{
+      padding-top: 25px !important;
+  }
+  
+  #top #wrap_all .gform_wrapper .gfield_checkbox li input[type='checkbox'] + label {
+    margin-top: -6px !important;
+  }
+
+   
+}
+
+/* splash ============================ */
+.splash-wrapper  {
+  margin-top: 120px;
+}
+.age-gate-div {
+  margin: 0 auto;
+  width: 622px;
+  height: 413px;
+  display: none;
+  position: relative;
+}
+.main-text {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.main-text img {
+  width: 100%; 
+}
+
+.yes-div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  height: 116px;
+}
+.yes-div a, .no-div a{
+  display: block; 
+}
+.yes-div a{
+  background: url('../images/yes-no-retina.png') no-repeat -2px -137px;
+  background-size: 600px;
+  display:block;
+  width:300px;
+  height:110px;
+  text-indent: -999999999px;
+}
+.yes-div a:hover{
+  background: url('../images/yes-no-retina.png') no-repeat -2px -27px;
+  background-size: 600px;
+}
+.no-div {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 117px;
+}
+.no-div a{
+  background: url('../images/yes-no-retina.png') no-repeat -304px -137px;
+  background-size: 600px;
+  display:block;
+  width:300px;
+  height:110px;
+  text-indent: -999999999px;
+}
+.no-div a:hover{
+  background: url('../images/yes-no-retina.png') no-repeat -304px -27px;
+  background-size: 600px;
+}
+
+.splash-align-middle {
+  vertical-align: middle !important;
+}
+.age-gate-table {
+  max-width: 600px;
+  margin-top: 120px;
+}
+.splash-no-padding {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.splash-row-01 {
+    font-family: "SignPainterHouseScript", cursive;
+    border-top: 4px solid #fff !important;
+    border-bottom: 4px solid #fff !important;
+    padding: 0 20px;
+    line-height: 1;
+    font-size: 49px !important;
+    color: #fff;
+}
+.splash-row-02 {
+    text-transform: uppercase;
+    font-family: "RockwellStd-ExtraBold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-kerning: normal;
+    font-size: 110px !important;
+    color: #fff;
+    line-height: 80px;
+    padding-top: 30px !important;
+}
+.splash-row-02 div{
+  width: 100%;
+  line-height: 90px;
+  text-align: center;
+}
+.splash-row-03-table {
+  max-width: 95%;
+  margin-bottom: 5px !important;
+}
+.splash-row-03{
+  padding: 0 !important;
+}
+.splash-row-03-col-01 {
+  vertical-align: middle !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  padding-left: 20px !important;
+  padding-right: 10px !important;
+}
+.splash-row-03-col-01 div{
+    font-family: "SignPainterHouseScript", cursive !important;
+    border-top: 4px solid #fff !important;
+    border-bottom: 4px solid #fff !important;
+    font-size: 49px !important;
+    color: #fff !important;
+    line-height: .5 !important;
+    padding: 20px 0 !important;
+    text-align: center;
+}
+.splash-row-03-col-02 {
+    font-family: Franchise, Bebas, BebasNeue, "Bebas Neue", sans-serif !important;
+    font-size: 110px !important;
+    letter-spacing: 0 !important;
+    text-transform: uppercase !important;
+    display: inline-block !important;
+    line-height: .5 !important;
+    color: #fff;
+    padding: 0px !important;
+    padding-top: 12px !important;
+}
+
+.splash-row-04-col-01,.splash-row-04-col-03 {
+    text-transform: uppercase;
+    font-family: "RockwellStd-ExtraBold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-kerning: normal;
+    padding-top: 37px !important;
+}
+.splash-row-04-col-01 a, .splash-row-04-col-03 a {
+    text-transform: uppercase;
+    font-family: "RockwellStd-ExtraBold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-kerning: normal;
+    line-height: .5;
+    font-size: 110px !important;
+    color: #fff;
+    /* padding-top: 26px !important; */
+}
+.splash-row-04-col-01 a:hover, .splash-row-04-col-03 a:hover {
+  text-decoration: none;
+  color: #b2cf42; 
+}
+.splash-row-04-col-02{
+    vertical-align: middle !important;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: 20px !important;
+    padding-right: 20px !important;    
+}
+.splash-row-04-col-02 div{
+    font-family: "SignPainterHouseScript", cursive !important;
+    border-top: 4px solid #fff !important;
+    border-bottom: 4px solid #fff !important;
+    font-size: 49px !important;
+    color: #fff !important;
+    line-height: .5 !important;
+    text-align: center;
+    padding: 25px 0;
+}
+/* end splash ================================================ */
+
+.events-list .thin-bar .content {
+    padding-top: 34px !important;
+}
+
+.icon-row {
+  padding-top: 10px;
+}
+
+.icon-can {
+  max-height: 51px !important;
+  width: auto !important;
+}
+
+.icon-bottle {
+  max-height: 78px !important;
+  width: auto !important;
+}
+
+.icon-bottle-22oz {
+  max-height: 110px !important;
+  width: auto !important;
+}
+
+
+.icon-bottle-750ml {
+  max-height: 119px !important;
+  width: auto !important;
+}
+
+.icon-keg {
+  max-height: 53px !important;
+  width: auto !important;
+}
+
+#top #wrap_all .beer-finder-wrapper .contain-right {
+  padding-right: 8% !important;
+}
+
+#top #wrap_all #share-experience .content {
+  padding-bottom: 36px;
+}
+
+#top #wrap_all #share-experience .instagram-header {
+  padding-bottom: 37px;
+}
+
+#top #wrap_all .beer-finder-wrapper .padding-left-20 {
+  padding-left: 7% !important;
+}
+
+#top #wrap_all .taste-enlightenment-header h2 {
+  line-height: .6;
+}
+#top #wrap_all .sp-text {
+  margin-bottom: 3.5px;
+}
+.logo {
+  background: #101417;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+#av_gmap_1 {
+  padding-bottom: 925px !important;
+}
+
+.banner {
+  overflow: hidden;
+}
+
+.brewery-tour-sub p:first-child {
+  margin: 39px 0 0 0 !important;
+
+}
+
+
+
+
+.brewery-tour-sub p:nth-child(2) {
+  margin: 7px 0 0 0 !important;
+}
+
+
+.brewery-tour-sub p:nth-child(3) {
+  margin: 1px 0 20px 0 !important;
+}
+
+
+.avia-image-container.avia-align-center {
+}
+
+.taste-enlightenment-header .sp-text {
+  margin-bottom: 0 !important;
+}
+
+#top #wrap_all form#the_beer_finder input#locator-zip-code {
+  line-height: 26px;
+  font-family: "Futura Condensed", "Open Sans", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+}
+
+
+.avia-mozilla #top #wrap_all .btn.btn-small {
+  line-height: 26px;
+}
+
+
+#top #wrap_all .gform_wrapper#gform_wrapper_1 .gfield_checkbox li label {
+      padding-top: 1px !important;
+}
+
+
+#top #wrap_all .gform_wrapper div.ginput_container input[type='text'] {
+  font-family: "Futura Condensed", "Open Sans", Helvetica, Arial, sans-serif !important;
+  font-weight: normal;
+}
+
+
+
+#field_3_3, #field_3_8 {
+  display: inline-block !important; 
+}
+
+#top #wrap_all #contact-main .container .flex_column.av_one_half:nth-child(2) p:nth-child(4) {
+  margin-top: 17px!important;
+}
+
+#top #wrap_all #contact-main .container .flex_column.av_one_half:nth-child(2) p {
+
+  margin-bottom: 5px;
+}
+#top #wrap_all .container {
+  /*box-sizing: content-box;*/  /*commented out to prevent header and footer responsive break as well as alignment issues on main beer page*/
+}
+
+.gform_wrapper .top_label li.gfield.gf_right_half {
+  display: block !important;
+}
+
+p + h3 {
+  margin-top: 25px;
+}
+
+#top #wrap_all .gform_wrapper .gfield_checkbox li input[type="checkbox"] + label {
+  padding-left: 28px !important;
+  padding-bottom: 4px !important;
+  margin-bottom: 4px;
+}
+
+#top #wrap_all .gform_wrapper .gfield_radio li input[type=radio] + label {
+  padding-left: 28px !important;
+  padding-bottom: 4px !important;
+  margin-bottom: 4px;
+}
+
+.gform_wrapper ul.gfield_checkbox li {
+  margin-right: 30px;
+}
+
+.gform_wrapper ul.gfield_checkbox li {
+  display: inline-block;
+}
+
+.rate-review-section, .rate-images {
+  box-sizing: content-box !important;
+}
+
+#top #wrap_all #beer-calendar .btn-wrap {
+  top: -4px !important;
+}
+
+.bx-prev {
+  padding-right: 15px;
+}
+
+.bx-next {
+  padding-left: 15px;
+}
+
+
+
+#top #wrap_all .splash-wrap .logo {
+  height: 114px !important;
+}
+
+#top #header_main > .container {
+  height: 114px !important;
+  line-height: 114px !important;
+}
+
+#splash-main {
+  height: 100vh;
+  display: table;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-size: cover;
+}
+
+.wrapped-up {
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  transform: translateY(50%);
+  -webkit-tranform: translateY(50%);
+}
+
+#top #wrap_all #single-beer-main .single-option img { 
+  width: 50px;
+}
+
+
+
+#top #wrap_all #beer-locator form#the_beer_finder input#locator-zip-code {
+  line-height: 54px;
+}
+
+#top #wrap_all .banner .container .content .avia-image-container > div img {
+  max-height: 9em;
+}
+
+#top #wrap_all .splash-wrap img {
+  max-height: 72px;
+}
+
+#top #wrap_all .splash-wrap .logo {
+  height: auto;
+}
+
+.logo img {
+  max-height: 72px;
+}
+
+#top #wrap_all #splash-main .splash-rw.lower-rw {
+  line-height: 80px !important;
+}
+#top #wrap_all #splash-main .first-rw {
+  padding: 40px 0 0 0 !important;
+}
+
+  .chosen-container {
+    width:100% !important;
+  }
+
+
+.splash-rw .lower-rw:last-child {
+
+}
+  #top #wrap_all #splash-main .splash-sp.third-sp {
+   font-size: 57px;
+margin-left: 15px;
+margin-right: 15px;
+line-height: 67px;
+margin-top: 1px;
+
+  }
+
+  #top #wrap_all .beer-types ul > li > a:hover img { 
+    margin-top:0 !important;
+  }
+
+  #top #wrap_all #splash-main .splash-sp.second-sp {
+    margin-left: 0px !important;
+  }
+
+  #top #wrap_all #splash-main .middle-line {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+#top #wrap_all #splash-main .lower-section {
+ height: 77px !important;
+}
+
+#top #wrap_all #splash-main .splash-rw {
+  line-height: .5;
+  padding: 15px 0 15px 0;
+}
+
+
+
+
+
+       #top #wrap_all #splash-main .splash-fran {
+          padding-top: 5px!important;
+      }
+
+      #top #wrap_all #splash-main .splash-sp.first-sp { 
+        margin-bottom: 0;
+      }
+
+      .beer-finder-button a {
+        padding: 0 43.5px !important;
+      }
+
+.brewery-tour-title {
+  margin-top: 39px !important;
+}
+
+#involved-carousel .owl-controls {
+  margin-bottom: 0;
+}
+
+.thin-bar .content {
+  padding-top: 64px !important
+}
+
+#involved-carousel .owl-controls .owl-nav .owl-prev {
+  left: 35px!important;
+  right: auto!important;
+}
+
+#involved-carousel .owl-controls .owl-nav .owl-next {
+  right: 35px!important;
+  left: auto!important;
+}
+
+@media screen and (max-width: 700px) {
+  #top #wrap_all .beer-finder-wrapper .contain-right {
+  padding-right: 0 !important;
+}
+
+#top #wrap_all .beer-finder-wrapper .padding-left-20 {
+  padding-left: 0 !important;
+}
+
+ .avia_textblock h2, .avia_textblock p {
+  padding: 0;
+}
+
+
+} 
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  
+
+ #locator-section {
+    min-height: 112px !important;
+    padding-top: 10px !important;
+}
+
+.beer-finder-button a {
+  padding: 0 24px !important;
+}
+
+#top #wrap_all #beer-locator form#the_beer_finder input#locator-zip-code {
+  line-height: 32px;
+}
+  .el_after_av_textblock ul.social-icons {
+    text-align: left !important; 
+  }
+
+#top #wrap_all #splash-main .splash-sp.second-sp {
+  line-height: 33px;
+}
+
+      #top input[type="text"] {
+       font-size: 18px;
+      }
+
+      #top #wrap_all #splash-main .splash-fran {
+        padding-top: 0 !important;
+      }
+
+      #top #wrap_all #splash-main .splash-sp.third-sp {
+        line-height: 33px !important;
+      }
+
+  #top #wrap_all .beer-finder-wrapper .find-beer-input {
+    margin-bottom: 26px !important;
+    font-size: 18px !important;
+}
+
+#top #wrap_all .about-section p {
+  text-align: left;
+}
+#top #wrap_all .about-section h2 {
+  text-align: justify;
+}
+
+  .instagram-single a .instagram-inner-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 36px;
+    width: 36px;
+    opacity: 74%;
+    border-radius: 50%;
+    line-height: 36px;
+}
+
+  #top #wrap_all #splash-main .splash-sp.third-sp {
+ 
+    margin-top: -17px;
+}
+
+  #top #wrap_all #splash-main .splash-rw.lower-rw {
+    line-height: 20px !important;
+    padding: 0 !important;
+}
+
+  #top #wrap_all #splash-main .splash-sp.third-sp {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+  #top #wrap_all #splash-main .first-rw {
+    padding: 20px 0 0 0 !important;
+}
+
+.wrapped-up {
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding-top: 57px;
+  position: absolute;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+}
+
+
+  #top #wrap_all #beer-calendar .btn-wrap {
+  top: -1px !important;
+}
+#top #wrap_all .beer-finder-wrapper .contain-right {
+  clear: both;
+}
+
+.options {
+  text-align: left !important; 
+}
+
+  #top #wrap_all .beer-finder-wrapper .bx-wrapper .bx-next {
+  right: 30% !important;
+
+}
+
+#top #wrap_all .beer-finder-wrapper .bx-wrapper .bx-prev {
+  left: 30% !important;
+
+}
+
+#the_beer_finder {
+  /*width: auto !important;*/
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+
+  #top #wrap_all #share-experience .instagram-header {
+  padding-bottom: 30px;
+}
+
+  .av_one_third {
+  }
+  .av_three_fourth {
+    text-align: left !important;
+  }
+
+   .av_three_fourth h2 {
+    text-align: left !important;
+  }
+
+  .options-cat-4 {
+    text-align: left !important;
+  }
+  .chosen-container {
+    width:163px !important;
+  }
+#top #wrap_all ul.social-icons {
+  text-align: center;
+}
+  .tribe-events-sub-nav {
+    width: 100% !important;
+  }
+  #top #wrap_all #splash-main .splash-sp.second-sp {
+    padding: 0 15px !important;
+    font-size: 30px !important;
+  }
+
+  #top #wrap_all #splash-main .splash-sp.first-sp {
+    padding: 0 10px !important;
+
+  }
+
+  #top #wrap_all #splash-main .splash-sp.third-sp {
+    margin-right: 5px !important;
+    margin-left:  5px !important; 
+  }
+
+  #top #wrap_all ul.social-icons {
+    margin-bottom: -7px;
+  }
+
+  #top #wrap_all #splash-main .splash-fran {
+      font-size: 50px;
+      letter-spacing: -.01em;
+      text-transform: uppercase;
+      display: inline-block;
+      line-height: 40px;
+      padding-top: 3px;
+    }
+.textwidget {
+  text-align: justify !important;
+}
+  .visitUs {
+    text-align: justify !important;
+  }
+
+  #top #wrap_all #locator-section .content {
+    padding-top: 5px !important;
+    margin-bottom: -5px;
+    padding-bottom: 0px !important;
+  }
+  #top #wrap_all #taste-enlightenment .content {
+    padding-top: 27px !important;
+  }
+
+  .avia-section {
+    min-height: 85px !important;
+  }
+
+  #top #wrap_all .rate-images .single-image:first-child {
+    max-width: 100px!important;
+    padding-bottom: 0px !important;
+  }
+
+
+
+  #top #wrap_all .rate-images .single-image:last-child {
+      max-width: 130px !important;
+      top: 12px !important;
+  }
+
+  .responsive .main_menu {
+    display: none !important;
+  }
+  #top #wrap_all .banner .container .content .avia-image-container {
+  max-height: 155px !important;
+}
+
+  #top #wrap_all .beer-finder-wrapper h1 {
+    text-align: justify !important;
+  }
+
+  #top #wrap_all .beer-finder-wrapper .beer-finder-form-wrapper {
+    text-align: justify!important;
+  }
+
+  .chosen-container {
+    width:100% !important;
+  }
+  .logo {
+    height: 100% !important;
+  }
+.responsive .logo a {
+    display: table-cell !important;
+    vertical-align: middle !important;
+  }
+  .responsive #top .logo {
+    height: 100% !important;
+  }
+
+  #top #wrap_all #main .search_form_field #searchform > div {
+  max-width: 350px !important;
+  line-height: 34px !important;
+  height: 36px !important;
+}
+
+  #top #wrap_all #main .search_form_field #searchform > div #s {
+    font-size: 16px !important;
+    height: 32px !important;
+    line-height: 30px;
+    text-indent: 12px !important;
+    width: calc(100% - 80px);
+
+  }
+
+  .button, #top #wrap_all #main .search_form_field #searchform > div #searchsubmit {
+    transition: background .5s ease-out, color .5s ease-out !important;
+    -webkit-transition: background .5s ease-out, color .5s ease-out !important;
+  }
+
+
+  #top #wrap_all #taste-enlightenment .content {
+    padding-bottom: 0px;
+    padding-top: 40px;
+  }
+
+  #top #wrap_all .taste-enlightenment-header h2 {
+    line-height: 1 !important;
+  }
+
+#top #wrap_all #share-experience .content {
+  padding-top: 36px;
+  padding-bottom: 24px;
+}
+  #top #wrap_all .beer-finder-wrapper .contain-right {
+  padding-right: 3%;
+}
+
+#top #wrap_all .beer-finder-wrapper .padding-left-20 {
+  padding-left: 3%;
+}
+
+
+   
+
+        #top #wrap_all .beer-types .constant-text {
+          margin-bottom: 0;
+
+      }
+
+    
+
+        #slide-kegs, #slide-cellar-3 {
+          margin-top: 35px;
+        }
+        #slide-beers {
+          margin-top: -50px;
+        }
+
+        #top #wrap_all #splash-main .middle-line {
+          margin-bottom: 11px;
+        }
+
+        .partnersHead h3, .visitUs h3 {
+          margin-top: 3px;
+        }
+
+        .girl {
+          max-width: none !important;
+        }
+
+        .findBar .avia-image-container-inner img {
+          max-height: 50% !important;
+        }
+}
+
+ .girl .avia-image-container-inner img {
+          width: auto;
+          height: 101%;
+          max-width: none;
+          max-height: none !important;
+        }
+
+#av_section_5 {
+  min-height: auto;
+}
+
+#top #wrap_all .beer-types .constant-text .sp-text {
+  margin-bottom: 3.5px;
+}
+
+#after_section_8 {
+  display: none;
+}
+
+#menu-item-10546 {
+  display: none;
+}
+
+#top #wrap_all #tribe-events-footer .tribe-events-sub-nav li.tribe-events-nav-previous a::before {
+    content: "" !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+#top #wrap_all #tribe-events-footer .tribe-events-sub-nav li.tribe-events-nav-previous a::after {
+    content: "" !important;
+    padding-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+#top #wrap_all #tribe-events-footer .tribe-events-sub-nav li.tribe-events-nav-next a::after {
+    content: "" !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+#top #wrap_all #tribe-events-footer .tribe-events-sub-nav li.tribe-events-nav-next a::before {
+    content: "" !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.page-id-168 .avia_textblock p {
+  line-height: 20px;
+}
+
+.page-id-168 .avia_textblock p .btn-large {
+  margin-top: 40px;
+}
+
+    .tasting_room .avia-image-container-inner img {
+          max-height: 125% !important;
+
+        }
+
+
+#top #wrap_all .rate-images .single-image:last-child {
+    max-width: 162px;
+    position: relative;
+    top: 4px;
+}
+#top #wrap_all .rate-images .single-image:first-child {
+    padding-bottom: 18px;
+}
+
+.brewery_tours {
+  text-align: left !important;
+}
+
+
+
+#top #wrap_all .beer-finder-wrapper .find-beer-input {
+    margin-bottom: 26px !important;
+    font-size: 18px !important;
+}
+
+#top #wrap_all .beer-finder-wrapper .bx-wrapper {
+    margin-top: 67px !important;
+}
+
+#top #wrap_all .gform_wrapper .gfield_checkbox li input[type="checkbox"] + label {
+    font-size: 12px !important;
+    padding-top: 4px !important;
+}
+
+#top #wrap_all .gform_wrapper .gfield_radio li input[type=radio] + label {
+    font-size: 12px !important;
+    padding-top: 4px !important;
+}
+
+p {
+  margin: 20px 0 20px 0;
+}
+
+#top #wrap_all .taste-room-section p:first-of-type {
+  margin-top: 10px;
+}
+
+
+#top #wrap_all .above-main-menu .search-form #searchsubmit {
+    background: #101417 !important;
+}
+#top #wrap_all .above-main-menu .search-form #searchsubmit:hover {
+    background: #fff !important;
+    color: #101417 !important;
+}
+
+#top #wrap_all #splash-main .splash-sp.second-sp {
+  margin-right: 0;
+  margin-bottom: 11px;
+}
+
+#top #wrap_all #main .search_form_field #searchform > div #s {
+    text-transform: uppercase;
+    font-size: 100%;
+    padding: 0;
+    border: black 2px solid !important;
+    background: #fff;
+    color: #101417;
+    max-width: 294px;
+    text-indent: 16px;
+    vertical-align: bottom;
+    float: left;
+    font-family: "Futura Condensed", "Open Sans", Helvetica, Arial, sans-serif;
+    text-indent: 25px;
+    height: 54px;
+    font-size: 26px;
+}
+#top .input-text, #top input[type="text"], #top input[type="input"], #top input[type="password"], #top input[type="email"], #top input[type="number"], #top input[type="url"], #top input[type="tel"], #top input[type="search"], #top textarea, #top select {
+  font-family: "Futura Condensed", "Open Sans", Helvetica, Arial, sans-serif !important;
+}
+
+#top #wrap_all #splash-main .splash-rw.lower-rw:last-child {
+  line-height: 20px !important
+}
+
+
+
+#top #wrap_all #featured-beers a:hover img {
+  opacity: 1 ;
+}
+
+#top #wrap_all #featured-beers a:hover {
+  opacity: .5 ;
+}
+
+#top #wrap_all #splash-main .content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.page-template-template-splash-php {
+  height: 100vh;
+}
+
+
+#top #wrap_all .rate-images .single-image a:hover img {
+  opacity: 1;
+}
+
+
+#top #wrap_all .rate-images .single-image:hover {
+  opacity: .5 ;
+}
+
+#top #wrap_all .rate-images .single-image {
+  opacity: 1 ;
+}
+
+#top #wrap_all .rate-images .single-image{
+    transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+}
+
+#top #wrap_all #featured-beers a {
+  transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+}
+
+.owl-carousel .owl-controls .owl-nav > div.owl-prev {
+    margin-top: -25px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+
+
+/*#locator-section {
+  min-height: 80px;
+}*/
+
+#top #wrap_all #main .search_form_field #searchform > div #searchsubmit {
+  clear: both;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#top #wrap_all #main .search_form_field #searchform > div {
+  max-width: 415px;
+  line-height: 54px;
+  height: 54px;
+}
+
+.owl-carousel .owl-controls .owl-nav > div.owl-prev {
+  left: 11.86% !important;
+  right: auto !important;
+}
+
+.owl-carousel .owl-controls .owl-nav > div.owl-next {
+  right: 11.86% !important;
+  left: auto !important;
+}
+
+
+
+
+.owl-carousel .owl-controls .owl-nav > div.owl-next, .owl-carousel .owl-controls .owl-nav > div.owl-prev {
+    margin-top: 0px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+#top #wrap_all .beer-types ul > li > a img {
+    -webkit-transition: 0.25s ease-out all !important;
+    -ms-transition: 0.25s ease-out all !important;
+    -moz-transition: 0.25s ease-out all !important;
+    -o-transition: 0.25s ease-out all !important;
+    transition: 0.25s ease-out all !important;
+}
+
+#top #wrap_all .above-main-menu .partner-login-wrap {
+    padding-top: 2px;
+}
+::-webkit-input-placeholder {
+   color: #000;
+   text-transform: uppercase;
+   font-family: "Futura Condensed", "Open Sans", Helvetica, Arial, sans-serif !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;
+   text-transform: uppercase; 
+   font-family: "Futura Condensed", "Open Sans", Helvetica, Arial, sans-serif !important;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;
+   text-transform: uppercase; 
+   font-family: "Futura Condensed", "Open Sans", Helvetica, Arial, sans-serif !important;
+}
+:-ms-input-placeholder {  
+   color: #000;
+   text-transform: uppercase;
+   font-family: "Futura Condensed", "Open Sans", Helvetica, Arial, sans-serif !important;
+}
+.find-beer-input {
+   color: #000 !important;
+   text-transform: uppercase !important;
+   font-size: 18px !important;
+   font-family: "Futura Condensed", "Open Sans", Helvetica, Arial, sans-serif !important;
+}
+#top #wrap_all .beer-finder-results .bx-wrapper ul li {
+  text-transform: capitalize;
+}
+li.to-left {
+  float: left;
+}
+li#field_4_28 {
+	clear: both !important;
+}
+.flex_column.av_one_fourth.el_before_av_one_half.first {
+  margin-top: 15px;
+}
+.tribe-events-calendar {
+	border: none !important;
+}
+div#tribe-events-header {
+	margin-top: -60px;
+    margin-bottom: 40px !important;
+}
+
+.tribe-events-month #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next a, .tribe-events-month #tribe-events-header .tribe-events-sub-nav li, .tribe-events-month #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next a, .tribe-events-month #tribe-events-header .tribe-events-sub-nav li a, .tribe-events-month #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next a, .tribe-events-month #tribe-events-header .tribe-events-sub-nav {
+    animation : none;
+    animation-delay : 0;
+    animation-direction : normal;
+    animation-duration : 0;
+    animation-fill-mode : none;
+    animation-iteration-count : 1;
+    animation-name : none;
+    animation-play-state : running;
+    animation-timing-function : ease;
+    backface-visibility : visible;
+    background : 0;
+    background-attachment : scroll;
+    background-clip : border-box;
+    background-color : transparent;
+    background-image : none;
+    background-origin : padding-box;
+    background-position : 0 0;
+    background-position-x : 0;
+    background-position-y : 0;
+    background-repeat : repeat;
+    background-size : auto auto;
+    border : 0;
+    border-style : none;
+    border-width : medium;
+    border-color : inherit;
+    border-bottom : 0;
+    border-bottom-color : inherit;
+    border-bottom-left-radius : 0;
+    border-bottom-right-radius : 0;
+    border-bottom-style : none;
+    border-bottom-width : medium;
+    border-collapse : separate;
+    border-image : none;
+    border-left : 0;
+    border-left-color : inherit;
+    border-left-style : none;
+    border-left-width : medium;
+    border-radius : 0;
+    border-right : 0;
+    border-right-color : inherit;
+    border-right-style : none;
+    border-right-width : medium;
+    border-spacing : 0;
+    border-top : 0;
+    border-top-color : inherit;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+    border-top-style : none;
+    border-top-width : medium;
+    bottom : auto;
+    box-shadow : none;
+    box-sizing : content-box;
+    caption-side : top;
+    clear : none;
+    clip : auto;
+    color : inherit;
+    columns : auto;
+    column-count : auto;
+    column-fill : balance;
+    column-gap : normal;
+    column-rule : medium none currentColor;
+    column-rule-color : currentColor;
+    column-rule-style : none;
+    column-rule-width : none;
+    column-span : 1;
+    column-width : auto;
+    content : normal;
+    counter-increment : none;
+    counter-reset : none;
+    cursor : auto;
+    direction : ltr;
+    display : inline;
+    empty-cells : show;
+    float : none;
+    font : normal;
+    font-family : inherit;
+    font-size : medium;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : normal;
+    height : auto;
+    hyphens : none;
+    left : auto;
+    letter-spacing : normal;
+    line-height : normal;
+    list-style : none;
+    list-style-image : none;
+    list-style-position : outside;
+    list-style-type : disc;
+    margin : 0;
+    margin-bottom : 0;
+    margin-left : 0;
+    margin-right : 0;
+    margin-top : 0;
+    max-height : none;
+    max-width : none;
+    min-height : 0;
+    min-width : 0;
+    opacity : 1;
+    orphans : 0;
+    outline : 0;
+    outline-color : invert;
+    outline-style : none;
+    outline-width : medium;
+    overflow : visible;
+    overflow-x : visible;
+    overflow-y : visible;
+    padding : 0;
+    padding-bottom : 0;
+    padding-left : 0;
+    padding-right : 0;
+    padding-top : 0;
+    page-break-after : auto;
+    page-break-before : auto;
+    page-break-inside : auto;
+    perspective : none;
+    perspective-origin : 50% 50%;
+    position : static;
+    /* May need to alter quotes for different locales (e.g fr) */
+    quotes : '\201C' '\201D' '\2018' '\2019';
+    right : auto;
+    tab-size : 8;
+    table-layout : auto;
+    text-align : inherit;
+    text-align-last : auto;
+    text-decoration : none;
+    text-decoration-color : inherit;
+    text-decoration-line : none;
+    text-decoration-style : solid;
+    text-indent : 0;
+    text-shadow : none;
+    text-transform : none;
+    top : auto;
+    transform : none;
+    transform-style : flat;
+    transition : none;
+    transition-delay : 0s;
+    transition-duration : 0s;
+    transition-property : none;
+    transition-timing-function : ease;
+    unicode-bidi : normal;
+    vertical-align : baseline;
+    visibility : visible;
+    white-space : normal;
+    widows : 0;
+    width : auto;
+    word-spacing : normal;
+    z-index : auto;
+}
+.tribe-events-sub-nav li a {
+	margin-bottom: 30px !important;
+ }
+.tribe-events-nav-next {
+	float: right !important;
+}
+
+
+/*added css rule to remove float from next button on events*/
+.tribe-events-nav-next.tribe-events-nav-left.tribe-events-past{
+  float: none !important;
+}
+
+/*input#locator-zip-code {
+	float: left;
+}*/
+
+/*input#locator-submit {
+	float: left;
+}*/
+
+#gforms_confirmation_message_1 {
+	margin-top: 15px;
+}
+.tribe-events-nav-right {
+	padding: 0px !important;
+}
+
+
+
+
+

@@ -1,0 +1,140 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flow-Flow v1.2.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-12-13 19:18:01+0000\n"
+"Last-Translator: admin <navdeykin@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#. translators: plugin header field 'Name'
+#: flow-flow.php:0
+#@ flow-flow
+msgid "Flow-Flow"
+msgstr ""
+
+#. translators: plugin header field 'PluginURI'
+#: flow-flow.php:0
+#@ flow-flow
+msgid "flow.looks-awesome.com"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: flow-flow.php:0
+#@ flow-flow
+msgid "Awesome social streams on your site"
+msgstr ""
+
+#. translators: plugin header field 'Author'
+#: flow-flow.php:0
+#@ flow-flow
+msgid "Looks Awesome"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: flow-flow.php:0
+#@ flow-flow
+msgid "looks-awesome.com"
+msgstr ""
+
+#: includes/FlowFlow.php:443
+#@ flow-flow
+msgid "All"
+msgstr "Todos"
+
+#: includes/FlowFlow.php:444
+#@ flow-flow
+msgid "Search"
+msgstr "Buscar"
+
+#: includes/FlowFlow.php:445
+#@ flow-flow
+msgid "Expand"
+msgstr "Expandir"
+
+#: includes/FlowFlow.php:446
+#@ flow-flow
+msgid "Collapse"
+msgstr "Colapso"
+
+#: includes/social/FFFeedUtils.php:28
+#@ flow-flow
+msgid "Yesterday"
+msgstr "Ayer"
+
+#: includes/social/FFFeedUtils.php:47
+#@ flow-flow
+msgid "s"
+msgstr "s"
+
+#: includes/social/FFFeedUtils.php:47
+#@ flow-flow
+msgid "m"
+msgstr "m"
+
+#: includes/social/FFFeedUtils.php:47
+#@ flow-flow
+msgid "h"
+msgstr "h"
+
+#: includes/social/FFFeedUtils.php:54
+#@ flow-flow
+msgid "ago"
+msgstr "hace"
+
+#: includes/FlowFlow.php:447
+#@ flow-flow
+msgid "Posted on"
+msgstr "Publicado en"
+
+#: includes/FlowFlow.php:448
+#@ flow-flow
+msgid "Show more"
+msgstr "Ver más"
+
+#: node_modules/grunt-wp-i18n/test/fixtures/basic-theme/exclude/file.php:3
+#: node_modules/grunt-wp-i18n/test/fixtures/plugin-include/plugin-include.php:6
+#@ example-theme
+#@ plugin-include
+msgid "Exclude"
+msgstr ""
+
+#. translators: plugin header field 'Name'
+#: node_modules/grunt-wp-i18n/test/fixtures/plugin-headers/plugin-headers.php:0
+#@ flow-flow
+msgid "Example Plugin"
+msgstr ""
+
+#: node_modules/grunt-wp-i18n/test/fixtures/plugin-include/include/file.php:2
+#@ plugin-include
+msgid "Include"
+msgstr ""
+
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/add-domain.php:2
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:2
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:3
+#@ default
+#@ oldtextdomain
+#@ vendortextdomain
+msgid "String"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: flow-flow.php:0
+#@ flow-flow
+msgid "1.2.4"
+msgstr ""
+

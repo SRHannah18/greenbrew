@@ -1,0 +1,350 @@
+// General Styles
+$pink: #e84179;
+
+$gray: #eeece9;
+$green: #b1bf22; // b1bf22  #B3C301 #B1BF22
+$green-tc: #B3C301;
+$text-gray: #7d7d7d;
+.pink {
+	background:$pink;
+}
+.gray {
+	background:$gray;
+}
+
+.green {
+	background:$green;
+}
+
+.pink,
+.green {
+	color:#ffffff;
+	h1,h2,h3,h4,h5,h6 {
+		color:#ffffff;
+	}
+
+}
+	
+
+.pink,
+.green,
+.gray {
+	.button {
+		border:2px solid #ffffff;
+		background:$pink;
+		font-family: "duke_fillfill", "Arial Narrow", sans-serif;
+		font-weight:normal;
+		font-size:32px;
+		height:auto;
+		padding:12px;
+		&:hover {
+			color:#ffffff;
+			background: lighten($pink,10%);
+		}
+	}
+}
+
+.gray {
+	.button {
+		background:$gray;
+		color:$text-gray;
+		border-color:$text-gray;
+		&:hover {
+			background:darken($gray,30%);
+		}
+	}
+}
+
+.inner-wrap {position:relative;}
+
+//****************************************
+//****************************************
+// treasure chest 2015
+//****************************************
+//****************************************
+.page-id-6583,
+.page-id-6964 {
+
+	.green {
+		background:$green-tc;
+	}
+
+	.green {
+		.button {
+			background:$green-tc;
+			padding:16px 24px;
+			font-size:40px;
+			&:hover {
+				background: lighten($green-tc,2.5%);
+			}
+		}
+	}
+
+	.raise-a-glass {
+			.button {
+				margin:18px 0 0 0;
+				color:#ffffff;
+				border-color:#ffffff;
+			}
+		}
+
+	// COMMON STYLES
+	h1 {
+		background: url(../../images/treasure-chest/2015/txt-treasure-chest.png) no-repeat;
+		text-indent:110%;
+		height:300px;
+		z-index:1001;
+		position:relative;
+		width:320px;
+		margin:0 auto;
+		}
+
+
+	.image-slider {
+		.cycle-slideshow {
+			.slide {
+				width:33.333%;
+				img {
+					width:100%;
+					height:auto;
+					&:hover {
+						opacity:0.9;
+					}
+				}
+			}
+
+
+			#prev,
+			#next {
+				position:absolute;
+				top:75%;
+				display:block;
+				width:25px;
+				height:25px;
+			}
+
+			#prev {
+				left:4px;
+				background: url(../../images/treasure-chest/2015/slider/prev.png) no-repeat center;
+				background-size:contain;
+				background-position:top left;
+			}
+
+			#next {
+				right:4px;
+				background: url(../../images/treasure-chest/2015/slider/next.png) no-repeat center;
+				background-size:contain;
+				background-position:top right;
+			}
+		}
+	}
+
+	.lisa-story {
+		.image-holder {
+			position:relative;
+			left:0;
+			bottom:0px;
+			float:right;
+			background:url(../../images/treasure-chest/2015/bottle-caps.jpg) no-repeat;
+			//background-size:contain;
+			width:35%;
+			height:250px;
+			//margin-bottom:100px;
+		}
+	}
+
+
+	#girl {
+		background:url(../../images/treasure-chest/2015/hawaii-girl-mobile.jpg) no-repeat;
+		width:108px;
+		height:250px;
+		float:left;
+		position:absolute;
+		left:12px;
+		top:auto;
+		bottom:0px;
+		z-index:1000;
+		
+	}
+
+	#treasure-beer {
+			margin:0 10px 0 24px;
+			float:right;
+			width:66px;
+			height:250px;
+			background:url(../../images/treasure-chest/2015/treasure-chest-beer-mobile-2.jpg) no-repeat;
+		}
+
+	#lisa-signature {
+		background: url(../../images/treasure-chest/2015/lisa-signature.png) no-repeat;
+		background-size:100%;
+		width:284px;
+		height:77px;
+	}
+
+	// MOBILE STYLES
+	@media only screen and (max-width: 767px) {
+		.inner-wrap {
+			padding:24px 0;
+			&.lisa-story h2 {
+				padding-top:24px;
+			}
+
+			h2.padding-top {
+				padding-top:24px;
+			}
+		}
+
+
+		#girl-mobile {
+			background: url(../../images/treasure-chest/2015/hawaii-girl-mobile-2.jpg) no-repeat center;
+			width:100%;
+			height:748px;
+		}
+	}
+
+
+	// DESKTOP STYLES
+	@media only screen and (min-width: 768px) {
+
+		
+
+		h2 {
+			font-size:32px;
+			&.image-replacement2 {
+				height:50px;
+			}
+		}
+
+
+		#girl {
+			position:absolute;
+			top:20px;
+			left:0px;
+			z-index:1000;
+			background: url(../../images/treasure-chest/2015/hawaii-girl.png) no-repeat;
+			//border:1px solid red;
+			width:322px;
+			height:748px;
+		}
+
+		.video {
+		z-index:1001;
+		margin-top:36px;
+		margin-bottom:18px;
+		padding-right:24px;
+		}
+
+		.content {
+			margin-top:24px;
+			width:63.0%;
+			margin-right:15%;
+			h2 {
+				margin-bottom:.0em;
+			}
+			p {
+				font-size:14px;
+			}
+		}
+
+		.about-beer {
+			padding-top:110px;
+			p {
+				font-size:14px;
+			}
+		}
+
+		#treasure-beer {
+			margin:-50px 0 25px 0;
+			width:122px;
+			height:460px;
+			background:url(../../images/treasure-chest/2015/treasure-chest-beer.png) no-repeat;
+		}
+
+		.raise-a-glass {
+			padding:75px 0;
+			.button {
+				margin:18px 0 0 0;
+			}
+		}
+
+		.get-involved {
+			padding:36px 0 24px 0;
+			h2 {
+				background: url(../../images/treasure-chest/2015/txt-get-involved.jpg) no-repeat;
+				background-size:100%;
+				// height:50px;
+			}
+		}
+
+		
+
+	.lisa-story {
+		overflow:hidden;
+		padding:50px 0 0 0;
+		.image-holder {
+			position:absolute;
+			background-position:bottom center;
+			background-size:contain;
+			left:0;
+			bottom:0px;
+			width:23.8%;
+			height:433px;
+		}
+	}
+
+	
+
+	.our-partners {
+		padding:36px 0;
+		h2 {
+			background: url(../../images/treasure-chest/2015/thank-you-partners.jpg) no-repeat;
+		}
+	}
+
+
+
+		// treasure chest 2015
+		
+
+			.image-slider {
+				.cycle-slideshow {
+
+					#prev,
+					#next {
+						width:50px;
+						height:50px;
+						top:45%;
+					}
+
+					#prev {
+						left:12px;
+					}
+
+					#next {
+						right:12px;
+					}
+				}
+			}
+
+
+	} // EOF DESKTOP
+
+
+	@media only screen and (min-width:1000px) {
+		.content {
+			width:17%;
+			margin-right:0;
+			margin-left:0;
+		}
+	}
+
+	img {display:block;}
+
+	
+} 
+//****************************************
+//****************************************
+// EOF TREASURE CHEST PAGES
+//****************************************
+//****************************************

@@ -1,0 +1,31 @@
+<?php
+/**
+* @package   AnyGuide - Online Tour Booking
+* @author    Anyguide <support@anyguide.com>
+* @license   GPL-2.0+
+* @link      http://anyguide.com
+* @copyright 2015 Anyguide
+*
+* Plugin Name:       AnyGuide - Online Tour Booking 
+* Plugin URI:        http://www.anyguide.com
+* Description:       This plugin allows you to integrate the Anyguide booking solution into your Wordpress site.
+* Version:           1.2.1
+* Author:            anyguide.com
+* Author URI:        http://www.anyguide.com/
+* Text Domain:       anyguide
+* License:           GPL-2.0+
+* License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+*/
+
+ob_start();
+define('ANYGUIDE_PLUGIN_FILE',__FILE__);
+define( 'ANYGUIDE_VERSION', '1.0.2' );
+
+require( dirname( __FILE__ ) . '/ag-functions.php' );
+require( dirname( __FILE__ ) . '/shortcode_tynimce.php' );
+require( dirname( __FILE__ ) . '/admin/install.php' );
+require( dirname( __FILE__ ) . '/admin/menu.php' );
+require( dirname( __FILE__ ) . '/shortcode-handler.php' );
+require( dirname( __FILE__ ) . '/admin/uninstall.php' );
+require( dirname( __FILE__ ) . '/direct_call.php' );
+?>

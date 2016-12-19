@@ -1,0 +1,47 @@
+[27-Mar-2016 11:36:23 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home1/greenfu7/public_html/wp-includes/rss-functions.php on line 8
+[28-Mar-2016 01:18:53 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home1/greenfu7/public_html/wp-includes/rss-functions.php on line 8
+[23-Jun-2016 03:57:56 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home1/greenfu7/public_html/wp-includes/nav-menu-template.php on line 16
+[23-Jun-2016 03:58:27 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home1/greenfu7/public_html/wp-includes/default-widgets.php on line 11
+[23-Jun-2016 03:58:27 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home1/greenfu7/public_html/wp-includes/default-widgets.php on line 11
+[23-Jun-2016 03:58:27 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/widgets/class-wp-widget-pages.php): failed to open stream: No such file or directory in /home1/greenfu7/public_html/wp-includes/default-widgets.php on line 11
+[23-Jun-2016 03:58:27 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/widgets/class-wp-widget-pages.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home1/greenfu7/public_html/wp-includes/default-widgets.php on line 11
+[23-Jun-2016 03:58:29 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home1/greenfu7/public_html/wp-includes/class-walker-page.php on line 17
+[23-Jun-2016 03:58:31 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home1/greenfu7/public_html/wp-includes/class-walker-page-dropdown.php on line 17
+[23-Jun-2016 04:00:16 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home1/greenfu7/public_html/wp-includes/default-filters.php on line 17
+[01-Aug-2016 14:44:39 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home1/greenfu7/public_html/wp-includes/nav-menu-template.php on line 16
+[01-Aug-2016 14:44:46 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home1/greenfu7/public_html/wp-includes/class-walker-page.php on line 17
+[01-Aug-2016 14:44:48 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home1/greenfu7/public_html/wp-includes/class-walker-page-dropdown.php on line 17
+[01-Aug-2016 14:46:09 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home1/greenfu7/public_html/wp-includes/rss.php on line 19
+[01-Aug-2016 14:47:16 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home1/greenfu7/public_html/wp-includes/class-walker-category.php on line 17
+[01-Aug-2016 14:48:19 America/Denver] PHP Fatal error:  Call to undefined function add_filter() in /home1/greenfu7/public_html/wp-includes/default-filters.php on line 17
+[01-Aug-2016 14:48:21 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home1/greenfu7/public_html/wp-includes/default-widgets.php on line 11
+[01-Aug-2016 14:48:21 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home1/greenfu7/public_html/wp-includes/default-widgets.php on line 11
+[01-Aug-2016 14:48:21 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/widgets/class-wp-widget-pages.php): failed to open stream: No such file or directory in /home1/greenfu7/public_html/wp-includes/default-widgets.php on line 11
+[01-Aug-2016 14:48:21 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/widgets/class-wp-widget-pages.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home1/greenfu7/public_html/wp-includes/default-widgets.php on line 11
+[01-Aug-2016 14:49:10 America/Denver] PHP Fatal error:  Call to undefined function is_admin() in /home1/greenfu7/public_html/wp-includes/vars.php on line 23
+[01-Aug-2016 14:49:18 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home1/greenfu7/public_html/wp-includes/compat.php on line 435
+[01-Aug-2016 14:49:18 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home1/greenfu7/public_html/wp-includes/compat.php on line 435
+[01-Aug-2016 14:49:18 America/Denver] PHP Warning:  require(ABSPATHWPINC/random_compat/random.php): failed to open stream: No such file or directory in /home1/greenfu7/public_html/wp-includes/compat.php on line 435
+[01-Aug-2016 14:49:18 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/random_compat/random.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home1/greenfu7/public_html/wp-includes/compat.php on line 435
+[01-Aug-2016 14:49:44 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home1/greenfu7/public_html/wp-includes/functions.php on line 8
+[01-Aug-2016 14:49:44 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home1/greenfu7/public_html/wp-includes/functions.php on line 8
+[01-Aug-2016 14:49:44 America/Denver] PHP Warning:  require(ABSPATHWPINC/option.php): failed to open stream: No such file or directory in /home1/greenfu7/public_html/wp-includes/functions.php on line 8
+[01-Aug-2016 14:49:44 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home1/greenfu7/public_html/wp-includes/functions.php on line 8
+[01-Aug-2016 14:50:18 America/Denver] PHP Notice:  Use of undefined constant ABSPATH - assumed 'ABSPATH' in /home1/greenfu7/public_html/wp-includes/script-loader.php on line 20
+[01-Aug-2016 14:50:18 America/Denver] PHP Notice:  Use of undefined constant WPINC - assumed 'WPINC' in /home1/greenfu7/public_html/wp-includes/script-loader.php on line 20
+[01-Aug-2016 14:50:18 America/Denver] PHP Warning:  require(ABSPATHWPINC/class.wp-dependencies.php): failed to open stream: No such file or directory in /home1/greenfu7/public_html/wp-includes/script-loader.php on line 20
+[01-Aug-2016 14:50:18 America/Denver] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/class.wp-dependencies.php' (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home1/greenfu7/public_html/wp-includes/script-loader.php on line 20
+[14-Oct-2016 19:52:40 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home/greenfu7/public_html/wp-includes/class-walker-nav-menu.php on line 17
+[14-Oct-2016 19:52:54 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/class-walker-nav-menu.php): failed to open stream: No such file or directory in /home/greenfu7/public_html/wp-includes/nav-menu-template.php on line 11
+[14-Oct-2016 19:52:54 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/class-walker-nav-menu.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/greenfu7/public_html/wp-includes/nav-menu-template.php on line 11
+[23-Nov-2016 09:03:07 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home/greenfu7/public_html/wp-includes/class-walker-nav-menu.php on line 17
+[23-Nov-2016 09:03:09 America/Denver] PHP Warning:  require_once(ABSPATHWPINC/class-walker-nav-menu.php): failed to open stream: No such file or directory in /home/greenfu7/public_html/wp-includes/nav-menu-template.php on line 11
+[23-Nov-2016 09:03:09 America/Denver] PHP Fatal error:  require_once(): Failed opening required 'ABSPATHWPINC/class-walker-nav-menu.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/greenfu7/public_html/wp-includes/nav-menu-template.php on line 11
+[23-Nov-2016 09:03:15 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home/greenfu7/public_html/wp-includes/class-walker-page.php on line 17
+[23-Nov-2016 09:03:16 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home/greenfu7/public_html/wp-includes/class-walker-page-dropdown.php on line 17
+[23-Nov-2016 09:03:29 America/Denver] PHP Fatal error:  Class 'Walker' not found in /home/greenfu7/public_html/wp-includes/class-walker-category.php on line 17
+[28-Nov-2016 20:04:08 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/greenfu7/public_html/wp-includes/registration.php on line 7
+[28-Nov-2016 20:37:08 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/greenfu7/public_html/wp-includes/registration.php on line 7
+[28-Nov-2016 22:05:01 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/greenfu7/public_html/wp-includes/registration.php on line 7
+[29-Nov-2016 10:12:08 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/greenfu7/public_html/wp-includes/registration.php on line 7
+[29-Nov-2016 10:54:54 America/Denver] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/greenfu7/public_html/wp-includes/registration.php on line 7

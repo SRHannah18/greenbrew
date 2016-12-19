@@ -1,0 +1,2320 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-family: $sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color: $text-gray;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+.desktop-only {display:none;}
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+
+.archive,
+.blog {
+	.entry-content {
+		border-bottom:1px solid #999999;
+		padding-bottom:12px;
+		margin-bottom:18px;
+	}
+}                       /* archive page */
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 100%;
+	margin: 0 auto;
+	position:relative;
+}
+
+.wrap .inner-wrap {
+	width:96%;
+	margin:0 auto;
+}
+
+.wrap #beer-nav .inner-wrap {
+	width:100%;
+}
+
+.header {
+	height:auto;
+	width:100%;
+	position:relative;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+	color: $link-color;
+
+	/* on hover */
+	&:hover, &:focus {
+		color: $link-hover;
+	}
+
+	/* on click */
+	&:active {
+
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .profile-username,
+body .specs .mobile-beer-style {
+	@include headings;
+	text-rendering: optimizelegibility;
+	/*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+	/* removing text decoration from all headline links */
+	a {
+		text-decoration: none;
+	}
+}
+
+h1, .h1 {
+	font-size: 1.5rem;
+	line-height: 1.333em;
+}
+
+h2, .h2, 
+body .specs .mobile-beer-style {
+	font-size: 1.25rem;
+	line-height: 1.4em;
+	margin-bottom: 0.375em;
+}
+
+h3, .h3 {
+	font-size: 1.25rem;
+}
+
+h4, .h4 {
+	font-size: 1.0rem;
+	font-weight: 700;
+}
+
+h5, .h5 {
+	font-size: 1.0rem;
+	line-height: 1.4em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h1 a, 
+h2 a, 
+h3 a, 
+h4 a, 
+h5 a,
+h1 a:visited, 
+h2 a:visited, 
+h3 a:visited, 
+h4 a:visited, 
+h5 a:visited {
+	color:$text-gray;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+#social-links-header {
+	width:100%;
+	background:#000000;
+	margin:0;
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:auto;
+	z-index:3000;
+	li {
+		display:inline-block;
+		margin-left:8px;
+	}
+
+
+	a {
+		@extend .image-replacement;
+		display:block;
+		width:22px;
+		height:22px;
+		background: $gfb-sprite-mobile;
+
+		&#facebook {background-position:0px 0px;
+				&:hover {
+					background-position:0px -22px;
+				}
+			}
+		&#twitter {background-position:-22px 0px;
+				&:hover {
+					background-position:-22px -22px;
+				}
+			}
+		&#instagram {background-position:-44px 0px;
+				&:hover {
+					background-position:-44px -22px;
+				}
+			}
+		&#youtube {background-position:-66px 0px;
+				&:hover {
+					background-position:-66px -22px;
+				}
+			}
+	}
+}	
+
+#header-top-bar {
+	width:100%;
+	background:#000000;
+	overflow:hidden;
+	padding:0 0 12px 0;
+	display:none;
+
+	.button,
+	input,
+	div a {
+		font-size:16px;
+		height:30px;
+		line-height:30px;
+		padding:0 8px;
+		width:100%;
+		text-align:center;
+	}
+
+
+	div {
+		
+	}
+}
+
+	#partner-login,
+	#retailer-login {
+		margin-right:12px;
+		color:$text-gray;
+		display:none;
+		&:hover {
+			color:#ffffff;
+		}
+	}
+
+	.not-logged-in #partner-login {
+		display:block;
+	}
+
+	#header-top-bar .logout {
+		color:$text-gray;
+		margin-right:12px;
+		&:hover {
+			color:$white;
+		}
+	}
+
+	.role-distributor #partner-login {display:block;}
+	.role-retailer #retailer-login {display:block;}
+
+	.role-administrator {
+		#retailer-login,
+		#partner-login {
+			display:block;
+		}
+	}
+
+
+
+	#my-cart { // this is an <a>
+		
+
+		.cart-status {
+			display:inline-block;
+			float:none;
+			padding:0 8px;
+			line-height:19px;
+			width:19px;
+			height:19px;
+			background: $gfb-sprite-mobile;
+			background-position:-88px 0px;
+			margin:2px 6px 0 0;
+		}
+
+		&:hover, &:focus {
+		
+			color: #ffffff;
+
+			.cart-status {
+				background-position:-107px 0px;
+			} // eof cart-status
+		
+		} // eof hover
+
+		.cart-items {
+			margin-left:3px;
+		}
+
+		&.full {
+				.cart-status {
+					background-position:-126px 0px;
+				}
+				&:hover, &:focus {
+					color:$gfb-green;
+				.cart-status {
+					background-position:-145px 0px;
+				} // eof cart-status
+			}
+		}
+	} // my-cart
+
+
+	#header-search {
+
+		input[type=text] {
+			border:none;
+			//color:#ffffff;
+			color:$text-gray;
+			&:focus { 
+				color:$text-gray;
+			}
+
+			&:hover {
+				//color:#ffffff;
+			}
+		}
+
+		input[type=submit] {
+			border:none;
+			background:#313131;
+			color:#7c7c7c;
+		}
+
+	}
+
+// SPLASH PAGE MOBILE
+.header,
+.page-template-template-splash-php .header {
+	background:#000000;
+	padding:12px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-template-template-splash-php {
+	//background:#000000 url(../../images/splash-bg-mobile3.jpg) no-repeat center center;
+	background-color:#000000;
+	background-repeat:no-repeat;
+	background-position:center center;
+	width:100%;
+	height:100%;
+
+
+#logo {
+	margin:0 auto;
+	float:none;
+}
+
+//#splash-content img {display:none;} // for development on computer screens
+
+#splash-content {
+	width:100%;
+	margin:24px auto 0 auto;
+	position:relative;
+	color:#ffffff;
+	text-align:center;
+	line-height:28px;
+}
+
+// #splash-content a {
+// 	color:#FFFFFF;
+// 	text-decoration:none;
+// }
+
+// .at-least-21.double-lines {
+// 	font-size:2.25rem;
+// 	padding:6px 0;
+// 	display:block;
+// 	top:0px;
+// 	margin-top:-12px;
+
+// } 
+// .double-lines {
+// 	border:1px solid #ffffff;
+// 	border-left:none;
+// 	border-right:none;
+// 	padding:0px 0 2px 0;
+// 	font-style:italic;
+// 	font-size:1.5rem;
+// 	position:relative;
+// 	top:-12px;
+// }
+
+// .twenty-one {
+// 	text-transform:uppercase;
+// 	font-size:2.0rem;
+// 	position:relative;
+// 	top:-10px;
+// 	margin-left:12px;
+// 	}
+// #yes, #no {font-size:2rem;}
+
+// .are-you {
+// 	display:block;
+// 	font-size:3.5rem;
+// 	text-transform: uppercase;
+// 	line-height:3rem;
+// 	margin-bottom:48px;
+// 	font-weight:bold;
+// }
+
+// #yes,
+// #no {
+// 	font-size:4rem;
+// 	letter-spacing:3px;
+// 	font-weight:bold;
+// 	line-height:5rem;
+// }
+
+// #yes:hover,
+// #no:hover {color:$gfb-green;}
+
+ }
+
+// EOF SPLASH PAGE
+
+
+
+// Original Desktop
+/* SPLASH PAGE */
+//******************************************************
+//******************************************************
+//******************************************************
+
+.page-template-template-splash-php {
+	//background:#000000 url(../../images/splash-bg-2000.jpg) no-repeat center top;
+	min-width:300px;
+	min-height:650px;
+
+	
+
+#splash-content {
+	max-width:820px;
+	overflow:hidden;
+	margin-top:0;
+}
+
+#splash-content img {
+	width:100%;
+	height:auto;
+	display:block;
+}
+
+#splash-content .hide {
+	position:absolute;
+	top:0px;
+	left:-9999px;
+}
+
+
+#yes, #no {
+	position:absolute;	
+	background:url(../../images/txt-green-yes-no-mobile.png) no-repeat;
+	height:45px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border:none;
+	outline:none;
+}
+
+#yes {
+	width:133px;
+	left:20.95%;
+	top:69.1%;
+	background-position:bottom left;
+	&:hover {
+		background-position:top left;
+	}
+	
+}
+#no {
+	width:105px;
+	left:64%;
+	top:68.9%;
+	background-position:bottom right;
+	&:hover {
+		background-position:top right;
+	}
+}
+
+}
+
+
+
+
+// EOF original desktop
+
+
+// HOME PAGE COMMON STYLES
+//******************************************************
+//******************************************************
+//******************************************************
+
+#btn-ratebeer,
+#btn-beer-advocate,
+#rate-beer,
+#beer-advocate {
+		@extend .image-replacement;
+		background: $gfb-sprite-mobile;
+		float:none;
+		height:27px;
+		display:block;
+		margin:0 auto;
+	}
+
+#btn-ratebeer,
+#rate-beer {
+		width:86px;
+		background-position: -102px -83px;
+		margin-bottom:20px;
+	}
+#btn-beer-advocate,
+#beer-advocate {
+		width:142px;
+		background-position: 0px -117px;
+	}
+
+
+
+.page-template-template-home-php,
+.page-template-template-home-2015-php,
+.page-template-template-home-2015-2-php {
+	#content {
+
+		.boxes {
+			position:relative;
+			.threecol {
+				margin:0;
+				width:49.99%;
+				padding:0 8px;
+				float:left;
+				position:relative;
+				overflow:visible;
+				margin-top:60px;
+			}
+			#featured-beer-bottle,
+			.featured-beer-bottle {
+				position:absolute;
+				top:auto;
+				bottom:0px;
+				left:4px;
+				width:30%;
+			}
+		}
+
+		.ratereviewbeer {
+
+		#btn-ratebeer {
+			width:100%;
+			background:url(../../images/home/ratereview/ratebeer.png) no-repeat center;
+			background-size:contain;
+			height:30px;
+		}
+		#btn-beer-advocate {
+			width:100%;
+			margin-bottom:24px;
+			background:url(../../images/home/ratereview/beeradvocate.png) no-repeat center;
+			background-size:contain;
+			height:30px;
+		}
+	}
+
+	#home-mobile-rate-review {
+		width:100%;
+		li {
+			width:100%;
+		}
+	}
+
+	}
+
+	
+	.youtube {
+			
+		iframe {
+			width:100%;
+			max-width:325px;
+		}
+	}
+
+	// Instagram Area home page
+	.instagram-wrapper {
+		.instagram-content {
+			width:32%;
+			margin:0 1.3% 10px 0;
+			float:left;
+			.profile-info {
+				display:none;
+				width:100%;
+				overflow:hidden;
+				.profile-image {
+					display:block;
+					width:60px;
+					height:60px;
+				}
+				.profile-username {
+					font-size:11px;
+					font-size:.9rem;
+				}
+			}
+		}
+	} // eof instagram-wrapper mobile
+}
+
+#virginia-beach-icon {
+	@extend .image-replacement;
+	//background: url(../../images/virginia-beach-brewery-sprite.png) no-repeat top left;
+	background-repeat:no-repeat;
+	width:180px;
+	height:130px;
+	position:relative;
+	margin:0 auto;
+	z-index:10000;
+	display:none;
+	#close {
+		//background: url(../../images/virginia-beach-brewery-sprite.png) no-repeat top right;
+		@extend .image-replacement;
+		background: $gfb-sprite-mobile;
+		width:50px;
+		height:50px;
+		position:absolute;
+		top:-6px;
+		left:-6px;
+		cursor:pointer;
+		z-index:10002;
+		background-position: -202px -50px;
+		border:none;
+		&:hover {
+			background-position: -202px -102px;
+			height:40px;
+		}
+		display:none;
+	}
+	a {
+		display:block;
+		width:180px;
+		height:130px;
+		z-index:10001;	
+	}
+}
+
+#mc_embed_signup {
+
+	div.mce_inline_error,
+	div#mce-error-response,
+	div#mce-success-response {
+		margin: 0 0 1em 0; 
+		padding: 5px 10px; 
+		font-weight: bold; 
+		z-index: 1; 
+		color:#fff;
+		position:relative;
+		z-index:10;
+	}
+				
+	div#mce-success-response {
+		background: $gfb-green-dark;
+	}
+
+	div.mce_inline_error,
+	div#mce-error-response {
+		background:#F1090D;
+	}
+}
+
+
+
+
+// BEER PAGE BASE PHONES
+//******************************************************
+//******************************************************
+//******************************************************
+.page-template-template-our-beers-php,
+.page-template-template-our-beers-2015-php,
+.page-template-template-our-beers-2015-simple-php {
+
+	#limited {
+
+		.twocol {
+			width: 33%;
+			margin: 0 0 10px 0;
+			float:left;
+		}
+	}
+	// EOF LIMITED
+
+	.discover {
+		h1 {
+			position:absolute;
+			top:0px;
+			left:-9999px;
+		}
+		img {
+			display:block;
+		}
+	}
+
+	#beer-nav {
+
+		a {
+			display:block;
+		}
+
+	} 
+
+} // EOF BEER PAGE
+
+
+
+// START OF INDIVIDUAL BEER PAGES PHONES
+.single-gfb_our_beers {
+
+	.wrap {
+		.single-beer-inner-wrap {
+			
+		}
+	}
+
+	#inner-content {
+		// *** denotes color has been changed...
+		&.blue-light {background-color:#58a0d7;} // Road Warrior ***
+		&.blue-lighter {background-color:#7ccfdb;} // Symposium
+		&.gray {background-color:#b1b3b6;} // Black IPA
+		&.gray-light {background-color:#a7a9ac;} // Double Stout ***
+		&.gray-lighter {background-color:#afc6d2;} // White IPA
+		&.green {background-color:#8fc26b;} // Barleywine
+		&.green-dark {background-color:#b2ce41;} // 30th Street
+		&.green-light {background-color:#57bb63;} // Green Bullet ***
+		&.green-lighter {background-color:#6bc8c6;} // Imperial IPA ***
+		&.orange {background-color:#dd9628;} // Citra Session
+		&.pink {background-color:#f489a1;} // Le Freak ***
+		&.purple-light {background-color:#9a7cb4;} // West Coast IPA
+		&.red {background-color:#ef3837;} // Cedar Plank
+		&.red-light {background-color:#f15d67;} // Hop Head Red ***
+		&.yellow {background-color:#cd8e2d;} // Palate Wrecker ***
+		&.orange-jibe {background-color:#f48a31;} // Jibe
+		&.blue-soul {background-color:#3cc5f0;} // Soul Style
+		&.cellar-3 {background-color:#333333;} // Cellar 3 Beers
+	}
+
+	#content {
+
+		.flash-of-genius-txt {
+			background:$gfb-sprite-mobile;
+			background-position:-141px -146px;
+			display:block;
+			width:200px;
+			height:15px;
+			position:relative;
+			top:0px;
+			right:0px;
+			margin-top:8px;
+			
+			span.title {
+				position:absolute;
+				top:0px;
+				left:-9999px;
+			}
+			span.number {
+				display:block;
+				width:24px;
+				height:15px;
+				float:right;
+				background:$gfb-sprite-mobile;
+				position:absolute;
+				top:-1px;
+				right:0px;
+				&.number-01 {background-position:-141px -164px;}
+				&.number-02 {background-position:-166px -164px;}
+				&.number-03 {background-position:-190px -164px;}
+				&.number-04 {background-position:-214px -164px;}
+				&.number-05 {background-position:-238px -164px;}
+				&.number-06 {background-position:-262px -164px;}
+				&.number-07 {background-position:-286px -164px;}
+
+				&.number-08 {background-position:-142px -180px;}
+				&.number-09 {background-position:-167px -180px;}
+				&.number-10 {background-position:-191px -180px;}
+				&.number-11 {background-position:-215px -180px;}
+				&.number-12 {background-position:-239px -180px;}
+				&.number-13 {background-position:-262px -180px;}
+				&.number-14 {background-position:-287px -180px;}
+
+				&.number-15 {background-position:-167px -198px;}
+				&.number-16 {background-position:-191px -198px;}
+			}
+			
+
+		}
+
+		color:#ffffff;
+		
+		h1,h2,h3,h4,h5,h6,a,
+		.specs .mobile-beer-style {
+			color:#ffffff;
+		}
+
+		.single-button {
+			
+		}
+
+		.store {
+			h2 {
+				
+			}
+
+			.sixcol {
+				margin-bottom:12px;
+			}
+		}
+
+		.specs {
+
+			p {
+				font-size:20px;
+				span {
+					//font-style:italic;
+					//font-size:14px;
+					
+				}
+			}
+
+		.options {
+				margin:12px 0 24px 0;
+				//border-bottom:3px solid #ffffff;
+				padding:0;
+				span {
+					margin:0 8px -4px 0;
+					background:$gfb-sprite-mobile;
+					display:inline-block;
+					//border:1px solid #ffffff;
+					position:relative;
+					&.image-replacement2 {
+						text-indent:200%;
+					}
+					
+				}
+				.twelve-oz {
+					background-position:-208px -217px;
+					width:62px;
+					height:72px;
+					top:17px;
+				}
+				.twenty-two-oz {
+					background-position:-284px -1px;
+					width:29px;
+					height:89px;
+					
+				}
+				.keg {
+					background-position:-161px -217px;
+					width:38px;
+					height:72px;
+					top:17px;
+				}
+				.cans {
+					background-position:-105px -21px;
+					width:66px;
+					height:58px;
+					top:31px;
+				}
+			}
+
+		}
+
+		#shop-now {
+
+			
+		}
+		.rate-beer {
+			h2 {
+				
+			}
+		}
+
+	}
+
+	.video-reviews {
+		margin:32px 0 60px 0;
+		position:relative;
+		clear:both;
+
+		.review-us,
+		h2 {
+			display:block;
+			&:hover {
+				opacity:0.7;
+			}
+		}
+		h2.review-us-title {
+			background-image: url(../../images/single-beers/review-our-beer.png);
+			height:50px;
+			a {
+				height:50px;
+			}
+			span {display:none;}
+		}
+
+		h2.review-title-custom {
+			border:3px solid #ffffff;
+			border-left:none;
+			border-right:none;
+			padding:6px 60px 6px 0;
+			&:hover {
+				opacity:1.0;
+			}
+		}
+
+		#you-tube {
+			position:absolute;
+			top:8px;
+			right:0px;
+			color:$text-gray;
+		}
+	}
+
+	.single-button {
+			
+			display:block;
+			background:#ffffff;
+			color:$text-gray;
+			text-transform:uppercase;
+			width:73px;
+			height:27px;
+			line-height:27px;
+			text-align:center;
+			font-family:$font-desktop;
+			text-decoration:none;
+			font-size:18px;
+			&:hover {
+				background:#000000;
+				color:#ffffff;
+			}
+			
+		}
+
+
+} // EOF INDIVIDUAL BEER PAGES
+
+
+.page-template-template-release-calendar-php {
+	.hero-image {
+		h1 {
+			display:none;
+		}
+	}
+	#release-calendar-content {
+		
+		
+		.cal-images {
+			position:relative;
+		}
+
+		
+
+
+		
+
+		.cal-images {
+			padding:0 0 0px 0;
+			li {
+				width:13.5%;
+				height:auto;
+				float:left;
+				margin:0 10px 20px 0;
+				
+				img {display:block;}
+
+
+				a {
+					text-decoration:none;	
+					span.dates {
+							display:block;
+							font-size:11px;
+						}
+				}
+			}
+		}
+
+		.available,
+		.draft,
+		a span.dates {
+			
+		}
+
+		.available,
+		a span.dates {
+			
+		}
+
+		.draft {
+			
+			span {
+				
+			}
+		}
+	}	
+}
+// eof release calendar mobile
+
+#tribe-events-pg-template #event-navigation,
+#tasting-room-box-nav {
+		margin-top:0px;
+		.twocol {
+			width:32%;
+			margin:0 .45%;
+			float:left;
+			&.calendar-link {
+				.twocol {
+					width:100%;
+					margin:0;
+					float:none;
+				}
+			}
+		}
+	}
+
+#tribe-events-pg-template {
+
+	h1.news-events-header {
+		position:absolute;
+		top:-6000px;
+		left:0px;
+	}
+
+body & h2.tribe-events-list-event-title {
+
+		a {display:inline;}
+		address {display:inline;}
+		&:hover {
+			color:red;
+		}
+		
+		.postal-code,
+		.country-name,
+		a.tribe-events-gmap {display:none;position:absolute;top:0px;left:-9999px;}
+
+		span {font-style:normal;}
+
+
+	}
+
+	// SOME COMMON STYLES
+	.tribe-bar-date-filter,
+	.tribe-bar-search-filter,
+	.tribe-bar-views-select {
+		display:none;
+	}
+
+	#tribebar-form {overflow:hidden;}
+
+	#tribe-bar-views,
+	.tribe-bar-filters {
+		width:48%;
+		height:50px;
+		float:left;
+		padding:0;
+		margin:0;
+		//border:1px solid red;
+	}
+
+	.tribe-bar-filters {
+		float:right;
+		input[type="text"] {
+			width:90%;
+		}
+	}
+
+
+} // EOF Events / Calendar Page Mobile
+
+
+
+
+#logo {
+	@extend .image-replacement;
+	//background:url(../../images/green-flash-logo.png) no-repeat top center;
+	background: $gfb-sprite-mobile;
+	background-position:0px -197px;
+	height:90px;
+	width:155px;
+	display:block;
+	padding:0;
+	margin:0;
+	a {
+		display:block;
+		height:90px;
+		width:155px;
+	}
+}
+
+#mobile-nav-button {
+	@extend .image-replacement;
+	background:#000000 url(../../images/nav-icon.png) no-repeat center center;
+	background-size:80%;
+	border:3px solid #ffffff;
+	width:50px;
+	height:50px;
+	//@include border-radius(8px);
+	position:absolute;
+	top:40px;
+	right:12px;
+	cursor: pointer;
+}
+
+#mobile-nav-button:hover {
+	//background-color: lighten(#000000, 10%)
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+
+#main-navigation {display:none;}
+
+.nav {
+	margin:0;
+	padding:0 0 12px 0;
+	background:#000;
+
+	li {
+		display: block;
+		padding: 10px 0px;
+		border-bottom: 1px solid $link-divider;
+
+		a {
+			
+			display:block;
+			text-decoration: none;
+			background-color: #000;
+			
+			color:$gfb-green;
+			text-transform:uppercase;
+
+			font-weight:bold;
+			text-align:center;
+
+
+			/*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+			&:hover, &:focus {
+				color:#fff;
+			}
+
+
+
+		}
+
+		ul a {
+				display:block;
+				width:100%;
+				height:100%;
+			}
+
+		ul li:first-child {
+				//padding-top:0px;
+			}
+
+		&:first-child {}
+
+		&:last-child {}
+
+
+
+		/*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+		ul.sub-menu,
+		ul.children {
+			padding:0;
+			margin-bottom:0px;
+			display:block;
+			ul {display:block;}
+			li {
+
+				a {
+					padding-left: 20px;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+
+				}
+
+				&:first-child {border-top: 1px solid $link-divider;}
+
+				&:last-child {border:none;}
+				li {
+					a {
+						padding-left:40px;
+					}
+				}
+
+			}
+
+		}
+
+	} /* end .menu li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+
+		a {}
+
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+	
+}
+
+		.hentry {
+			clear:both;
+
+			header {}
+
+			footer {}
+
+		} /* end .hentry */
+
+		.single-title,
+		.page-title {}
+
+		.single-title {}
+
+		.page-title {}
+
+		.archive-title { }
+
+		/* want to style individual post classes? Booya! */
+		.post-id {}         /* post by id (i.e. post-3) */
+		.post {}            /* general post style */
+		.page {}            /* general article on a page style */
+		.attachment {}      /* general style on an attatchment */
+		.sticky {}          /* sticky post style */
+		.hentry {}          /* hentry class */
+		.category-slug {}   /* style by category (i.e. category-videos) */
+		.tag-slug {}        /* style by tag (i.e. tag-news) */
+
+		/* post meta */
+		.byline {
+			color: #999;
+
+			time {}
+		}
+
+		/* entry content */
+		.entry-content {
+
+			#searchform {
+				.button {
+					background:#ffffff;
+					border:1px solid #cccccc;
+					color:#666666;
+					&:hover, &:focus {
+						color: #000000;
+		
+						}
+				}
+			}
+
+			h3,h4,h5,h6 {
+				font-size:24px;
+			}
+
+			p, address {
+				font-style:normal;
+			}
+
+
+			ul, ol, table, dl {}
+
+			ul, ol {
+				margin-left:36px;
+
+				li {}
+
+			}
+
+			ul {
+
+				li {list-style-type:disc;}
+
+			}
+
+			ol {
+
+				li {list-style-type:decimal;}
+
+			}
+
+			table {
+				margin-bottom:1em;
+				width:100%;
+				border:1px solid #cccccc;
+				border-bottom:none;
+				border-right:none;
+				th {
+					background:#000000;
+					color:#ffffff;
+					text-align:left;
+				}
+				tr:nth-child(even) {
+					background: #efefef;
+				}
+				tr:nth-child(odd) {
+					background: #ffffff;
+				}
+
+				th,td {
+					padding:4px;
+					border:1px solid #cccccc;
+					border-left:none;
+					border-top:none;
+				}
+
+				&#vb-fact-sheet {
+					border:none;
+					th, td {
+						border:none;
+						vertical-align: top;
+						padding:12px 12px 12px 0px;
+						background:$bg-gray;
+						color:$text-gray;
+					}
+					th {
+						width:25%;
+						.button {
+							width:70%;
+							font-size:14px;
+							text-align:center;
+							margin-top:12px;
+						}
+
+					}
+				}
+			}
+
+			blockquote {
+
+				&:before {}
+
+			}
+
+			dl {}
+
+			dt {}
+
+			dd {
+				margin-left: 0;
+				font-size: 0.9em;
+				color: #787878;
+				margin-bottom: 1.5em;
+			}
+
+			img {
+				margin: 0 0 1.5em 0;
+				max-width: 100%;
+				height: auto;
+			}
+
+			/*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/
+			.alignleft, img.alignleft {}
+			.alignright, img.alignright {}
+			.aligncenter, img.aligncenter {}
+
+			video, object {
+				max-width: 100%;
+				height: auto;
+			}
+
+			pre {
+				background: #eee;
+				border: 1px solid #cecece;
+				padding: 10px;
+			}
+
+		} /* end .entry-content */
+
+		.wp-caption {
+			max-width: 100%;
+			background: #eee;
+			padding: 5px;
+
+			/* images inside wp-caption */
+			img {
+				max-width: 100%;
+				margin-bottom: 0;
+				width: 100%;
+			}
+
+			p.wp-caption-text {
+				font-size: 0.85em;
+				margin: 4px 0 7px;
+				text-align: center;
+			}
+
+		} /* end .wp-caption */
+
+		/* image gallery styles */
+		.page-id-2929 h1.page-title {
+			text-indent:-9999px;
+		}
+
+		.page-id-616 #content h2,
+		.page-id-2929 #content h2 {
+			clear:both;
+			text-align:center;
+			color:#a5a5a5;
+			em {
+				display:inline-block;
+				background:#EEECE9;
+				position:relative;
+				padding:0 12px;
+				top:-20px;
+				font-style:normal;
+			}
+
+			border-top:2px solid #a5a5a5;
+			padding-top: 0px;
+  			margin-top: 0px;
+
+		}
+
+		
+		.gallery {
+			clear:both;
+			br {display:none;}
+			margin-bottom:36px;
+
+			dl {
+				width:49%;
+				float:left;
+				min-height:285px;
+				//border:1px solid #000000;
+				//padding-right:10%;
+
+
+				a {}
+
+				img {
+					display:block;
+					margin:0 auto;
+				}
+
+			}
+
+			dt {padding:0;margin:0}
+
+			// dd {
+			// 	text-align:center;
+			// 	margin:0;padding:10px 10px 0px 10px;
+			// 	line-height:22px;
+			// 	color:#666666;
+			// 	font-family:$heading-font;
+			// 	font-size:16px;
+			// 	letter-spacing:1px;
+				
+			// 	strong {
+			// 		text-transform:uppercase;
+			// 		font-weight:normal;
+			// 		font-size:30px;
+			// 		letter-spacing:1px;
+
+			// 	}
+			// 	br {display:inline;}
+			// }
+
+		} /* end .gallery */
+
+		//.page-id-616,
+		.page-id-2929,
+		.gallery {
+			
+			p.bio-management,
+			dd {
+				text-align:center;
+				margin:0;padding:10px 10px 0px 10px;
+				line-height:22px;
+				color:#666666;
+				font-family:$heading-font;
+				font-size:16px;
+				letter-spacing:1px;
+				
+				strong {
+					text-transform:uppercase;
+					font-weight:normal;
+					font-size:28px;
+					letter-spacing:1px;
+
+				}
+				br {display:inline;}
+			}
+		}
+
+		/* gallery caption styles */
+		.gallery-caption {}
+
+		.size-full {}
+		.size-large {}
+		.size-medium {}
+		.size-thumbnail {}
+
+
+
+
+.post-type-archive-espresso_events #main,
+.single-espresso_events #main,
+#main #single-page-checkout,
+#main .espresso_payment_overview {
+
+
+			.ee-button,
+		 	.ee-button:visited, 
+		 	.medium.ee-button, 
+		 	.medium.ee-button:visited,
+		 	.ee-status,
+		 	.ticket-selector-submit-btn,
+		 	.spco-next-step-btn {
+				background:#000000;
+				font-size:11px;
+				text-transform:uppercase;
+				height:26px;
+				padding-top:7px;
+				width:35%;
+				min-width:115px;
+				color:#ffffff;
+				&:hover {
+					background:$text-gray;
+				}
+			}
+
+			.ee-icon,
+			.dashicons {display:none;}
+
+			.ee-status {
+				background:#000000;
+				text-transform:uppercase;
+				&.event-active-status-DTA {
+					background:$gfb-green;
+					&:hover {
+						background:$gfb-green;
+					}
+				}
+				&:hover {
+					background:#000000;
+				}
+			}
+
+			.ticket-selector-submit-btn,
+			.spco-next-step-btn {
+				font-size:16px;
+				height:30px;
+				line-height:30px;
+				text-decoration:none;
+				//width:200px;
+				border:none;
+				padding-bottom:4px;
+			}
+
+			#spco-steps-display-dv {
+				background:#000000;
+
+				.inactive-step .spco-step-big-nmbr {
+					color:#666666;
+				}
+
+				.spco-step-big-nmbr {
+					color:$gfb-green;
+					
+				}
+			}
+
+
+
+			
+
+	table {
+		width:100%;
+		margin-bottom:48px;
+
+		tr {
+			border:1px solid #cccccc;
+		}
+
+		th {
+			text-align:left;
+			background:#000000;
+			color:#ffffff;
+			padding:4px;
+			font-size:14px;
+
+			&.th-status {
+				span {
+					float:right;
+					display:block;
+					width:35%;
+					min-width:115px;
+				}
+			}
+		}
+
+		td {
+			padding:6px 4px 4px 4px;
+			font-size:12px;
+			
+			&.event-category a {
+				text-decoration:none;
+				cursor: default;
+				color:$text-gray;
+			}
+
+		}
+
+
+
+		tr:nth-child(even) {
+			background: #efefef;
+		}
+		tr:nth-child(odd) {
+			background: #ffffff;
+		}
+
+
+	}
+
+}
+
+.single-espresso_events {
+
+	table,
+	table table {
+		max-width:100%;
+	}
+
+	h3 {
+		font-size:1.6rem;
+	}
+
+	h4, h5 {
+		font-size:1.2rem;
+	}
+
+
+
+}
+
+// .page-template-template-distributor-home-php,
+// .page-template-template-retailer-home-php {
+// 	.dlinks-inner {
+// 		span.title,
+// 		span.coming-soon {
+// 			display:block;
+// 		}
+// 	}
+// }
+
+#content .entry-content #on-tap-beers {
+	margin:0;
+	li {
+		list-style-type:none;
+		&.first {
+			clear:both;
+		}
+		h2 {
+			margin:0;
+		}	
+	}
+}
+
+/******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+
+.pagination,
+.wp-prev-next {
+	margin: 1.1em 0 2.2em;
+}
+	.pagination{
+        text-align: center;
+        ul {
+            display: inline-block;
+            white-space: nowrap;
+            padding:0;
+            clear: both;
+            margin: 1px;
+            li {
+                padding: 0;
+                margin: 0;
+                float: left;
+                display: inline;
+                overflow: hidden;
+                a, span {
+                    margin: 0;
+                    text-decoration: none;
+                    padding: 0;
+                    line-height: 1em;
+                    font-size: 1em;
+                    font-weight: normal;
+                    padding: .5em;
+                    min-width: 1em;
+                    display: block;
+                }
+                span.current{
+                	font-weight: bold;
+                }
+                a:hover, a:focus {
+                    
+                }
+            }
+        }
+    } /* end .bones_page_navi */
+
+	/* fallback previous & next links */
+	.wp-prev-next {
+
+		ul {}
+
+		.prev-link {
+			float: left;
+		}
+
+		.next-link {
+			float: right;
+		}
+
+	} /* end .wp-prev-next */
+
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+
+/* h3 comment title */
+#comments {
+
+	/* number of comments span */
+	span {}
+
+}
+
+.comment-nav {
+
+	ul {
+
+		li {}
+
+	}
+}
+
+
+.commentlist {
+
+	li {
+		position: relative;
+		clear: both;
+		overflow: hidden;
+		list-style-type: none;
+		margin-bottom: 1.5em;
+		padding: 0.7335em 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		ul.children {
+			margin: 0;
+
+			li {}
+
+			/* variations */
+			.comment {}
+			.alt {}
+			.odd {}
+			.even {}
+			.depth-1 {}           /* change number for different depth */
+			.byuser {}
+			.bypostauthor {}
+			.comment-author-admin {}
+
+		} /* end .commentlist li ul.children */
+	}
+
+	li[class*=depth-] {
+		margin-top: 1.1em;
+	}
+
+	li.depth-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	li:not(.depth-1) {
+		margin-right: -10px;
+		margin-left: -10px;
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	li.depth-2 {}
+	li.depth-3 {}
+	li.depth-4 {}
+	li.depth-5 {}
+
+	/* general comment classes */
+	.alt {}
+	.odd {
+		background: #eee;
+	}
+	.even {
+		background: #fefefe;
+	}
+	.parent {}
+	.comment {}
+	.children {}
+	.pingback {}
+	.bypostauthor {}
+	.comment-author {}
+	.comment-author-admin {}
+	.thread-alt {}
+	.thread-odd {}
+	.thread-even {}
+
+	/* vcard */
+	.vcard {
+		margin-left: 50px;
+
+		cite.fn {
+			font-weight: 700;
+			font-style: normal;
+
+			a.url {}
+
+		}
+
+		time {
+			float: right;
+
+			a {
+				color: #999;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+		}
+
+		img.photo {}
+
+		img.avatar {
+			position: absolute;
+			left: 10px;
+			padding: 2px;
+			border: 1px solid #cecece;
+			background: #fff;
+		}
+
+	} /* end .commentlist .vcard */
+
+
+	/* comment meta */
+	.comment-meta {
+
+		a {}
+
+	}
+
+	.commentmetadata {
+
+		a {}
+
+	}
+
+	/* comment content */
+	.comment_content {
+		margin-left: 50px;
+
+		p {
+			margin: 0.7335em 0 1.5em;
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+	} /* end .commentlist .comment_content */
+
+	/* comment reply link */
+	.comment-reply-link {
+		text-decoration: none;
+		float: right;
+		background: #4598bb;
+		padding: 3px 5px;
+		color: #fff;
+		opacity: 0.65;
+		margin-bottom: 10px;
+		font-weight: 700;
+		font-size: 0.9em;
+
+		&:hover,
+		&:focus {
+			opacity: 1;
+		}
+
+	} /* end .commentlist .comment-reply-link */
+
+} /* end .commentlist */
+
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+
+.respond-form {
+	margin: 1.5em 10px;
+	padding-bottom: 2.2em;
+
+	form {
+		margin: 0.75em 0;
+
+		li {
+			list-style-type: none;
+			clear: both;
+			margin-bottom: 0.7335em;
+
+			label,
+			small {
+				display: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url],
+		textarea {
+			padding: 3px 6px;
+			background: #efefef;
+			border: 2px solid #cecece;
+			line-height: 1.5em;
+
+			&:focus {
+				background: #fff;
+			}
+
+			/* form validation */
+			&:invalid {
+				outline: none;
+				border-color: #fbc2c4;
+				background-color: #f6e7eb;
+				-webkit-box-shadow: none;
+				   -moz-box-shadow: none;
+				    -ms-box-shadow: none;
+						box-shadow: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url] {
+			max-width: 400px;
+			min-width: 250px;
+		}
+
+		textarea {
+			resize: none;
+			width: 97.3%;
+			height: 150px;
+		}
+
+	}
+}
+
+	/* comment submit button */
+	#submit {}
+
+	/* comment form title */
+	#comment-form-title {
+		margin: 0 0 1.1em;
+	}
+
+	/* cancel comment reply link */
+	#cancel-comment-reply {
+		a {}
+	}
+
+	/* logged in comments */
+	.comments-logged-in-as {}
+
+	/* allowed tags */
+	#allowed_tags {
+		margin: 1.5em 10px 0.7335em 0;
+	}
+
+	/* no comments */
+	.nocomments {
+		margin: 0 20px 1.1em;
+	}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {}
+
+	.widgettitle {}
+
+	.widget {
+
+		ul {
+
+			li {
+
+				&:first-child {}
+
+				&:last-child {}
+
+				a {}
+
+				/* deep nesting */
+				ul {}
+
+			}
+
+		}
+
+	}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.footer {
+	clear: both;
+	background:#000000;
+	color:$gfb-footer-gray;
+	text-align:center;
+	padding:36px 0px;
+	a {
+		color:$gfb-footer-gray;
+		text-decoration:none;
+		&:hover {
+			color:$white;
+		}	
+	}
+	
+	#footer-logo {
+		margin:0 auto;
+		width:132px;
+		height:52px;
+
+		a {
+			display:block;
+			@extend .image-replacement;
+			background: $gfb-sprite-mobile;
+			background-position:0px -145px;
+			width:132px;
+			height:52px;
+		}
+	}
+	
+	#tasting-room-hours {
+		@include headings;
+		margin:18px 0 10px 0;
+	}
+	
+	address {
+		font-style:normal;
+	}
+	
+	#social-links-footer {
+		li {
+			display:inline-block;
+			margin:0 3px;
+			a {
+				@extend .image-replacement;
+				display:block;
+				width:22px;
+				height:22px;
+				background: $gfb-sprite-mobile;
+
+				&#facebook-footer {background-position:0px -44px;
+						&:hover {
+							background-position:0px 0px;
+						}
+					}
+				&#twitter-footer {background-position:-22px -44px;
+						&:hover {
+							background-position:-22px 0px;
+						}
+					}
+				&#instagram-footer {background-position:-44px -44px;
+						&:hover {
+							background-position:-44px 0px;
+						}
+					}
+				&#youtube-footer {background-position:-66px -44px;
+						&:hover {
+							background-position:-66px 0px;
+						}
+					}
+			}
+		}
+	}
+	
+	.footer-nav {
+
+		li {
+			display:inline-block;
+			&:after {
+				content: "/";
+				margin:0 2px 0 6px;
+			}
+			a {
+				
+			}
+		}
+
+		li:last-child:after {
+			content: "";
+			display:none;
+		}
+
+	}
+
+	.copyright {
+
+	}
+}
+
+/*********************
+IFRAMES GENERAL
+*********************/
+iframe {
+	border:none;
+	width:100%;
+}
+
+// beer finder iframe
+iframe#beerfinderiframe {
+	height:1800px;
+
+}
+
+#popup-content-wrapper1 {
+
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background:none;
+	z-index:50000;
+	display:none;
+}
+
+#popup-content-wrapper2 {
+	background:#ffffff;
+	max-width:1000px;
+	min-height:600px;
+	margin:100px auto 0 auto;
+	position:relative;
+	padding:60px 20px 20px 20px;
+}
+
+#popup-close {
+	width:100px;
+	background:#000000;
+	position:absolute;
+	top:0px;
+	right:0px;
+	text-align:center;
+	height:40px;
+	line-height:40px;
+	color:#ffffff;
+	&:hover {
+		background:#666666;
+	}
+}
+
+.page-id-1223,
+.page-id-445,
+.parent-pageid-445 {
+
+	#menu-item-148 {display:none;}
+
+}
+
+.cellar-3-buttons {
+			display:inline-block;
+			height:41px;
+			line-height:39px;
+			font-size:30px;
+			background:#fff;
+			color: #ffffff;
+			font-family: $font-desktop;
+			text-transform:uppercase;
+			text-align:center;
+			width:15%;
+			position:absolute;
+			border:2px solid #ffffff;
+			top:24px;
+			right:0px;
+			text-decoration:none;
+			background:#000000;
+			&:hover {
+				background:#000;
+				color:$text-gray;
+				border-color:$text-gray;
+			}
+		}
+
+#cellar-3-home {
+	padding-bottom:150px;
+	position:relative;
+	text-align:center;
+	.threecol {
+		width:24%;
+		margin:0;
+		margin-right:1.32%;
+		float:left;
+		&.last {
+			float:right;
+			margin-right:0;
+		}
+
+		img {
+			max-width:100%;
+			height:auto;
+		}
+	}
+}
+body #cellar-3-content {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	h2 {
+
+		.no-phones {display:none;}
+		font-size:20px;
+		line-height:20px;
+		margin:0;
+		br {display:none;}
+		small {
+			font-size:12px;
+			letter-spacing:2px;
+			display:block;
+			line-height:14px;
+			margin-top:8px;
+		}
+	}
+
+	.cellar-3-buttons {
+	width:auto;
+	height:auto;
+	padding:4px 10px;
+	color:#ffffff;
+	position:relative;
+	margin:0;
+	}
+
+}
+
+	
+
+/*********************
+SCREEN READERS
+*********************/
+
+.screen-reader-text {display:none;}
+

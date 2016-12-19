@@ -1,0 +1,7 @@
+.hashimage-list {
+	list-style: none;
+}
+
+.hashimage-list li {
+	display: inline-block;
+}

@@ -1,0 +1,68 @@
+// SPLASH PAGE
+.page-template-template-splash-php {
+
+	#yes {
+		left:4.0%;
+		top:66.6%;
+
+
+	}
+	#no {
+		left:62%;
+		top:66.4%;
+	}
+
+} // EOF SPLASH PAGE
+
+.page-template-template-home-php,
+.page-template-template-home-2015-php,
+.page-template-template-home-2015-2-php {
+	#content {
+
+		.boxes {
+			#featured-beer-bottle {
+				top:0px;
+				left:-10px;
+				width:11%;
+			}
+		}
+	}
+}
+
+.page-template-template-tasting-room-php .entry-content {
+	.sixcol {
+		width:100%;
+
+		&.first {
+			float:none;
+		}
+		&.last {
+			float: none;
+		}
+	}
+}
+
+.page-template-template-our-beers-2015-simple-php {
+
+	#beer-list-color-bgs {
+		
+		li {
+			float:none;
+			width:100%;
+		}
+	}
+
+}
+
+#find-beer h2 {
+		height:175px;
+		width:100%;
+	}
+
+// body #cellar-3-content {
+// 	h2 {
+// 		.no-portrait {
+// 			display:none:
+// 		}
+// 	}
+// }
